@@ -1,0 +1,6 @@
+# ninja log v5
+365	455	1668348209565714011	Advanced_Programming_1_Project	13f6ed5ecabca5a
+1	365	1668348209477714140	CMakeFiles/Advanced_Programming_1_Project.dir/testClass.cpp.o	ef70c55270b0010e
+0	21	1668522778144160258	CMakeFiles/Advanced_Programming_1_Project.dir/main.cpp.o	b7d5c6a9cafe2ca4
+0	219	1668522834572720173	CMakeFiles/Advanced_Programming_1_Project.dir/main.cpp.o	b7d5c6a9cafe2ca4
+220	269	1668522834620720612	Advanced_Programming_1_Project	6075f83c56ced22c
