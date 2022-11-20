@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(Advanced_Programming_1_Project
         # README.md
-         main.cpp main.h)
+         main.cpp main.h Minkowski.cpp Minkowski.h canberra.cpp canberra.h chebyshev.cpp chebyshev.h)
