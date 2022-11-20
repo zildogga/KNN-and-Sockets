@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(Advanced_Programming_1_Project
         # README.md
-         main.cpp main.h)
+        distance/cpp/main.cpp distance/h/main.h distance/cpp/distanceClass.cpp distance/h/distanceClass.h distance/cpp/euclideanDistance.cpp distance/h/euclideanDistance.h distance/cpp/manhattanDistance.cpp distance/h/manhattanDistance.h)

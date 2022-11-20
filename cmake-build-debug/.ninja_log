@@ -1,6 +1,23 @@
 # ninja log v5
-365	455	1668348209565714011	Advanced_Programming_1_Project	13f6ed5ecabca5a
-1	365	1668348209477714140	CMakeFiles/Advanced_Programming_1_Project.dir/testClass.cpp.o	ef70c55270b0010e
-0	21	1668522778144160258	CMakeFiles/Advanced_Programming_1_Project.dir/main.cpp.o	b7d5c6a9cafe2ca4
-0	219	1668522834572720173	CMakeFiles/Advanced_Programming_1_Project.dir/main.cpp.o	b7d5c6a9cafe2ca4
 220	269	1668522834620720612	Advanced_Programming_1_Project	6075f83c56ced22c
+0	219	1668522834572720173	CMakeFiles/Advanced_Programming_1_Project.dir/main.cpp.o	b7d5c6a9cafe2ca4
+1	365	1668348209477714140	CMakeFiles/Advanced_Programming_1_Project.dir/testClass.cpp.o	ef70c55270b0010e
+0	285	1668951357944836007	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o	33ae6b0156816c0d
+1	290	1668951357948836005	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattanDistance.cpp.o	ee86b674a7599cd8
+1	292	1668951357952836002	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclideanDistance.cpp.o	be513675896462f0
+1	326	1668951357984835988	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o	c973ab36ca026141
+326	387	1668951358048835958	Advanced_Programming_1_Project	2ac5ca75c9256d30
+1	280	1668951438952831032	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o	c973ab36ca026141
+280	334	1668951439004831049	Advanced_Programming_1_Project	2ac5ca75c9256d30
+1	257	1668951539964907609	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattanDistance.cpp.o	ee86b674a7599cd8
+1	257	1668951539964907609	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclideanDistance.cpp.o	be513675896462f0
+1	297	1668951540004907656	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o	c973ab36ca026141
+297	352	1668951540060907720	Advanced_Programming_1_Project	2ac5ca75c9256d30
+0	310	1668951555368926376	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o	c973ab36ca026141
+310	369	1668951555428926452	Advanced_Programming_1_Project	2ac5ca75c9256d30
+0	260	1668952325843288540	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclideanDistance.cpp.o	be513675896462f0
+0	270	1668952325855288591	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattanDistance.cpp.o	ee86b674a7599cd8
+0	304	1668952325887288724	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o	c973ab36ca026141
+304	360	1668952325943288957	Advanced_Programming_1_Project	2ac5ca75c9256d30
+1	251	1668952401007605426	CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclideanDistance.cpp.o	be513675896462f0
+252	305	1668952401059605648	Advanced_Programming_1_Project	2ac5ca75c9256d30
