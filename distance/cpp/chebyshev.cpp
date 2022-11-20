@@ -2,7 +2,7 @@
 // Created by Omer on 20/11/2022.
 //
 
-#include "chebyshev.h"
+#include "distance/h/chebyshev.h"
 
 double chebyshev::distance(std::vector<double> v1, std::vector<double> v2) {
     double dis = 0;

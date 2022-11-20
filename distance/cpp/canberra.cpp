@@ -2,7 +2,7 @@
 // Created by Omer on 20/11/2022.
 //
 
-#include "canberra.h"
+#include "distance/h/canberra.h"
 
 //for from 1 to n of (abs of pi - qi) / (abs of pi + abs of qi)
 double canberra::distance(std::vector<double> v1, std::vector<double> v2) {

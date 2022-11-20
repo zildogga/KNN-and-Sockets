@@ -9,7 +9,7 @@
 using namespace std;
 //d(x,y) = (for from 1 to n of abs of (xi - yi)^p)^(1/p)
 
-class Minkowski {
+class minkowski {
 public:
     double distance(std::vector<double>v1,std::vector<double>v2);
 };

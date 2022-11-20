@@ -7,7 +7,7 @@
 
 #include "canberra.h"
 #include "chebyshev.h"
-#include "Minkowski.h"
+#include "minkowski.h"
 #include "iostream"
 #include <vector>
 #include <cmath>

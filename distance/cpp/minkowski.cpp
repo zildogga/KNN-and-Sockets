@@ -2,9 +2,9 @@
 // Created by Omer on 20/11/2022.
 //
 //d(x,y) = (for from 1 to n of abs of (xi - yi)^p)^(1/p)
-#include "Minkowski.h"
+#include "distance/h/minkowski.h"
 
-double Minkowski::distance(std::vector<double> v1, std::vector<double> v2) {
+double minkowski::distance(std::vector<double> v1, std::vector<double> v2) {
     double dis = 0;
     double p = 2;//might be changed
     //goes over all the arguments on the vector
