@@ -4,12 +4,10 @@
 
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_CHEBYSHEV_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_CHEBYSHEV_H
-#include <vector>
-#include <cmath>
+#include "distanceClass.h"
 using namespace std;
-class chebyshev {
-public:
-    double distance(std::vector<double>v1,std::vector<double>v2);
+class chebyshev:public distanceClass{
+    double distance(vector<double> v1, vector<double> v2);
 };
 
 

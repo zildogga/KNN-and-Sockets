@@ -10,7 +10,7 @@
 
 class distanceClass {
     public:
-        double distance(std::vector<double> v1, std::vector<double> v2);
+        virtual double distance(std::vector<double> v1, std::vector<double> v2);
 };
 
 

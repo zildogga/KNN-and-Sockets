@@ -8,6 +8,8 @@
 #include "canberra.h"
 #include "chebyshev.h"
 #include "minkowski.h"
+#include "euclidean.h"
+#include "manhattan.h"
 #include "iostream"
 #include <vector>
 #include <cmath>

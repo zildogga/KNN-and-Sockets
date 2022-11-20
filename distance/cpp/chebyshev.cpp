@@ -4,7 +4,7 @@
 
 #include "distance/h/chebyshev.h"
 
-double chebyshev::distance(std::vector<double> v1, std::vector<double> v2) {
+double chebyshev::distance(vector<double> v1, vector<double> v2) {
     double dis = 0;
     //goes over all the values
     for (int i = 0; i < v1.size(); ++i) {

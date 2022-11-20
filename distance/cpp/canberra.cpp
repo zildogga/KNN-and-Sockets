@@ -5,7 +5,7 @@
 #include "distance/h/canberra.h"
 
 //for from 1 to n of (abs of pi - qi) / (abs of pi + abs of qi)
-double canberra::distance(std::vector<double> v1, std::vector<double> v2) {
+double canberra::distance(vector<double> v1, vector<double> v2) {
     double dis = 0;
     //goes over all the values of the vector
     for (int i = 0; i < v1.size(); i++) {
