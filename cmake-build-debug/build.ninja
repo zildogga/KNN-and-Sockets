@@ -49,13 +49,6 @@ cmake_ninja_workdir = /home/ofir/CLionProjects/Advanced-Programming-1-Project/cm
 
 build cmake_object_order_depends_target_Advanced_Programming_1_Project: phony || CMakeFiles/Advanced_Programming_1_Project.dir
 
-build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/main.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
-  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -I/home/ofir/CLionProjects/Advanced-Programming-1-Project/.
-  OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp
-
 build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/distanceClass.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
   DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o.d
   FLAGS = -g -std=gnu++14
@@ -63,15 +56,43 @@ build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.c
   OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
   OBJECT_FILE_DIR = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp
 
-build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclideanDistance.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/euclideanDistance.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
-  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclideanDistance.cpp.o.d
+build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/main.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
+  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o.d
   FLAGS = -g -std=gnu++14
   INCLUDES = -I/home/ofir/CLionProjects/Advanced-Programming-1-Project/.
   OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
   OBJECT_FILE_DIR = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp
 
-build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattanDistance.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/manhattanDistance.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
-  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattanDistance.cpp.o.d
+build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/minkowski.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
+  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/ofir/CLionProjects/Advanced-Programming-1-Project/.
+  OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
+  OBJECT_FILE_DIR = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp
+
+build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/canberra.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
+  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/ofir/CLionProjects/Advanced-Programming-1-Project/.
+  OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
+  OBJECT_FILE_DIR = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp
+
+build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/chebyshev.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
+  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/ofir/CLionProjects/Advanced-Programming-1-Project/.
+  OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
+  OBJECT_FILE_DIR = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp
+
+build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/manhattan.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
+  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/ofir/CLionProjects/Advanced-Programming-1-Project/.
+  OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
+  OBJECT_FILE_DIR = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp
+
+build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o: CXX_COMPILER__Advanced_Programming_1_Project_Debug /home/ofir/CLionProjects/Advanced-Programming-1-Project/distance/cpp/euclidean.cpp || cmake_object_order_depends_target_Advanced_Programming_1_Project
+  DEP_FILE = CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o.d
   FLAGS = -g -std=gnu++14
   INCLUDES = -I/home/ofir/CLionProjects/Advanced-Programming-1-Project/.
   OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
@@ -85,7 +106,7 @@ build CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattanDistan
 #############################################
 # Link the executable Advanced_Programming_1_Project
 
-build Advanced_Programming_1_Project: CXX_EXECUTABLE_LINKER__Advanced_Programming_1_Project_Debug CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclideanDistance.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattanDistance.cpp.o
+build Advanced_Programming_1_Project: CXX_EXECUTABLE_LINKER__Advanced_Programming_1_Project_Debug CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Advanced_Programming_1_Project.dir
   POST_BUILD = :

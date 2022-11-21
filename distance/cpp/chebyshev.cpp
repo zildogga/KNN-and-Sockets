@@ -1,6 +1,4 @@
-//
-// Created by Omer on 20/11/2022.
-//
+
 
 #include "distance/h/chebyshev.h"
 

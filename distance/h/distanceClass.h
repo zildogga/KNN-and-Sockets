@@ -1,6 +1,4 @@
-//
-// Created by ofir on 11/15/22.
-//
+
 
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_DISTANCECLASS_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_DISTANCECLASS_H
@@ -10,7 +8,7 @@
 
 class distanceClass {
     public:
-        virtual double distance(std::vector<double> v1, std::vector<double> v2);
+        virtual double distance(std::vector<double> v1, std::vector<double> v2){};
 };
 
 

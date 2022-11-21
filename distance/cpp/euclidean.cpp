@@ -1,6 +1,4 @@
-//
-// Created by Omer on 20/11/2022.
-//
+
 
 #include "distance/h/euclidean.h"
 // calculate the euclidean distance of 2 vectors. d(p,q) = square root of sigma (v1[i] - v2[i]) ^ 2

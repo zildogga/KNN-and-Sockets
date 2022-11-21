@@ -1,6 +1,4 @@
-//
-// Created by Omer on 20/11/2022.
-//
+
 //d(x,y) = (for from 1 to n of abs of (xi - yi)^p)^(1/p)
 #include "distance/h/minkowski.h"
 

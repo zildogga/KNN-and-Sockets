@@ -7,4 +7,5 @@ include_directories(.)
 
 add_executable(Advanced_Programming_1_Project
         # README.md
-        distance/cpp/main.cpp distance/h/main.h distance/cpp/minkowski.cpp distance/h/minkowski.h distance/cpp/canberra.cpp distance/h/canberra.h distance/cpp/chebyshev.cpp distance/h/chebyshev.h distance/cpp/manhattan.cpp distance/h/manhattan.h distance/cpp/euclidean.cpp distance/h/euclidean.h)
+        distance/h/distanceClass.h distance/cpp/distanceClass.cpp distance/cpp/main.cpp distance/h/main.h distance/cpp/minkowski.cpp distance/h/minkowski.h distance/cpp/canberra.cpp distance/h/canberra.h distance/cpp/chebyshev.cpp distance/h/chebyshev.h distance/cpp/manhattan.cpp distance/h/manhattan.h distance/cpp/euclidean.cpp distance/h/euclidean.h
+        )
