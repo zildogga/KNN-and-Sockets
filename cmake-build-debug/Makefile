@@ -128,13 +128,13 @@ Advanced_Programming_1_Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/build
 .PHONY : Advanced_Programming_1_Project/fast
 
-distance/cpp/canberra.obj: distance/cpp/canberra.cpp.obj
-.PHONY : distance/cpp/canberra.obj
+distance/cpp/canberra.o: distance/cpp/canberra.cpp.o
+.PHONY : distance/cpp/canberra.o
 
 # target to build an object file
-distance/cpp/canberra.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj
-.PHONY : distance/cpp/canberra.cpp.obj
+distance/cpp/canberra.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o
+.PHONY : distance/cpp/canberra.cpp.o
 
 distance/cpp/canberra.i: distance/cpp/canberra.cpp.i
 .PHONY : distance/cpp/canberra.i
@@ -152,13 +152,13 @@ distance/cpp/canberra.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.s
 .PHONY : distance/cpp/canberra.cpp.s
 
-distance/cpp/chebyshev.obj: distance/cpp/chebyshev.cpp.obj
-.PHONY : distance/cpp/chebyshev.obj
+distance/cpp/chebyshev.o: distance/cpp/chebyshev.cpp.o
+.PHONY : distance/cpp/chebyshev.o
 
 # target to build an object file
-distance/cpp/chebyshev.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj
-.PHONY : distance/cpp/chebyshev.cpp.obj
+distance/cpp/chebyshev.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o
+.PHONY : distance/cpp/chebyshev.cpp.o
 
 distance/cpp/chebyshev.i: distance/cpp/chebyshev.cpp.i
 .PHONY : distance/cpp/chebyshev.i
@@ -176,13 +176,13 @@ distance/cpp/chebyshev.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.s
 .PHONY : distance/cpp/chebyshev.cpp.s
 
-distance/cpp/distanceClass.obj: distance/cpp/distanceClass.cpp.obj
-.PHONY : distance/cpp/distanceClass.obj
+distance/cpp/distanceClass.o: distance/cpp/distanceClass.cpp.o
+.PHONY : distance/cpp/distanceClass.o
 
 # target to build an object file
-distance/cpp/distanceClass.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj
-.PHONY : distance/cpp/distanceClass.cpp.obj
+distance/cpp/distanceClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o
+.PHONY : distance/cpp/distanceClass.cpp.o
 
 distance/cpp/distanceClass.i: distance/cpp/distanceClass.cpp.i
 .PHONY : distance/cpp/distanceClass.i
@@ -200,13 +200,13 @@ distance/cpp/distanceClass.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.s
 .PHONY : distance/cpp/distanceClass.cpp.s
 
-distance/cpp/euclidean.obj: distance/cpp/euclidean.cpp.obj
-.PHONY : distance/cpp/euclidean.obj
+distance/cpp/euclidean.o: distance/cpp/euclidean.cpp.o
+.PHONY : distance/cpp/euclidean.o
 
 # target to build an object file
-distance/cpp/euclidean.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj
-.PHONY : distance/cpp/euclidean.cpp.obj
+distance/cpp/euclidean.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o
+.PHONY : distance/cpp/euclidean.cpp.o
 
 distance/cpp/euclidean.i: distance/cpp/euclidean.cpp.i
 .PHONY : distance/cpp/euclidean.i
@@ -224,13 +224,13 @@ distance/cpp/euclidean.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.s
 .PHONY : distance/cpp/euclidean.cpp.s
 
-distance/cpp/main.obj: distance/cpp/main.cpp.obj
-.PHONY : distance/cpp/main.obj
+distance/cpp/main.o: distance/cpp/main.cpp.o
+.PHONY : distance/cpp/main.o
 
 # target to build an object file
-distance/cpp/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj
-.PHONY : distance/cpp/main.cpp.obj
+distance/cpp/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o
+.PHONY : distance/cpp/main.cpp.o
 
 distance/cpp/main.i: distance/cpp/main.cpp.i
 .PHONY : distance/cpp/main.i
@@ -248,13 +248,13 @@ distance/cpp/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.s
 .PHONY : distance/cpp/main.cpp.s
 
-distance/cpp/manhattan.obj: distance/cpp/manhattan.cpp.obj
-.PHONY : distance/cpp/manhattan.obj
+distance/cpp/manhattan.o: distance/cpp/manhattan.cpp.o
+.PHONY : distance/cpp/manhattan.o
 
 # target to build an object file
-distance/cpp/manhattan.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj
-.PHONY : distance/cpp/manhattan.cpp.obj
+distance/cpp/manhattan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o
+.PHONY : distance/cpp/manhattan.cpp.o
 
 distance/cpp/manhattan.i: distance/cpp/manhattan.cpp.i
 .PHONY : distance/cpp/manhattan.i
@@ -272,13 +272,13 @@ distance/cpp/manhattan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.s
 .PHONY : distance/cpp/manhattan.cpp.s
 
-distance/cpp/minkowski.obj: distance/cpp/minkowski.cpp.obj
-.PHONY : distance/cpp/minkowski.obj
+distance/cpp/minkowski.o: distance/cpp/minkowski.cpp.o
+.PHONY : distance/cpp/minkowski.o
 
 # target to build an object file
-distance/cpp/minkowski.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj
-.PHONY : distance/cpp/minkowski.cpp.obj
+distance/cpp/minkowski.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o
+.PHONY : distance/cpp/minkowski.cpp.o
 
 distance/cpp/minkowski.i: distance/cpp/minkowski.cpp.i
 .PHONY : distance/cpp/minkowski.i
@@ -305,25 +305,25 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Advanced_Programming_1_Project
-	@echo ... distance/cpp/canberra.obj
+	@echo ... distance/cpp/canberra.o
 	@echo ... distance/cpp/canberra.i
 	@echo ... distance/cpp/canberra.s
-	@echo ... distance/cpp/chebyshev.obj
+	@echo ... distance/cpp/chebyshev.o
 	@echo ... distance/cpp/chebyshev.i
 	@echo ... distance/cpp/chebyshev.s
-	@echo ... distance/cpp/distanceClass.obj
+	@echo ... distance/cpp/distanceClass.o
 	@echo ... distance/cpp/distanceClass.i
 	@echo ... distance/cpp/distanceClass.s
-	@echo ... distance/cpp/euclidean.obj
+	@echo ... distance/cpp/euclidean.o
 	@echo ... distance/cpp/euclidean.i
 	@echo ... distance/cpp/euclidean.s
-	@echo ... distance/cpp/main.obj
+	@echo ... distance/cpp/main.o
 	@echo ... distance/cpp/main.i
 	@echo ... distance/cpp/main.s
-	@echo ... distance/cpp/manhattan.obj
+	@echo ... distance/cpp/manhattan.o
 	@echo ... distance/cpp/manhattan.i
 	@echo ... distance/cpp/manhattan.s
-	@echo ... distance/cpp/minkowski.obj
+	@echo ... distance/cpp/minkowski.o
 	@echo ... distance/cpp/minkowski.i
 	@echo ... distance/cpp/minkowski.s
 .PHONY : help

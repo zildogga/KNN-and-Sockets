@@ -18,7 +18,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="Advanced_Programming_1_Project">
-				<Option output="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option output="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -41,7 +41,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="Advanced_Programming_1_Project/fast">
-				<Option output="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option output="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>

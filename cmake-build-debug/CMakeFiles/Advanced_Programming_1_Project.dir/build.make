@@ -68,12 +68,11 @@ include CMakeFiles/Advanced_Programming_1_Project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
 
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/includes_CXX.rsp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj: ../distance/cpp/distanceClass.cpp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\distanceClass.cpp.obj.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\distanceClass.cpp.obj -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\distanceClass.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o: ../distance/cpp/distanceClass.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\distanceClass.cpp.o.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\distanceClass.cpp.o -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\distanceClass.cpp
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.i"
@@ -83,12 +82,11 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\distanceClass.cpp -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\distanceClass.cpp.s
 
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/includes_CXX.rsp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj: ../distance/cpp/main.cpp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\main.cpp.obj.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\main.cpp.obj -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\main.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o: ../distance/cpp/main.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\main.cpp.o.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\main.cpp.o -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\main.cpp
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.i"
@@ -98,12 +96,11 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\main.cpp -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\main.cpp.s
 
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/includes_CXX.rsp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj: ../distance/cpp/minkowski.cpp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\minkowski.cpp.obj.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\minkowski.cpp.obj -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\minkowski.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o: ../distance/cpp/minkowski.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\minkowski.cpp.o.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\minkowski.cpp.o -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\minkowski.cpp
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.i"
@@ -113,12 +110,11 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\minkowski.cpp -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\minkowski.cpp.s
 
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/includes_CXX.rsp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj: ../distance/cpp/canberra.cpp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\canberra.cpp.obj.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\canberra.cpp.obj -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\canberra.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o: ../distance/cpp/canberra.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\canberra.cpp.o.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\canberra.cpp.o -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\canberra.cpp
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.i"
@@ -128,12 +124,11 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\canberra.cpp -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\canberra.cpp.s
 
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/includes_CXX.rsp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj: ../distance/cpp/chebyshev.cpp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\chebyshev.cpp.obj.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\chebyshev.cpp.obj -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\chebyshev.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o: ../distance/cpp/chebyshev.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\chebyshev.cpp.o.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\chebyshev.cpp.o -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\chebyshev.cpp
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.i"
@@ -143,12 +138,11 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\chebyshev.cpp -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\chebyshev.cpp.s
 
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/includes_CXX.rsp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj: ../distance/cpp/manhattan.cpp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\manhattan.cpp.obj.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\manhattan.cpp.obj -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\manhattan.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o: ../distance/cpp/manhattan.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\manhattan.cpp.o.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\manhattan.cpp.o -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\manhattan.cpp
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.i"
@@ -158,12 +152,11 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\manhattan.cpp -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\manhattan.cpp.s
 
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/includes_CXX.rsp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj: ../distance/cpp/euclidean.cpp
-CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\euclidean.cpp.obj.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\euclidean.cpp.obj -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\euclidean.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/flags.make
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o: ../distance/cpp/euclidean.cpp
+CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o: CMakeFiles/Advanced_Programming_1_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o -MF CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\euclidean.cpp.o.d -o CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\euclidean.cpp.o -c C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\distance\cpp\euclidean.cpp
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.i"
@@ -175,33 +168,31 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.s: cmak
 
 # Object files for target Advanced_Programming_1_Project
 Advanced_Programming_1_Project_OBJECTS = \
-"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj" \
-"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj" \
-"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj" \
-"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj" \
-"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj" \
-"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj" \
-"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj"
+"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o" \
+"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o" \
+"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o" \
+"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o" \
+"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o" \
+"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o" \
+"CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o"
 
 # External object files for target Advanced_Programming_1_Project
 Advanced_Programming_1_Project_EXTERNAL_OBJECTS =
 
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.obj
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.obj
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.obj
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.obj
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.obj
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.obj
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.obj
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/build.make
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/linklibs.rsp
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/objects1.rsp
-Advanced_Programming_1_Project.exe: CMakeFiles/Advanced_Programming_1_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Advanced_Programming_1_Project.exe"
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/build.make
+Advanced_Programming_1_Project: CMakeFiles/Advanced_Programming_1_Project.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Advanced_Programming_1_Project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Advanced_Programming_1_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Advanced_Programming_1_Project.dir/build: Advanced_Programming_1_Project.exe
+CMakeFiles/Advanced_Programming_1_Project.dir/build: Advanced_Programming_1_Project
 .PHONY : CMakeFiles/Advanced_Programming_1_Project.dir/build
 
 CMakeFiles/Advanced_Programming_1_Project.dir/clean:

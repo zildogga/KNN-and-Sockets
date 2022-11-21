@@ -4,7 +4,7 @@
 # compile CXX with C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/Advanced_Programming_1_Project.dir/includes_CXX.rsp
+CXX_INCLUDES = -IC:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\.
 
 CXX_FLAGS = -g -std=gnu++14
 
