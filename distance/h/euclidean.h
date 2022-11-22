@@ -1,7 +1,6 @@
 
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_EUCLIDEAN_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_EUCLIDEAN_H
-using namespace std;
 #include "distanceClass.h"
 class euclidean:public distanceClass{
 public:

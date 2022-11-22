@@ -13,6 +13,7 @@
 #include "iostream"
 #include <vector>
 #include <cmath>
+#include "float.h"
 using namespace std;
 class main {
 

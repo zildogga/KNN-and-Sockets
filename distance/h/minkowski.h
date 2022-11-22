@@ -5,7 +5,6 @@
 
 #include "distanceClass.h"
 
-using namespace std;
 //d(x,y) = (for from 1 to n of abs of (xi - yi)^p)^(1/p)
 
 class minkowski:public distanceClass{

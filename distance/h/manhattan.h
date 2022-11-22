@@ -3,7 +3,6 @@
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_MANHATTAN_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_MANHATTAN_H
 
-using namespace std;
 #include "distanceClass.h"
 
 class manhattan:public distanceClass {

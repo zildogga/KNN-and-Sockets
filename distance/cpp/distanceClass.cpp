@@ -25,7 +25,8 @@ double distanceClass::checkValidation(string str) {
     }
     catch (exception &e) {
         //prints an error
-        cerr << "The input was unsuccessful." << endl;
+        cerr << "The input was not a number." << endl;
+        return DBL_MAX;
     }
     //if the flag is true that means the string was successfully converted into a double
     if (flag) {

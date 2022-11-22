@@ -144,6 +144,8 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/float.h
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o
  C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/chebyshev.cpp
@@ -288,6 +290,8 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/float.h
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o
  C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/distanceClass.cpp
@@ -431,6 +435,8 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/float.h
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o
  C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/euclidean.cpp
@@ -575,6 +581,8 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/float.h
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o
  C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/main.cpp
@@ -738,6 +746,8 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/float.h
  C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/canberra.h
  C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/chebyshev.h
  C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/minkowski.h
@@ -887,6 +897,8 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/float.h
 
 CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o
  C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/minkowski.cpp
@@ -1031,4 +1043,6 @@ CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath
  C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/math.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h
+ C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/x86_64-w64-mingw32/include/float.h
 
