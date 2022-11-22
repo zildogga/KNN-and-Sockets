@@ -5,7 +5,7 @@
 double distanceClass::checkValidation(string str) {
     double x = 0;
     //a flag to check if double
-    bool flag = false;
+    bool isDouble = false;
     //trying to convert to a number
     try {
         //a variable to save the size of the conversion
@@ -20,16 +20,17 @@ double distanceClass::checkValidation(string str) {
             throw e;
             //that means it was a number
         } else {
-            flag = true;
+            isDouble = true;
         }
     }
     catch (exception &e) {
         //prints an error
         cerr << "The input was not a number." << endl;
+        //returns the max double for exception reasons
         return DBL_MAX;
     }
     //if the flag is true that means the string was successfully converted into a double
-    if (flag) {
+    if (isDouble) {
         return x;
     }
 }
