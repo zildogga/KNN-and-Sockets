@@ -4,7 +4,6 @@
 
 double minkowski::distance(vector<double> v1, vector<double> v2) {
     double dis = 0;
-    double p = 2;//might be changed
     //goes over all the arguments on the vector
     for (int i = 0; i < v1.size(); i++) {
         //absolute value of xi-yi, and to the power of p
