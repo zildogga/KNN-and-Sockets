@@ -47,25 +47,18 @@ This is a rundown about everything we have and did in the first assignment:
 >For **p≥1**, the Minkowski distance is a metric as a result of the Minkowski inequality. When **p<1**, the distance between **(0,0)** and **(1,1)** is **2^1/p^>2** but the point **(0,1)** is at a distance **1** from both of these points. Since this violates the triangle inequality, for **p>1** it is not a metric. However, a metric can be obtained for these values by simply removing the exponent of **1/p**.
 
 ## 💻 How to run the program
-The whole program runs from the **main.cpp** file.
-
-To debug the project, you need to download **MakeFile** version *3.22*.
-
-[CMake download for Linux and Windows](https://cmake.org/files/v3.2/)
-
-Then go to the directory of the project (on the terminal), and write:
-
-    cmake ..
-
-Lastly, go to the cmake directory from the terminal, and then write the following command:
-
-    ./Advanced_Programming_1_Project
 
 **Linux:**
 
-instead of the cmake, you can also paste this line in the terminal *(might not work)*:
+Paste this command to the terminal:
 
-    g++ -std=c++11 -Idistance/h distance/h/canberra.h distance/cpp/canberra.cpp distance/h/chebyshev.h distance/cpp/chebyshev.cpp distance/h/euclidean.h distance/cpp/euclidean.cpp distance/h/manhattan.h distance/cpp/manhattan.cpp distance/cpp/minkowski.cpp distance/h/minkowski.h distance/h/distanceClass.h distance/cpp/distanceClass.cpp distance/h/main.h distance/cpp/main.cpp
+    g++ -std=c++11 -I[path for the directory of the project] distance/cpp/Canberra.cpp distance/h/Canberra.h distance/cpp/Chebyshev.cpp distance/h/Chebyshev.h distance/cpp/Euclidean.cpp distance/h/Euclidean.h distance/cpp/DistanceClass.cpp distance/h/DistanceClass.h distance/cpp/Main.cpp distance/h/Main.h distance/cpp/Manhattan.cpp distance/h/Manhattan.h distance/cpp/Minkowski.cpp distance/h/Minkowski.h
+
+❤️ **insert your own path on the computer in the path place.** ❤️
+
+an example for a path:
+
+    /home/ofir/CLionProjects/Advanced-Programming-1-Project
 
 and then:
 
