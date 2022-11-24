@@ -30,24 +30,34 @@ This is a rundown about everything we have and did in the first assignment:
 
 # ⚡ Algorithms
 **Euclidean**
+
 <img src="https://i.imgur.com/EXQEowM.png" width="600"/>
+
 > The distance between any two points on the real line is the absolute value of the numerical difference of their coordinates, their absolute difference. Thus if p and q are two points on the real line, then the distance between them is given by this formula, and the same for *n* number of points.
 
 **Manhattan**
+
 <img src="https://i.imgur.com/LzyrKnq.png" width="300"/>
+
 >The taxicab distance, *d1*, between two vectors **p** , **q** in an *n*-dimensional real vector space with fixed Cartesian coordinate system, is the sum of the lengths of the projections of the line segment between the points onto the coordinate axes.
 
 **Chebyshev**
+
 <img src="https://i.imgur.com/ukNkEdp.png" width="230"/>
->Mathematically, the Chebyshev distance is a metric induced by the supremum norm or uniform norm. It is an example of an injective metric. In two dimensions, i.e. plane geometry, if the points **p** and **q** have Cartesian coordinates (*x~1~*,*y~1~*) and (*x~2~*,*y~2~*), their Chebyshev distance is the maximum distance between the *x*'s and the *y*'s of the two vectors.
+
+>Mathematically, the Chebyshev distance is a metric induced by the supremum norm or uniform norm. It is an example of an injective metric. In two dimensions, i.e. plane geometry, if the points **p** and **q** have Cartesian coordinates (*x<sub>1</sub>*,*y<sub>1</sub>*) and (*x<sub>2</sub>*,*y<sub>2</sub>*), their Chebyshev distance is the maximum distance between the *x*'s and the *y*'s of the two vectors.
 
 **Canberra**
+
 <img src="https://i.imgur.com/oFLYRNo.png" width="230"/>
->The Canberra distance *d* between vectors **p** and **q** in an *n*-dimensional real vector space is given by summing up the absolute values of *p~i~*-*q~i~*, and dividing it by *p~i~*+*q~i~*.
+
+>The Canberra distance *d* between vectors **p** and **q** in an *n*-dimensional real vector space is given by summing up the absolute values of *p<sub>i</sub>*-*q<sub>i</sub>*, and dividing it by *p<sub>i</sub>*+*q<sub>i</sub>*.
 
 **Minkowski**
+
 <img src="https://i.imgur.com/dqTIJb9.png" width="230"/>
->For **p≥1**, the Minkowski distance is a metric as a result of the Minkowski inequality. When **p<1**, the distance between **(0,0)** and **(1,1)** is **2^1/p^>2** but the point **(0,1)** is at a distance **1** from both of these points. Since this violates the triangle inequality, for **p>1** it is not a metric. However, a metric can be obtained for these values by simply removing the exponent of **1/p**.
+
+>For **p≥1**, the Minkowski distance is a metric as a result of the Minkowski inequality. When **p<1**, the distance between **(0,0)** and **(1,1)** is **2<sup>1/p</sup>>2** but the point **(0,1)** is at a distance **1** from both of these points. Since this violates the triangle inequality, for **p>1** it is not a metric. However, a metric can be obtained for these values by simply removing the exponent of **1/p**.
 
 ## 💻 How to run the program
 
