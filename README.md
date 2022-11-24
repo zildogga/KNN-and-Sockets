@@ -8,20 +8,23 @@
 <div align=center>🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁</div>
 ㅤ
 
-So far, we have uploaded the first assignment for the project.
+  So far, we have uploaded the first assignment for the project.
 The assignment was to make a software that calculates distances between 2 vectors of the *same size* with 5 different algorithms:
 
-1. **Canberra**
-2. **Minkowski**
-3. **Euclidean**
-4. **Chebyshev**
-5. **Manhattan**
+ 1. **Canberra**
+ 2. **Minkowski**
+ 3. **Euclidean**
+ 4. **Chebyshev**
+ 5. **Manhattan**
+
 
 This is a rundown about everything we have and did in the first assignment:
 
 # 📁 Files
 
-<img src="https://i.imgur.com/LN30JQT.png" width="300"/>
+
+<img src="https://i.imgur.com/aHewclO.png" width="300"/>
+
 
 > This is a screenshot of the files we have created in the assignment.
 
@@ -47,19 +50,23 @@ This is a rundown about everything we have and did in the first assignment:
 >For **p≥1**, the Minkowski distance is a metric as a result of the Minkowski inequality. When **p<1**, the distance between **(0,0)** and **(1,1)** is **2^1/p^>2** but the point **(0,1)** is at a distance **1** from both of these points. Since this violates the triangle inequality, for **p>1** it is not a metric. However, a metric can be obtained for these values by simply removing the exponent of **1/p**.
 
 ## 💻 How to run the program
-The whole program runs from the **main.cpp** file.
 
 **Linux:**
-To debug the project, you have to paste this line:
 
-    g++ -std=c++11 distance/cpp/canberra.cpp distance/h/canberra.h distance/cpp/chebyshev.cpp distance/h/chebyshev.h distance/cpp/euclidean.cpp distance/h/euclidean.h distance/cpp/distanceClass.cpp distance/h/distanceClass.h distance/cpp/main.cpp distance/h/main.h distance/cpp/manhattan.cpp distance/h/manhattan.h distance/cpp/minkowski.cpp distance/h/minkowski.h
+Paste this command to the terminal:
+
+    g++ -std=c++11 -I[path for the directory of the project] distance/cpp/Canberra.cpp distance/h/Canberra.h distance/cpp/Chebyshev.cpp distance/h/Chebyshev.h distance/cpp/Euclidean.cpp distance/h/Euclidean.h distance/cpp/DistanceClass.cpp distance/h/DistanceClass.h distance/cpp/Main.cpp distance/h/Main.h distance/cpp/Manhattan.cpp distance/h/Manhattan.h distance/cpp/Minkowski.cpp distance/h/Minkowski.h
+
+❤️ **insert your own path on the computer in the path place.** ❤️
+
+an example for a path:
+
+    /home/ofir/CLionProjects/Advanced-Programming-1-Project
 
 and then:
 
     ./a.out
 
-**Windows:**
-To debug the project,
 
 ## ✍ Examples for input
 
@@ -76,7 +83,9 @@ Here are some examples for input:
 
 ## 📊 UML diagrams
 
-**Dictionary:**
+
+**Dictionary:** 
+
 ```mermaid
 flowchart
 id5{Package}
@@ -106,4 +115,6 @@ id3{h}-->main.h(main.h)
 style id1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style id3 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+
 ```
+
