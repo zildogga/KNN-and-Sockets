@@ -5,7 +5,7 @@
 
 #include "DistanceClass.h"
 //the p from the algorithm
-const int p = 2;
+const double p = 2;
 //d(x,y) = (for from 1 to n of abs of (xi - yi)^p)^(1/p)
 
 class Minkowski: public DistanceClass{

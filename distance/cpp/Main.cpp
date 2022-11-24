@@ -35,7 +35,7 @@ int main() {
     while(true) {
         //checks if the size is 0, if it is there was no input in the vector yet
         if (!v1.size()) {
-            cout << "Enter the first vector : " << endl;
+            //cout << "Enter the first vector : " << endl;
             //if the vector wasn't successfully inserted, we need to clear it and go beck to the start of the loop
             if (!getVector(&v1)) {
                 v1.clear();
@@ -45,7 +45,7 @@ int main() {
         }
         //checks if the size is 0, if it is there was no input in the vector yet
         if (!v2.size()) {
-            cout << "Enter the second vector : " << endl;
+            //cout << "Enter the second vector : " << endl;
             //if the vector wasn't successfully inserted, we need to clear it and go beck to the start of the loop
             if (!getVector(&v2)) {
                 v2.clear();
@@ -70,12 +70,35 @@ int main() {
     Euclidean euc;
     Manhattan man;
     //prints all the results
-    cout << "And the results are:" << endl;
-    cout << "Canberra : " << c.distance(v1, v2) << endl;
-    cout << "Chebyshev : " << ch.distance(v1, v2) << endl;
-    cout << "Minkowski : " << m.distance(v1, v2) << endl;
-    cout << "Euclidean : " << euc.distance(v1, v2) << endl;
-    cout << "Manhattan : " << man.distance(v1, v2) << endl;
+    // set precision to the double numbers, if the number is int print x.0
+    cout << setprecision(17);
+    cout << euc.distance(v1, v2);
+    if ((int)euc.distance(v1, v2) == euc.distance(v1, v2)) {
+        cout << ".0";
+    }
+    cout << endl;
+    cout << man.distance(v1, v2);
+    if ((int)man.distance(v1, v2) == man.distance(v1, v2)) {
+        cout << ".0";
+    }
+    cout << endl;
+    cout << ch.distance(v1, v2);
+    if ((int)ch.distance(v1, v2) == ch.distance(v1, v2)) {
+        cout << ".0";
+    }
+    cout << endl;
+    cout << c.distance(v1, v2);
+    if ((int)c.distance(v1, v2) == c.distance(v1, v2)) {
+        cout << ".0";
+    }
+    cout << endl;
+    cout << m.distance(v1, v2);
+    if ((int)m.distance(v1, v2) == m.distance(v1, v2)) {
+        cout << ".0";
+    }
+    cout << endl;
+
+
     //returns 0 to end the Main
     return 0;
 }

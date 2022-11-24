@@ -33,4 +33,5 @@ double DistanceClass::checkValidation(string str) {
     if (isDouble) {
         return x;
     }
+    return DBL_MAX;
 }
