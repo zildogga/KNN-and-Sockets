@@ -1,8 +1,8 @@
 
 
-#include "distance/h/chebyshev.h"
+#include "distance/h/Chebyshev.h"
 
-double chebyshev::distance(vector<double> v1, vector<double> v2) {
+double Chebyshev::distance(vector<double> v1, vector<double> v2) {
     double dis = 0;
     //goes over all the values
     for (int i = 0; i < v1.size(); ++i) {

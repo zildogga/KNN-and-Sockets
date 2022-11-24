@@ -4,18 +4,18 @@
 #define ADVANCED_PROGRAMMING_1_PROJECT_MAIN_H
 
 #include "iomanip"
-#include "distanceClass.h"
-#include "canberra.h"
-#include "chebyshev.h"
-#include "minkowski.h"
-#include "euclidean.h"
-#include "manhattan.h"
+#include "DistanceClass.h"
+#include "Canberra.h"
+#include "Chebyshev.h"
+#include "Minkowski.h"
+#include "Euclidean.h"
+#include "Manhattan.h"
 #include "iostream"
 #include <vector>
 #include <cmath>
 #include "float.h"
 using namespace std;
-class main {
+class Main {
 
 };
 

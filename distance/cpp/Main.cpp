@@ -1,6 +1,6 @@
 
 
-#include "distance/h/main.h"
+#include "distance/h/Main.h"
 
 //a function to get a new vector from the user
 bool getVector(vector<double> *v) {
@@ -10,7 +10,7 @@ bool getVector(vector<double> *v) {
         cin >> x;
         //checks if the input is a number per input (per spaces)
         double num;
-        num = distanceClass().checkValidation(x);
+        num = DistanceClass().checkValidation(x);
         //if the num is max double that means we had an error
         if (num == DBL_MAX) {
             //clears the cin
@@ -64,11 +64,11 @@ int main() {
         break;
     }
     //an instance for each algorithm
-    canberra c;
-    chebyshev ch;
-    minkowski m;
-    euclidean euc;
-    manhattan man;
+    Canberra c;
+    Chebyshev ch;
+    Minkowski m;
+    Euclidean euc;
+    Manhattan man;
     //prints all the results
     cout << "And the results are:" << endl;
     cout << "Canberra : " << c.distance(v1, v2) << endl;
@@ -76,7 +76,7 @@ int main() {
     cout << "Minkowski : " << m.distance(v1, v2) << endl;
     cout << "Euclidean : " << euc.distance(v1, v2) << endl;
     cout << "Manhattan : " << man.distance(v1, v2) << endl;
-    //returns 0 to end the main
+    //returns 0 to end the Main
     return 0;
 }
 

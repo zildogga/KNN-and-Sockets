@@ -128,173 +128,173 @@ Advanced_Programming_1_Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/build
 .PHONY : Advanced_Programming_1_Project/fast
 
-distance/cpp/canberra.o: distance/cpp/canberra.cpp.o
-.PHONY : distance/cpp/canberra.o
+distance/cpp/Canberra.o: distance/cpp/Canberra.cpp.o
+.PHONY : distance/cpp/Canberra.o
 
 # target to build an object file
-distance/cpp/canberra.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.o
-.PHONY : distance/cpp/canberra.cpp.o
+distance/cpp/Canberra.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Canberra.cpp.o
+.PHONY : distance/cpp/Canberra.cpp.o
 
-distance/cpp/canberra.i: distance/cpp/canberra.cpp.i
-.PHONY : distance/cpp/canberra.i
+distance/cpp/Canberra.i: distance/cpp/Canberra.cpp.i
+.PHONY : distance/cpp/Canberra.i
 
 # target to preprocess a source file
-distance/cpp/canberra.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.i
-.PHONY : distance/cpp/canberra.cpp.i
+distance/cpp/Canberra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Canberra.cpp.i
+.PHONY : distance/cpp/Canberra.cpp.i
 
-distance/cpp/canberra.s: distance/cpp/canberra.cpp.s
-.PHONY : distance/cpp/canberra.s
+distance/cpp/Canberra.s: distance/cpp/Canberra.cpp.s
+.PHONY : distance/cpp/Canberra.s
 
 # target to generate assembly for a file
-distance/cpp/canberra.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/canberra.cpp.s
-.PHONY : distance/cpp/canberra.cpp.s
+distance/cpp/Canberra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Canberra.cpp.s
+.PHONY : distance/cpp/Canberra.cpp.s
 
-distance/cpp/chebyshev.o: distance/cpp/chebyshev.cpp.o
-.PHONY : distance/cpp/chebyshev.o
+distance/cpp/Chebyshev.o: distance/cpp/Chebyshev.cpp.o
+.PHONY : distance/cpp/Chebyshev.o
 
 # target to build an object file
-distance/cpp/chebyshev.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.o
-.PHONY : distance/cpp/chebyshev.cpp.o
+distance/cpp/Chebyshev.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Chebyshev.cpp.o
+.PHONY : distance/cpp/Chebyshev.cpp.o
 
-distance/cpp/chebyshev.i: distance/cpp/chebyshev.cpp.i
-.PHONY : distance/cpp/chebyshev.i
+distance/cpp/Chebyshev.i: distance/cpp/Chebyshev.cpp.i
+.PHONY : distance/cpp/Chebyshev.i
 
 # target to preprocess a source file
-distance/cpp/chebyshev.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.i
-.PHONY : distance/cpp/chebyshev.cpp.i
+distance/cpp/Chebyshev.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Chebyshev.cpp.i
+.PHONY : distance/cpp/Chebyshev.cpp.i
 
-distance/cpp/chebyshev.s: distance/cpp/chebyshev.cpp.s
-.PHONY : distance/cpp/chebyshev.s
+distance/cpp/Chebyshev.s: distance/cpp/Chebyshev.cpp.s
+.PHONY : distance/cpp/Chebyshev.s
 
 # target to generate assembly for a file
-distance/cpp/chebyshev.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/chebyshev.cpp.s
-.PHONY : distance/cpp/chebyshev.cpp.s
+distance/cpp/Chebyshev.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Chebyshev.cpp.s
+.PHONY : distance/cpp/Chebyshev.cpp.s
 
-distance/cpp/distanceClass.o: distance/cpp/distanceClass.cpp.o
-.PHONY : distance/cpp/distanceClass.o
+distance/cpp/DistanceClass.o: distance/cpp/DistanceClass.cpp.o
+.PHONY : distance/cpp/DistanceClass.o
 
 # target to build an object file
-distance/cpp/distanceClass.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.o
-.PHONY : distance/cpp/distanceClass.cpp.o
+distance/cpp/DistanceClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/DistanceClass.cpp.o
+.PHONY : distance/cpp/DistanceClass.cpp.o
 
-distance/cpp/distanceClass.i: distance/cpp/distanceClass.cpp.i
-.PHONY : distance/cpp/distanceClass.i
+distance/cpp/DistanceClass.i: distance/cpp/DistanceClass.cpp.i
+.PHONY : distance/cpp/DistanceClass.i
 
 # target to preprocess a source file
-distance/cpp/distanceClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.i
-.PHONY : distance/cpp/distanceClass.cpp.i
+distance/cpp/DistanceClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/DistanceClass.cpp.i
+.PHONY : distance/cpp/DistanceClass.cpp.i
 
-distance/cpp/distanceClass.s: distance/cpp/distanceClass.cpp.s
-.PHONY : distance/cpp/distanceClass.s
+distance/cpp/DistanceClass.s: distance/cpp/DistanceClass.cpp.s
+.PHONY : distance/cpp/DistanceClass.s
 
 # target to generate assembly for a file
-distance/cpp/distanceClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/distanceClass.cpp.s
-.PHONY : distance/cpp/distanceClass.cpp.s
+distance/cpp/DistanceClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/DistanceClass.cpp.s
+.PHONY : distance/cpp/DistanceClass.cpp.s
 
-distance/cpp/euclidean.o: distance/cpp/euclidean.cpp.o
-.PHONY : distance/cpp/euclidean.o
+distance/cpp/Euclidean.o: distance/cpp/Euclidean.cpp.o
+.PHONY : distance/cpp/Euclidean.o
 
 # target to build an object file
-distance/cpp/euclidean.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.o
-.PHONY : distance/cpp/euclidean.cpp.o
+distance/cpp/Euclidean.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Euclidean.cpp.o
+.PHONY : distance/cpp/Euclidean.cpp.o
 
-distance/cpp/euclidean.i: distance/cpp/euclidean.cpp.i
-.PHONY : distance/cpp/euclidean.i
+distance/cpp/Euclidean.i: distance/cpp/Euclidean.cpp.i
+.PHONY : distance/cpp/Euclidean.i
 
 # target to preprocess a source file
-distance/cpp/euclidean.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.i
-.PHONY : distance/cpp/euclidean.cpp.i
+distance/cpp/Euclidean.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Euclidean.cpp.i
+.PHONY : distance/cpp/Euclidean.cpp.i
 
-distance/cpp/euclidean.s: distance/cpp/euclidean.cpp.s
-.PHONY : distance/cpp/euclidean.s
+distance/cpp/Euclidean.s: distance/cpp/Euclidean.cpp.s
+.PHONY : distance/cpp/Euclidean.s
 
 # target to generate assembly for a file
-distance/cpp/euclidean.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/euclidean.cpp.s
-.PHONY : distance/cpp/euclidean.cpp.s
+distance/cpp/Euclidean.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Euclidean.cpp.s
+.PHONY : distance/cpp/Euclidean.cpp.s
 
-distance/cpp/main.o: distance/cpp/main.cpp.o
-.PHONY : distance/cpp/main.o
+distance/cpp/Main.o: distance/cpp/Main.cpp.o
+.PHONY : distance/cpp/Main.o
 
 # target to build an object file
-distance/cpp/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.o
-.PHONY : distance/cpp/main.cpp.o
+distance/cpp/Main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Main.cpp.o
+.PHONY : distance/cpp/Main.cpp.o
 
-distance/cpp/main.i: distance/cpp/main.cpp.i
-.PHONY : distance/cpp/main.i
+distance/cpp/Main.i: distance/cpp/Main.cpp.i
+.PHONY : distance/cpp/Main.i
 
 # target to preprocess a source file
-distance/cpp/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.i
-.PHONY : distance/cpp/main.cpp.i
+distance/cpp/Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Main.cpp.i
+.PHONY : distance/cpp/Main.cpp.i
 
-distance/cpp/main.s: distance/cpp/main.cpp.s
-.PHONY : distance/cpp/main.s
+distance/cpp/Main.s: distance/cpp/Main.cpp.s
+.PHONY : distance/cpp/Main.s
 
 # target to generate assembly for a file
-distance/cpp/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/main.cpp.s
-.PHONY : distance/cpp/main.cpp.s
+distance/cpp/Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Main.cpp.s
+.PHONY : distance/cpp/Main.cpp.s
 
-distance/cpp/manhattan.o: distance/cpp/manhattan.cpp.o
-.PHONY : distance/cpp/manhattan.o
+distance/cpp/Manhattan.o: distance/cpp/Manhattan.cpp.o
+.PHONY : distance/cpp/Manhattan.o
 
 # target to build an object file
-distance/cpp/manhattan.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.o
-.PHONY : distance/cpp/manhattan.cpp.o
+distance/cpp/Manhattan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Manhattan.cpp.o
+.PHONY : distance/cpp/Manhattan.cpp.o
 
-distance/cpp/manhattan.i: distance/cpp/manhattan.cpp.i
-.PHONY : distance/cpp/manhattan.i
+distance/cpp/Manhattan.i: distance/cpp/Manhattan.cpp.i
+.PHONY : distance/cpp/Manhattan.i
 
 # target to preprocess a source file
-distance/cpp/manhattan.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.i
-.PHONY : distance/cpp/manhattan.cpp.i
+distance/cpp/Manhattan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Manhattan.cpp.i
+.PHONY : distance/cpp/Manhattan.cpp.i
 
-distance/cpp/manhattan.s: distance/cpp/manhattan.cpp.s
-.PHONY : distance/cpp/manhattan.s
+distance/cpp/Manhattan.s: distance/cpp/Manhattan.cpp.s
+.PHONY : distance/cpp/Manhattan.s
 
 # target to generate assembly for a file
-distance/cpp/manhattan.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/manhattan.cpp.s
-.PHONY : distance/cpp/manhattan.cpp.s
+distance/cpp/Manhattan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Manhattan.cpp.s
+.PHONY : distance/cpp/Manhattan.cpp.s
 
-distance/cpp/minkowski.o: distance/cpp/minkowski.cpp.o
-.PHONY : distance/cpp/minkowski.o
+distance/cpp/Minkowski.o: distance/cpp/Minkowski.cpp.o
+.PHONY : distance/cpp/Minkowski.o
 
 # target to build an object file
-distance/cpp/minkowski.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.o
-.PHONY : distance/cpp/minkowski.cpp.o
+distance/cpp/Minkowski.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Minkowski.cpp.o
+.PHONY : distance/cpp/Minkowski.cpp.o
 
-distance/cpp/minkowski.i: distance/cpp/minkowski.cpp.i
-.PHONY : distance/cpp/minkowski.i
+distance/cpp/Minkowski.i: distance/cpp/Minkowski.cpp.i
+.PHONY : distance/cpp/Minkowski.i
 
 # target to preprocess a source file
-distance/cpp/minkowski.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.i
-.PHONY : distance/cpp/minkowski.cpp.i
+distance/cpp/Minkowski.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Minkowski.cpp.i
+.PHONY : distance/cpp/Minkowski.cpp.i
 
-distance/cpp/minkowski.s: distance/cpp/minkowski.cpp.s
-.PHONY : distance/cpp/minkowski.s
+distance/cpp/Minkowski.s: distance/cpp/Minkowski.cpp.s
+.PHONY : distance/cpp/Minkowski.s
 
 # target to generate assembly for a file
-distance/cpp/minkowski.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/minkowski.cpp.s
-.PHONY : distance/cpp/minkowski.cpp.s
+distance/cpp/Minkowski.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Minkowski.cpp.s
+.PHONY : distance/cpp/Minkowski.cpp.s
 
 # Help Target
 help:
@@ -305,27 +305,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Advanced_Programming_1_Project
-	@echo ... distance/cpp/canberra.o
-	@echo ... distance/cpp/canberra.i
-	@echo ... distance/cpp/canberra.s
-	@echo ... distance/cpp/chebyshev.o
-	@echo ... distance/cpp/chebyshev.i
-	@echo ... distance/cpp/chebyshev.s
-	@echo ... distance/cpp/distanceClass.o
-	@echo ... distance/cpp/distanceClass.i
-	@echo ... distance/cpp/distanceClass.s
-	@echo ... distance/cpp/euclidean.o
-	@echo ... distance/cpp/euclidean.i
-	@echo ... distance/cpp/euclidean.s
-	@echo ... distance/cpp/main.o
-	@echo ... distance/cpp/main.i
-	@echo ... distance/cpp/main.s
-	@echo ... distance/cpp/manhattan.o
-	@echo ... distance/cpp/manhattan.i
-	@echo ... distance/cpp/manhattan.s
-	@echo ... distance/cpp/minkowski.o
-	@echo ... distance/cpp/minkowski.i
-	@echo ... distance/cpp/minkowski.s
+	@echo ... distance/cpp/Canberra.o
+	@echo ... distance/cpp/Canberra.i
+	@echo ... distance/cpp/Canberra.s
+	@echo ... distance/cpp/Chebyshev.o
+	@echo ... distance/cpp/Chebyshev.i
+	@echo ... distance/cpp/Chebyshev.s
+	@echo ... distance/cpp/DistanceClass.o
+	@echo ... distance/cpp/DistanceClass.i
+	@echo ... distance/cpp/DistanceClass.s
+	@echo ... distance/cpp/Euclidean.o
+	@echo ... distance/cpp/Euclidean.i
+	@echo ... distance/cpp/Euclidean.s
+	@echo ... distance/cpp/Main.o
+	@echo ... distance/cpp/Main.i
+	@echo ... distance/cpp/Main.s
+	@echo ... distance/cpp/Manhattan.o
+	@echo ... distance/cpp/Manhattan.i
+	@echo ... distance/cpp/Manhattan.s
+	@echo ... distance/cpp/Minkowski.o
+	@echo ... distance/cpp/Minkowski.i
+	@echo ... distance/cpp/Minkowski.s
 .PHONY : help
 
 

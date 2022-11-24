@@ -84,46 +84,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/canberra.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Canberra.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/chebyshev.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Chebyshev.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/distanceClass.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/DistanceClass.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/euclidean.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Euclidean.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/main.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Main.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/manhattan.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Manhattan.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/minkowski.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Minkowski.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/canberra.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Canberra.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/chebyshev.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Chebyshev.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/distanceClass.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/DistanceClass.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/euclidean.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Euclidean.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/main.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Main.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/manhattan.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Manhattan.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/minkowski.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Minkowski.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/CMakeLists.txt">

@@ -8,7 +8,7 @@
 #include "float.h"
 using namespace std;
 
-class distanceClass {
+class DistanceClass {
     public:
         virtual double distance(std::vector<double> v1, std::vector<double> v2){};
         double checkValidation(string str);
