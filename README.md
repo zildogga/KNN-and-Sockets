@@ -114,6 +114,11 @@ id2{cpp}-->euclidean.cpp
 id2{cpp}-->manhattan.cpp
 id2{cpp}-->chebyshev.cpp
 id2{cpp}-->distanceClass.cpp
+distanceClass.cpp-->canberra.cpp
+distanceClass.cpp-->minkowski.cpp
+distanceClass.cpp-->euclidean.cpp
+distanceClass.cpp-->manhattan.cpp
+distanceClass.cpp-->chebyshev.cpp
 id2{cpp}-->main.cpp
 id3{h}-->canberra.h(canberra.h)
 id3{h}-->minkowski.h(minkowski.h)
