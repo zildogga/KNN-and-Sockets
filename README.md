@@ -17,11 +17,14 @@ The assignment was to make a software that calculates distances between 2 vector
  4. **Chebyshev**
  5. **Manhattan**
 
+
 This is a rundown about everything we have and did in the first assignment:
 
 # 📁 Files
 
+
 <img src="https://i.imgur.com/aHewclO.png" width="300"/>
+
 
 > This is a screenshot of the files we have created in the assignment.
 
@@ -80,7 +83,9 @@ Here are some examples for input:
 
 ## 📊 UML diagrams
 
+
 **Dictionary:** 
+
 ```mermaid
 flowchart
 id5{Package}
@@ -110,4 +115,6 @@ id3{h}-->main.h(main.h)
 style id1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style id3 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+
 ```
+
