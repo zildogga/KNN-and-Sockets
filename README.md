@@ -49,17 +49,28 @@ This is a rundown about everything we have and did in the first assignment:
 ## 💻 How to run the program
 The whole program runs from the **main.cpp** file.
 
-**Linux:** 
-To debug the project, you have to paste this line:
+To debug the project, you need to download **MakeFile** version *3.22*.
 
-    g++ -std=c++11 distance/cpp/canberra.cpp distance/h/canberra.h distance/cpp/chebyshev.cpp distance/h/chebyshev.h distance/cpp/euclidean.cpp distance/h/euclidean.h distance/cpp/distanceClass.cpp distance/h/distanceClass.h distance/cpp/main.cpp distance/h/main.h distance/cpp/manhattan.cpp distance/h/manhattan.h distance/cpp/minkowski.cpp distance/h/minkowski.h
+[CMake download for Linux and Windows](https://cmake.org/files/v3.2/)
+
+Then go to the directory of the project (on the terminal), and write:
+
+    cmake ..
+
+Lastly, go to the cmake directory from the terminal, and then write the following command:
+
+    ./Advanced_Programming_1_Project
+
+**Linux:**
+
+instead of the cmake, you can also paste this line in the terminal *(might not work)*:
+
+    g++ -std=c++11 -Idistance/h distance/h/canberra.h distance/cpp/canberra.cpp distance/h/chebyshev.h distance/cpp/chebyshev.cpp distance/h/euclidean.h distance/cpp/euclidean.cpp distance/h/manhattan.h distance/cpp/manhattan.cpp distance/cpp/minkowski.cpp distance/h/minkowski.h distance/h/distanceClass.h distance/cpp/distanceClass.cpp distance/h/main.h distance/cpp/main.cpp
 
 and then:
 
     ./a.out
 
-**Windows:**
-To debug the project,
 
 ## ✍ Examples for input
 
