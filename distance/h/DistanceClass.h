@@ -6,6 +6,7 @@
 #include <vector>
 #include <cmath>
 #include "float.h"
+#include "string"
 using namespace std;
 
 class DistanceClass {
