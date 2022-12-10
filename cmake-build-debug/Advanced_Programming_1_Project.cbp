@@ -98,6 +98,9 @@
 		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/cpp/Euclidean.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/cpp/Knn.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/cpp/Main.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
@@ -117,6 +120,9 @@
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/h/Euclidean.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/h/Knn.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/h/Main.h">
