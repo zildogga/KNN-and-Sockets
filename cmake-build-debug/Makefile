@@ -214,6 +214,30 @@ distance\cpp\Euclidean.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\Euclidean.cpp.s
 .PHONY : distance\cpp\Euclidean.cpp.s
 
+distance\cpp\Knn.obj: distance\cpp\Knn.cpp.obj
+.PHONY : distance\cpp\Knn.obj
+
+# target to build an object file
+distance\cpp\Knn.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\Knn.cpp.obj
+.PHONY : distance\cpp\Knn.cpp.obj
+
+distance\cpp\Knn.i: distance\cpp\Knn.cpp.i
+.PHONY : distance\cpp\Knn.i
+
+# target to preprocess a source file
+distance\cpp\Knn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\Knn.cpp.i
+.PHONY : distance\cpp\Knn.cpp.i
+
+distance\cpp\Knn.s: distance\cpp\Knn.cpp.s
+.PHONY : distance\cpp\Knn.s
+
+# target to generate assembly for a file
+distance\cpp\Knn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Advanced_Programming_1_Project.dir\distance\cpp\Knn.cpp.s
+.PHONY : distance\cpp\Knn.cpp.s
+
 distance\cpp\Main.obj: distance\cpp\Main.cpp.obj
 .PHONY : distance\cpp\Main.obj
 
@@ -307,6 +331,9 @@ help:
 	@echo ... distance/cpp/Euclidean.obj
 	@echo ... distance/cpp/Euclidean.i
 	@echo ... distance/cpp/Euclidean.s
+	@echo ... distance/cpp/Knn.obj
+	@echo ... distance/cpp/Knn.i
+	@echo ... distance/cpp/Knn.s
 	@echo ... distance/cpp/Main.obj
 	@echo ... distance/cpp/Main.i
 	@echo ... distance/cpp/Main.s
