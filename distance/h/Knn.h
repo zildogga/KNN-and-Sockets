@@ -19,6 +19,7 @@ class Knn {
 public:
     string ClosestsNeighbers(int k, string distanceAlgo, vector<pair<vector<double>, string>> taggedVectors,
                              vector<double> inputVector);
+    vector<pair<double, string>> sortDistancesVector(vector<pair<double, string>> distances);
 };
 
 

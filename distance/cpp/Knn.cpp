@@ -2,7 +2,7 @@
 // Created by ofir local user on 10/12/2022.
 //
 #include "distance/h/Knn.h"
-vector<pair<double, string>> sortDistancesVector(vector<pair<double, string>> distances) {
+vector<pair<double, string>> Knn::sortDistancesVector(vector<pair<double, string>> distances) {
     pair<double, string> temp;
     for(int i = 0; i < distances.size() - 1; i++) {
         for(int j = 0; j < distances.size() - i - 1; j++) {
@@ -16,7 +16,7 @@ vector<pair<double, string>> sortDistancesVector(vector<pair<double, string>> di
     return distances;
 }
 
-string ClosestsNeighbers(int k, string distanceAlgo, vector<pair<vector<double>, string>> taggedVectors,
+string Knn::ClosestsNeighbers(int k, string distanceAlgo, vector<pair<vector<double>, string>> taggedVectors,
                        vector<double> inputVector) {
     vector<pair<double, string>> distances;
     if(distanceAlgo == "AUC") {

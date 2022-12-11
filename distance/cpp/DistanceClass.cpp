@@ -37,7 +37,7 @@ double DistanceClass::checkValidation(string str) {
 }
 
 //a function to get a new vector from the user
-bool getVector(vector<double> *v) {
+bool DistanceClass::getVector(vector<double> *v) {
     //a while to get each number separated by spaces
     do {
         string x;
