@@ -11,7 +11,7 @@ int main() {
     //string disType = ?
     Classification classification;
     //the path should be changed
-    classification.inputToClass("C:\\Users\\Omer\\CLionProjects\\Advanced-Programming-1-Project\\Files\\iris_classified.csv",5,"MAN");
+    classification.inputToClass("C:\\Users\\97252\\Documents\\GitHub\\Advanced-Programming-1-Project\\Files\\iris_classified.csv",5,"MAN");
 
 
 //    ReadFile readFile;
