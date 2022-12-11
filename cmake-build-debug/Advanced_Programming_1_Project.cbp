@@ -90,6 +90,9 @@
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Chebyshev.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Classification.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/DistanceClass.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
@@ -112,6 +115,9 @@
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Chebyshev.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Classification.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/DistanceClass.h">

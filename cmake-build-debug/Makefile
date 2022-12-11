@@ -176,6 +176,30 @@ distance/cpp/Chebyshev.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Chebyshev.cpp.s
 .PHONY : distance/cpp/Chebyshev.cpp.s
 
+distance/cpp/Classification.obj: distance/cpp/Classification.cpp.obj
+.PHONY : distance/cpp/Classification.obj
+
+# target to build an object file
+distance/cpp/Classification.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Classification.cpp.obj
+.PHONY : distance/cpp/Classification.cpp.obj
+
+distance/cpp/Classification.i: distance/cpp/Classification.cpp.i
+.PHONY : distance/cpp/Classification.i
+
+# target to preprocess a source file
+distance/cpp/Classification.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Classification.cpp.i
+.PHONY : distance/cpp/Classification.cpp.i
+
+distance/cpp/Classification.s: distance/cpp/Classification.cpp.s
+.PHONY : distance/cpp/Classification.s
+
+# target to generate assembly for a file
+distance/cpp/Classification.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Advanced_Programming_1_Project.dir\build.make CMakeFiles/Advanced_Programming_1_Project.dir/distance/cpp/Classification.cpp.s
+.PHONY : distance/cpp/Classification.cpp.s
+
 distance/cpp/DistanceClass.obj: distance/cpp/DistanceClass.cpp.obj
 .PHONY : distance/cpp/DistanceClass.obj
 
@@ -335,6 +359,9 @@ help:
 	@echo ... distance/cpp/Chebyshev.obj
 	@echo ... distance/cpp/Chebyshev.i
 	@echo ... distance/cpp/Chebyshev.s
+	@echo ... distance/cpp/Classification.obj
+	@echo ... distance/cpp/Classification.i
+	@echo ... distance/cpp/Classification.s
 	@echo ... distance/cpp/DistanceClass.obj
 	@echo ... distance/cpp/DistanceClass.i
 	@echo ... distance/cpp/DistanceClass.s
