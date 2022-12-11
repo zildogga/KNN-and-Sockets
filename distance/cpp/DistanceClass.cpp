@@ -35,3 +35,29 @@ double DistanceClass::checkValidation(string str) {
     }
     return DBL_MAX;
 }
+
+//a function to get a new vector from the user
+bool getVector(vector<double> *v) {
+    //a while to get each number separated by spaces
+    do {
+        string x;
+        cin >> x;
+        //checks if the input is a number per input (per spaces)
+        double num;
+        num = DistanceClass().checkValidation(x);
+        //if the num is max double that means we had an error
+        if (num == DBL_MAX) {
+            //clears the cin
+            cin.clear();
+            fflush(stdin);
+            return false;
+        }
+        //pushes number into the vector
+        (*v).push_back(num);
+        //stops when he presses enter, might have spaces before, so we have to get rid of them
+        while (cin.peek() == ' ') {
+            cin.get();
+        }
+    } while (cin.peek() != '\n');
+    return true;
+}

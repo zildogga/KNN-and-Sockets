@@ -10,9 +10,10 @@
 using namespace std;
 
 class DistanceClass {
-    public:
+public:
     virtual double distance(std::vector<double> v1, std::vector<double> v2){return 0;};
-        double checkValidation(string str);
+    double checkValidation(string str);
+    bool getVector(vector<double> *v);
 };
 
 

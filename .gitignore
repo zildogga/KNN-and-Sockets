@@ -1,6 +1,6 @@
 # Prerequisites
 *.d
-
+*.csv
 cmake-build-debug/
 
 # Compiled Object files
