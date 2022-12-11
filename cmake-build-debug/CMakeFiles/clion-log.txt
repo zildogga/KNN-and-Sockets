@@ -1,4 +1,6 @@
-"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project -B C:\Users\Omer\CLionProjects\Advanced-Programming-1-Project\cmake-build-debug
+
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project
+
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug

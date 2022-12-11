@@ -96,7 +96,10 @@
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/DistanceClass.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Euclidean.cpp">
+		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/cpp/Knn.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/cpp/Main.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Main.cpp">
@@ -117,7 +120,10 @@
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Chebyshev.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Classification.h">
+		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/h/Knn.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/distance/h/Main.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/DistanceClass.h">
