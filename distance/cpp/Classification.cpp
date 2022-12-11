@@ -43,6 +43,7 @@ vector<pair<vector<double>,string>> Classification::CSVToInfo (string path) {
 }
 
 void Classification::classify (vector<double> test, vector<pair<vector<double>,string>> information, int k, string disType) {
-    string chosenClass = knn(test, information, k, disType);
+    Knn knn;
+    string chosenClass = knn.ClosestsNeighbers(k, disType, information, test);
     cout << chosenClass << endl;
 }

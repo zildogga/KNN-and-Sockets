@@ -9,8 +9,8 @@ int main() {
     //int k = ?
     //string path = ?
     //string disType = ?
-    Classification classification;
-    //classification.inputToClass();
+    //Classification classification;
+    //classification.inputToClass("C:\\Users\\97252\\Documents\\GitHub\\Advanced-Programming-1-Project\\Files\\iris_classified.csv",5,"MAN");
 
 
 //    ReadFile readFile;

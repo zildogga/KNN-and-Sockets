@@ -17,8 +17,8 @@
 using namespace std;
 class Knn {
 public:
-    void ClosestsNeighbers(int k, string distanceAlgo, vector<vector<double>> taggedVectors,
-                           vector<double> inputVector, vector<string> types);
+    string ClosestsNeighbers(int k, string distanceAlgo, vector<pair<vector<double>, string>> taggedVectors,
+                             vector<double> inputVector);
 };
 
 

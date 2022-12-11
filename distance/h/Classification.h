@@ -9,6 +9,7 @@
 #include <vector>
 #include "ReadFile.h"
 #include "DistanceClass.h"
+#include "Knn.h"
 using namespace std;
 class Classification {
 public:
