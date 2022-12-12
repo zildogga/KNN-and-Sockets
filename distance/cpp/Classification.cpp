@@ -13,7 +13,13 @@ void Classification::inputToClass(string path,int k, string disType) {
             test.clear();
             continue;
         } else {
-            break;
+            if(test.size() != information[0].first.size()){
+                test.clear();
+                cerr << "wrong size vector" << endl;
+                continue;
+            } else {
+                break;
+            }
         }
     }
     classify(test, information,k, disType);
