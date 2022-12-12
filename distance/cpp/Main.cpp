@@ -5,10 +5,6 @@
 
 
 int main(int argc, char* argv[]) {
-//    std::cout << "Have " << argc << " arguments:" << std::endl;
-//    for (int i = 1; i < argc; ++i) {
-//        std::cout << argv[i] << std::endl;
-//    }
     int k = 0;
     try {
         k = stoi(argv[1]);
@@ -21,7 +17,11 @@ int main(int argc, char* argv[]) {
     string disType = argv[3];
     Classification classification;
     //the path should be changed
-    classification.inputToClass(path,k,disType);
+
+    while(true) {
+        classification.inputToClass(path, k, disType);
+    }
+
 
 
 //    ReadFile readFile;
