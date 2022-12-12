@@ -4,14 +4,24 @@
 
 
 
-int main() {
-
-    //int k = ?
-    //string path = ?
-    //string disType = ?
+int main(int argc, char* argv[]) {
+//    std::cout << "Have " << argc << " arguments:" << std::endl;
+//    for (int i = 1; i < argc; ++i) {
+//        std::cout << argv[i] << std::endl;
+//    }
+    int k = 0;
+    try {
+        k = stoi(argv[1]);
+    }
+    catch(exception e) {
+        cerr << "Error" << endl;
+        return 1;
+    }
+    string path = argv[2];
+    string disType = argv[3];
     Classification classification;
     //the path should be changed
-    classification.inputToClass("C:\\Users\\Omer\\CLionProjects\\Advanced-Programming-1-Project\\Files\\iris_classified.csv",5,"MAN");
+    classification.inputToClass(path,k,disType);
 
 
 //    ReadFile readFile;
