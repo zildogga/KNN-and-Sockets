@@ -4,23 +4,40 @@
 
 
 
-int main(int argc, char* argv[]) {
+// This is the main function
+int main(
+        // This function takes two arguments as input:
+        // - argc: the number of command-line arguments passed to the program
+        // - argv: an array of strings containing the command-line arguments
+        int argc, char* argv[]
+) {
+    // This line initializes a variable to store the value of k
     int k = 0;
+    // This try block attempts to convert the string representing k to an integer
     try {
+        // This line attempts to convert the string at index 1 in the argv array to an integer, and assigns the result to the k variable
         k = stoi(argv[1]);
     }
+        // This catch block is executed if the conversion of the string to an integer fails
     catch(exception e) {
+        // This line prints an error message
         cerr << "Error" << endl;
+        // This line returns 1 to indicate an error occurred
         return 1;
     }
+    // This line initializes a variable to store the path to the CSV file
     string path = argv[2];
+    // This line initializes a variable to store the distance algorithm to use
     string disType = argv[3];
+    // This line creates a new Classification object
     Classification classification;
-    //the path should be changed
-
+    // This infinite loop continuously prompts the user for a test case and performs classification
     while(true) {
+        // This line calls the inputToClass function to classify the test case
         classification.inputToClass(path, k, disType);
     }
+}
+
 
 
 
@@ -107,5 +124,5 @@ int main(int argc, char* argv[]) {
 //
 //    //returns 0 to end the Main
 //    return 0;
-}
+
 

@@ -17,8 +17,10 @@
 using namespace std;
 class Knn {
 public:
+    // this function returns the class of the closest Neighbors by the k, algorithm and the vector to check
     string ClosestsNeighbers(int k, string distanceAlgo, vector<pair<vector<double>, string>> taggedVectors,
                              vector<double> inputVector);
+    // this function sorts the vectors by distances as asc
     vector<pair<double, string>> sortDistancesVector(vector<pair<double, string>> distances);
 };
 
