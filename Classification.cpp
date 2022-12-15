@@ -99,6 +99,10 @@ void Classification::classify (
         // This function takes a string representing the distance type to use as input
         string disType
 ) {
+    if(k > information.size()){
+        cerr << "Error" << endl;
+        return;
+    }
     // This line creates a new Knn object
     Knn knn;
     // This line calls the ClosestsNeighbors function on the Knn object,
