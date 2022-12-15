@@ -15,7 +15,7 @@ vector<vector<string>> ReadFile::ReadCSVByPath(
     // This line initializes an empty string to store each line from the CSV file
     string line;
     // This line initializes a new ifstream object using the path to the CSV file
-    ifstream file(path);
+    ifstream file("../" + path);
 
     // This if block is executed if the CSV file was successfully opened
     if (file.is_open())
