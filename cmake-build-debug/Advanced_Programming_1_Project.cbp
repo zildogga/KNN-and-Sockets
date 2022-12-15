@@ -8,143 +8,143 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="/home/ofir/CLionProjects/testClone/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Advanced_Programming_1_Project">
-				<Option output="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option output="/home/ofir/CLionProjects/testClone/cmake-build-debug/Advanced_Programming_1_Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ofir/CLionProjects/testClone/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/."/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/home/ofir/CLionProjects/testClone/."/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Advanced_Programming_1_Project/fast">
-				<Option output="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option output="/home/ofir/CLionProjects/testClone/cmake-build-debug/Advanced_Programming_1_Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ofir/CLionProjects/testClone/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/."/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/home/ofir/CLionProjects/testClone/."/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="/home/ofir/CLionProjects/testClone/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="/home/ofir/CLionProjects/testClone/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/testClone/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Canberra.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/Canberra.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Chebyshev.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/Chebyshev.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Classification.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/Classification.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/DistanceClass.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/DistanceClass.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Euclidean.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/Euclidean.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Knn.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/Knn.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Main.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/Main.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Manhattan.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/Manhattan.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/Minkowski.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/Minkowski.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/cpp/ReadFile.cpp">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/cpp/ReadFile.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Canberra.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/Canberra.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Chebyshev.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/Chebyshev.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Classification.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/Classification.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/DistanceClass.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/DistanceClass.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Euclidean.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/Euclidean.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Knn.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/Knn.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Main.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/Main.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Manhattan.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/Manhattan.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/Minkowski.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/Minkowski.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/distance/h/ReadFile.h">
+		<Unit filename="/home/ofir/CLionProjects/testClone/distance/h/ReadFile.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/CMakeLists.txt">
+		<Unit filename="/home/ofir/CLionProjects/testClone/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -7,12 +7,12 @@
 #include "string"
 #include "vector"
 #include "iostream"
-#include "distance/h/DistanceClass.h"
-#include "distance/h/Euclidean.h"
-#include "distance/h/Canberra.h"
-#include "distance/h/Chebyshev.h"
-#include "distance/h/Manhattan.h"
-#include "distance/h/Minkowski.h"
+#include "DistanceClass.h"
+#include "Euclidean.h"
+#include "Canberra.h"
+#include "Chebyshev.h"
+#include "Manhattan.h"
+#include "Minkowski.h"
 
 using namespace std;
 class Knn {

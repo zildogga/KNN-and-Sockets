@@ -2,7 +2,7 @@
 // Created by Omer on 11/12/2022.
 //
 
-#include "distance/h/ReadFile.h"
+#include "ReadFile.h"
 vector<vector<string>> ReadFile::ReadCSVByPath(string path)
 {
     vector<vector<string>> result;

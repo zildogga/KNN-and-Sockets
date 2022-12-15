@@ -2,7 +2,7 @@
 // Created by Omer on 11/12/2022.
 //
 
-#include "distance/h/Classification.h"
+#include "Classification.h"
 
 void Classification::inputToClass(string path,int k, string disType) {
     vector<pair<vector<double>,string>> information = CSVToInfo(path);

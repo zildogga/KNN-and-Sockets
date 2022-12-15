@@ -1,7 +1,7 @@
 //
 // Created by ofir local user on 10/12/2022.
 //
-#include "distance/h/Knn.h"
+#include "Knn.h"
 vector<pair<double, string>> Knn::sortDistancesVector(vector<pair<double, string>> distances) {
     pair<double, string> temp;
     for(int i = 0; i < distances.size() - 1; i++) {

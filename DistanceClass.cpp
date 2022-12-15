@@ -1,6 +1,6 @@
 
 
-#include "distance/h/DistanceClass.h"
+#include "DistanceClass.h"
 //a function that checks if an input is a number (double) and if so returns it
 double DistanceClass::checkValidation(string str) {
     double x = 0;

@@ -1,6 +1,6 @@
 
 
-#include "distance/h/Chebyshev.h"
+#include "Chebyshev.h"
 
 double Chebyshev::distance(vector<double> v1, vector<double> v2) {
     double dis = 0;

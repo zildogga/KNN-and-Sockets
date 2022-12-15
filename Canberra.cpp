@@ -1,6 +1,6 @@
 
 
-#include "distance/h/Canberra.h"
+#include "Canberra.h"
 
 //for from 1 to n of (abs of pi - qi) / (abs of pi + abs of qi)
 double Canberra::distance(vector<double> v1, vector<double> v2) {
@@ -12,3 +12,4 @@ double Canberra::distance(vector<double> v1, vector<double> v2) {
     }
     return dis;
 }
+
