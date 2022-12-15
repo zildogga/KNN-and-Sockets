@@ -98,7 +98,7 @@ string Knn::ClosestsNeighbers(
         }
         // If the distance algorithm is not one of the above, this block prints an error message
     } else{
-        cout << "Error.";
+        return "Error";
     }
 
     // This line calls the sortDistancesVector function to sort the vector of pairs of distances and class names in ascending order by distance

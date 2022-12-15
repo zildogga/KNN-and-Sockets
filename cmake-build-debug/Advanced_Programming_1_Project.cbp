@@ -4,149 +4,147 @@
 	<Project>
 		<Option title="Advanced_Programming_1_Project"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Advanced_Programming_1_Project">
-				<Option output="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option output="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/."/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+					<Add directory="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 Advanced_Programming_1_Project"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Advanced_Programming_1_Project/fast">
-				<Option output="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option output="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/."/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+					<Add directory="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 Advanced_Programming_1_Project/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\97252\Documents\GitHub\Advanced-Programming-1-Project\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Canberra.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Canberra.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Canberra.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Canberra.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Chebyshev.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Chebyshev.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Chebyshev.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Chebyshev.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Classification.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Classification.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Classification.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Classification.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/DistanceClass.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/DistanceClass.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/DistanceClass.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/DistanceClass.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Euclidean.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Euclidean.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Euclidean.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Euclidean.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Knn.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Knn.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Knn.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Knn.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Main.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Main.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Main.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Main.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Manhattan.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Manhattan.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Manhattan.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Manhattan.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Minkowski.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Minkowski.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/Minkowski.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/Minkowski.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/ReadFile.cpp">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/ReadFile.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/ReadFile.h">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/ReadFile.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="C:/Users/97252/Documents/GitHub/Advanced-Programming-1-Project/CMakeLists.txt">
+		<Unit filename="C:/Users/Omer/CLionProjects/Advanced-Programming-1-Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

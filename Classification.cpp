@@ -108,6 +108,10 @@ void Classification::classify (
     // This line calls the ClosestsNeighbors function on the Knn object,
     // passing the test case, training data, value of k, and distance type as arguments, and stores the returned class in a string
     string chosenClass = knn.ClosestsNeighbers(k, disType, information, test);
+    if(chosenClass == "Error") {
+        cerr << chosenClass << endl;
+        return;
+    }
     // This line prints the chosen class to the standard output stream
     cout << chosenClass << endl;
 }

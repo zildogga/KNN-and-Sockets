@@ -11,6 +11,10 @@ int main(
         // - argv: an array of strings containing the command-line arguments
         int argc, char* argv[]
 ) {
+    if (argc <= 3) {
+        cerr << "Error" << endl;
+        return -1;
+    }
     // This line initializes a variable to store the value of k
     int k = 0;
     // This try block attempts to convert the string representing k to an integer
@@ -23,7 +27,7 @@ int main(
         // This line prints an error message
         cerr << "Error" << endl;
         // This line returns 1 to indicate an error occurred
-        return 1;
+        return -1;
     }
     // This line initializes a variable to store the path to the CSV file
     string path = argv[2];
