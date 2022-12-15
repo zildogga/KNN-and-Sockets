@@ -121,6 +121,8 @@ string Knn::ClosestsNeighbers(
     string maxClass;
     // This outer loop iterates over the classes in the vector of classes
     for(int i = 0; i < classes.size(); i++) {
+        // Resets the tempCount
+        tempCount = 0;
         // This inner loop iterates over the classes in the vector of classes
         for(int j = 0; j < classes.size(); j++) {
             // If the current class in the outer loop is the same as the current class in the inner loop, the count of occurrences is incremented
