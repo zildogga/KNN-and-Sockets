@@ -11,6 +11,13 @@ int main(
         // - argv: an array of strings containing the command-line arguments
         int argc, char* argv[]
 ) {
+
+    Server server;
+    int sock = server.serverFunction(5555);
+    server.client();
+    server.secondServer(sock);
+    server.secondClient(sock);
+
     if (argc <= 3) {
         cerr << "Error" << endl;
         return -1;
