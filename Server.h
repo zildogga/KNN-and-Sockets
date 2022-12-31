@@ -1,0 +1,14 @@
+//
+// Created by omer on 12/31/22.
+//
+
+#ifndef ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H
+#define ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H
+
+
+class Server {
+
+};
+
+
+#endif //ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H
