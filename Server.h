@@ -17,10 +17,8 @@ using namespace std;
 
 class Server {
 public:
-    int serverFunction(int serverPort);
-    int client();
-    int secondServer(int sock);
-    int secondClient(int sock);
+    int startServer(int serverPort, string fileName);
+    int acceptClient();
 };
 
 

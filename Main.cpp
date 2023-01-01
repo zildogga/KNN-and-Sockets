@@ -13,10 +13,9 @@ int main(
 ) {
 
     Server server;
-    int sock = server.serverFunction(5555);
-    server.client();
-    server.secondServer(sock);
-    server.secondClient(sock);
+    int succ = 0;
+    succ = server.startServer(5555, "wine_Classified");
+    //server.acceptClient(sock);
 
     if (argc <= 3) {
         cerr << "Error" << endl;
