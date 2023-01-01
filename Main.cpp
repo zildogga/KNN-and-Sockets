@@ -11,6 +11,12 @@ int main(
         // - argv: an array of strings containing the command-line arguments
         int argc, char* argv[]
 ) {
+
+    Server server;
+    int succ = 0;
+    succ = server.startServer(5555, "wine_Classified");
+    //server.acceptClient(sock);
+
     if (argc <= 3) {
         cerr << "Error" << endl;
         return -1;
@@ -38,7 +44,8 @@ int main(
     // This infinite loop continuously prompts the user for a test case and performs classification
     while(true) {
         // This line calls the inputToClass function to classify the test case
-        classification.inputToClass(path, k, disType);
+        string result = classification.inputToClass(path, k, disType);
+        cout << result << endl;
     }
 }
 

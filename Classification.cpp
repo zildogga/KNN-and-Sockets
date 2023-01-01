@@ -5,7 +5,33 @@
 #include "Classification.h"
 
 // This function is part of the Classification class
-void Classification::inputToClass(
+string Classification::vectorToClass(
+        // This function takes a path to a CSV file as input
+        string path,
+        // This function takes an integer k as input
+        int k,
+        // This function takes a string representing a distance type as input
+        string disType,
+        vector<double> test
+) {
+    // This line converts the CSV file at the given path to a vector of pairs of vectors of doubles and strings
+    vector<pair<vector<double>,string>> information = CSVToInfo(path);
+    // This line creates a new DistanceClass object
+    DistanceClass distanceClass;
+    // If the user entered a vector of doubles, this line checks if the vector has the correct size
+    if(test.size() != information[0].first.size()){
+        // This line prints an error message to the standard error stream
+        cerr << "wrong size vector" << endl;
+        return "";
+        // This line continues the loop, prompting the user to enter a valid vector of doubles again
+    }
+    // CSV file, the value of k, and the distance type
+    string result = classify(test, information, k, disType);
+    return result;
+}
+
+// This function is part of the Classification class
+string Classification::inputToClass(
         // This function takes a path to a CSV file as input
         string path,
         // This function takes an integer k as input
@@ -44,7 +70,8 @@ void Classification::inputToClass(
     }
     // After the loop has exited, this line classifies the vector of doubles using the information from the
     // CSV file, the value of k, and the distance type
-    classify(test, information, k, disType);
+    string result = classify(test, information, k, disType);
+    return result;
 }
 
 
@@ -89,7 +116,7 @@ vector<pair<vector<double>,string>> Classification::CSVToInfo (
 
 
 // This function is part of the Classification class
-void Classification::classify (
+string Classification::classify (
         // This function takes a vector of doubles representing a test case as input
         vector<double> test,
         // This function takes a vector of pairs of vectors of doubles and strings representing the training data as input
@@ -101,7 +128,7 @@ void Classification::classify (
 ) {
     if(k > information.size()){
         cerr << "Error" << endl;
-        return;
+        return "";
     }
     // This line creates a new Knn object
     Knn knn;
@@ -109,9 +136,8 @@ void Classification::classify (
     // passing the test case, training data, value of k, and distance type as arguments, and stores the returned class in a string
     string chosenClass = knn.ClosestsNeighbers(k, disType, information, test);
     if(chosenClass == "Error") {
-        cerr << chosenClass << endl;
-        return;
+        return chosenClass;
     }
     // This line prints the chosen class to the standard output stream
-    cout << chosenClass << endl;
+    return chosenClass;
 }

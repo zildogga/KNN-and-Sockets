@@ -16,6 +16,8 @@
 #include "float.h"
 #include "ReadFile.h"
 #include "Classification.h"
+#include "Server.h"
+
 using namespace std;
 class Main {
 
