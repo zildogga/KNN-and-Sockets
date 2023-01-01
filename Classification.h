@@ -14,11 +14,12 @@ using namespace std;
 class Classification {
 public:
     // gets the input and returns the class to this input
-    void inputToClass(string path,int k, string disType);
+    string inputToClass(string path,int k, string disType);
+    string vectorToClass(string path, int k, string disType, vector<double> test);
 private:
     // gets a csv path and returns the csv file as a double and string vector
     vector<pair<vector<double>,string>> CSVToInfo (string path);
-    void classify (vector<double> test, vector<pair<vector<double>,string>> information, int k, string disType);
+    string classify (vector<double> test, vector<pair<vector<double>,string>> information, int k, string disType);
 };
 
 

@@ -44,7 +44,8 @@ int main(
     // This infinite loop continuously prompts the user for a test case and performs classification
     while(true) {
         // This line calls the inputToClass function to classify the test case
-        classification.inputToClass(path, k, disType);
+        string result = classification.inputToClass(path, k, disType);
+        cout << result << endl;
     }
 }
 

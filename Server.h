@@ -12,6 +12,7 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <string.h>
+#include <Classification.h>
 
 using namespace std;
 
@@ -19,6 +20,7 @@ class Server {
 public:
     int startServer(int serverPort, string fileName);
     int acceptClient();
+    string serverClassify(int clientSock);
 };
 
 
