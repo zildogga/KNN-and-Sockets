@@ -48,13 +48,9 @@ int Server::acceptClient() {
         perror("error accepting client");
         return -1;
     }
-    int check = 1;
-    while(check) {
+    while(true) {
         string result = serverClassify(client_sock);
         if(result == "") {
-            check = 0;
-        }
-        if(result == "close") {
             return 0;
         }
     }
@@ -63,6 +59,7 @@ string Server::serverClassify(int clientSock) {
     string result = "";
     char buffer[size];
     int expected_data_len = sizeof(buffer);
+    memset(buffer, 0, sizeof(buffer));
     int read_bytes = recv(clientSock, buffer, expected_data_len, 0);
     if (read_bytes == 0) {
         //connection is closed
@@ -78,50 +75,52 @@ string Server::serverClassify(int clientSock) {
         //get out of the buffer the values with integrity checks
         vector<double> vec;
         int k;
-        string disType="";
+        string disType="o";
 
         istringstream iss(buffer); // create an input string stream from the input string
 
-        double num; // variable to store the current integer
-        string str; // variable to store the string
-        int count = 0; // variable to store the number of integers extracted so far
         //closing the server if the buffer have -1 and that's it
         if(buffer[0] == -1 && buffer[1] == '\0') {
-            return "close";
+            return "";
         }
+        double num;
+        int count = 0;
         // try to extract values from the input string until the string stream fails
         while (iss >> num) {
-            ++count; // increment the count of extracted integers
+            cout << iss.str() << endl;
+            count++;
+            vec.push_back(num);
         }
-
-        // check if the number of integers is at least 2 and the string was extracted successfully
-        if (count >= 1 && iss >> str >> num) {
-            // the input string has the correct format, so extract the values again
-            iss.clear(); // clear the string stream's fail flag
-            iss.seekg(0); // reset the string stream's position to the beginning
-
-            // extract the integers and string
-            for (int i = 0; i < count - 1; ++i) {
+        // the input string has the correct format, so extract the values again
+        iss.clear(); // clear the string stream's fail flag
+        iss.seekg(0); // reset the string stream's position to the beginning
+        for (int i = 0; i < count+2; i++) {
+            if(i<count) {
                 iss >> num;
-                vec.push_back(num);
+            } else if(i==count) {
+                iss >> disType;
+            } else {
+                iss >> k;
             }
-            iss >> str >> num;
-            disType = str;
-            k = num;
-            // This line calls the inputToClass function to classify the test case
-            result = classification.vectorToClass(file, k, disType, vec);
-            result.copy(buffer, size-1);
-            //might need +1 or -1
-            buffer[result.size()] = '\0';
-        } else {
+        }
+        cout << iss.str() << endl;
+        if (iss.fail()) {
             // the input string does not have the correct format
             result = "invalid input";
-            result.copy(buffer, size-1);
+            //result.copy(buffer, size-1);
+            strcpy(buffer,result.c_str());
             //might need +1 or -1
-            buffer[result.size()] = '\0';
+            //buffer[result.size()] = '\0';
+        } else {
+            // This line calls the inputToClass function to classify the test case
+            result = classification.vectorToClass(file, k, disType, vec);
+            //result.copy(buffer, size - 1);
+            //might need +1 or -1
+            //buffer[result.size()] = '\0';
+            strcpy(buffer,result.c_str());
         }
     }
-    int sent_bytes = send(clientSock, buffer, read_bytes, 0);
+    int sent_bytes = send(clientSock, buffer, result.size(), 0);
     if (sent_bytes < 0) {
         perror("error sending to client");
     }

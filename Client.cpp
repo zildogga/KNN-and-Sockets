@@ -30,13 +30,14 @@ int Client::createClient(char *ipAddress, int portNum) {
         }
         char buffer[SIZE_OF_BUFFER];
         int expected_data_len = sizeof(buffer);
+        memset(buffer, 0, sizeof(buffer));
         int read_bytes = recv(sock, buffer, expected_data_len, 0);
         if (read_bytes == 0) {
             break;
         } else if (read_bytes < 0) {
             break;
         } else {
-            cout << buffer;
+            cout << buffer << endl;
         }
     }
     close(sock);

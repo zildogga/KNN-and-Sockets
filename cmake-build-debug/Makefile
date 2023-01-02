@@ -201,6 +201,30 @@ Classification.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Classification.cpp.s
 .PHONY : Classification.cpp.s
 
+Client.o: Client.cpp.o
+.PHONY : Client.o
+
+# target to build an object file
+Client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Client.cpp.o
+.PHONY : Client.cpp.o
+
+Client.i: Client.cpp.i
+.PHONY : Client.i
+
+# target to preprocess a source file
+Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Client.cpp.i
+.PHONY : Client.cpp.i
+
+Client.s: Client.cpp.s
+.PHONY : Client.s
+
+# target to generate assembly for a file
+Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Client.cpp.s
+.PHONY : Client.cpp.s
+
 DistanceClass.o: DistanceClass.cpp.o
 .PHONY : DistanceClass.o
 
@@ -411,6 +435,9 @@ help:
 	@echo "... Classification.o"
 	@echo "... Classification.i"
 	@echo "... Classification.s"
+	@echo "... Client.o"
+	@echo "... Client.i"
+	@echo "... Client.s"
 	@echo "... DistanceClass.o"
 	@echo "... DistanceClass.i"
 	@echo "... DistanceClass.s"

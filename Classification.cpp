@@ -20,9 +20,8 @@ string Classification::vectorToClass(
     DistanceClass distanceClass;
     // If the user entered a vector of doubles, this line checks if the vector has the correct size
     if(test.size() != information[0].first.size()){
-        // This line prints an error message to the standard error stream
-        cerr << "wrong size vector" << endl;
-        return "";
+        // This line sends an error message to the standard error stream
+        return "wrong size vector";
         // This line continues the loop, prompting the user to enter a valid vector of doubles again
     }
     // CSV file, the value of k, and the distance type
@@ -127,17 +126,12 @@ string Classification::classify (
         string disType
 ) {
     if(k > information.size()){
-        cerr << "Error" << endl;
-        return "";
+        return "Error";
     }
     // This line creates a new Knn object
     Knn knn;
     // This line calls the ClosestsNeighbors function on the Knn object,
     // passing the test case, training data, value of k, and distance type as arguments, and stores the returned class in a string
     string chosenClass = knn.ClosestsNeighbers(k, disType, information, test);
-    if(chosenClass == "Error") {
-        return chosenClass;
-    }
-    // This line prints the chosen class to the standard output stream
     return chosenClass;
 }

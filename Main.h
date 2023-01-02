@@ -17,6 +17,8 @@
 #include "ReadFile.h"
 #include "Classification.h"
 #include "Server.h"
+#include "Client.h"
+
 
 using namespace std;
 class Main {

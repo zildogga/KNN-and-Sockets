@@ -102,6 +102,12 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Classification.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Client.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Client.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DistanceClass.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
