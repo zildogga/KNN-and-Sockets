@@ -8,23 +8,23 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Advanced_Programming_1_Project">
-				<Option output="/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option output="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/omer/CLionProjects/Advanced-Programming-1-Project/."/>
+					<Add directory="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/."/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -34,20 +34,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Advanced_Programming_1_Project/fast">
-				<Option output="/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option output="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Advanced_Programming_1_Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/omer/CLionProjects/Advanced-Programming-1-Project/."/>
+					<Add directory="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/."/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -57,118 +57,118 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project/fast"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Advanced_Programming_1_Project/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug"/>
+				<Option working_dir="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Canberra.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Canberra.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Canberra.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Canberra.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Chebyshev.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Chebyshev.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Chebyshev.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Chebyshev.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Classification.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Classification.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Classification.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Classification.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Client.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Client.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Client.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Client.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DistanceClass.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/DistanceClass.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DistanceClass.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/DistanceClass.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Euclidean.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Euclidean.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Euclidean.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Euclidean.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Knn.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Knn.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Knn.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Knn.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Main.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Main.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Main.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Main.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainClient.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/MainClient.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainClient.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/MainClient.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainServer.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/MainServer.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainServer.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/MainServer.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Manhattan.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Manhattan.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Manhattan.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Manhattan.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Minkowski.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Minkowski.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Minkowski.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Minkowski.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ReadFile.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/ReadFile.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ReadFile.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/ReadFile.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Server.cpp">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Server.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Server.h">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/Server.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/CMakeLists.txt">
+		<Unit filename="/home/ofir/CLionProjects/Adnvanced-Programming-1-Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

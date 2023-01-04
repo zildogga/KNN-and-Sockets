@@ -1,7 +1,3 @@
-//
-// Created by Omer on 11/12/2022.
-//
-
 #include "ReadFile.h"
 // This is a method of the ReadFile class
 vector<vector<string>> ReadFile::ReadCSVByPath(

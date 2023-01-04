@@ -1,7 +1,3 @@
-//
-// Created by ofir local user on 10/12/2022.
-//
-
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_KNN_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_KNN_H
 #include "string"

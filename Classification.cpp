@@ -1,7 +1,3 @@
-//
-// Created by Omer on 11/12/2022.
-//
-
 #include "Classification.h"
 
 // This function is part of the Classification class

@@ -1,5 +1,3 @@
-
-
 #include "Canberra.h"
 
 //for from 1 to n of (abs of pi - qi) / (abs of pi + abs of qi)

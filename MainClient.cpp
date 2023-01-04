@@ -1,13 +1,5 @@
-//
-// Created by omer on 1/4/23.
-//
-
 #include "MainClient.h"
-
-
 #include "Main.h"
-
-
 
 // This is the main function
 int main(
@@ -16,17 +8,22 @@ int main(
         // - argv: an array of strings containing the command-line arguments
         int argc, char* argv[]
 ) {
-
+    // check if their more arguments than needed
     if (argc <= 2) {
+        // if so print Error message
         cerr << "Error" << endl;
         return -1;
     }
 
     Client client;
-    string ip = argv[1];
-    char test [ip.size()+1];
-    strcpy(test,ip.c_str());
-    client.createClient(test, argv[2]);
+    // convert string ip to char[] ip
+    string ipStr = argv[1];
+    char ip[ipStr.size()+1];
+    strcpy(ip,ipStr.c_str());
+    // args[2] == port number
+    string portNum = argv[2];
+    // create client
+    client.createClient(ip, portNum);
     return 0;
 }
 

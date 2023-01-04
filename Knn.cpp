@@ -1,6 +1,3 @@
-//
-// Created by ofir local user on 10/12/2022.
-//
 #include "Knn.h"
 // This function is part of the Knn class
 vector<pair<double, string>> Knn::sortDistancesVector(
@@ -98,7 +95,7 @@ string Knn::ClosestsNeighbers(
         }
         // If the distance algorithm is not one of the above, this block prints an error message
     } else{
-        return "Error";
+        return "invalid input";
     }
 
     // This line calls the sortDistancesVector function to sort the vector of pairs of distances and class names in ascending order by distance

@@ -1,7 +1,3 @@
-//
-// Created by omer on 12/31/22.
-//
-
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H
 
@@ -18,10 +14,12 @@ using namespace std;
 
 class Server {
 public:
+    // function to start server
     int startServer(string serverPort, string fileName);
+    // function to accept client connection
     int acceptClient();
+    // function to classify data sent by client
     string serverClassify(int clientSock);
 };
-
 
 #endif //ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H

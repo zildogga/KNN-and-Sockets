@@ -1,5 +1,3 @@
-
-
 #include "DistanceClass.h"
 //a function that checks if an input is a number (double) and if so returns it
 double DistanceClass::checkValidation(string str) {

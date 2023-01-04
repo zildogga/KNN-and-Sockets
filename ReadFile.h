@@ -1,7 +1,3 @@
-//
-// Created by Omer on 11/12/2022.
-//
-
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_READFILE_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_READFILE_H
 #include <fstream>

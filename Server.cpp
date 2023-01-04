@@ -1,7 +1,3 @@
-//
-// Created by omer on 12/31/22.
-//
-
 #include "Server.h"
 
 string file = "";
@@ -12,112 +8,146 @@ Classification classification;
 ReadFile readFile;
 
 int Server::startServer(string serverPort, string fileName) {
+    // declare and initialize port number
     int port;
+    // convert string serverPort to int and store in port
     istringstream iss(serverPort);
     if (iss >> port) {
     } else {
+        // print error message if conversion fails
         cerr << "invalid input" << endl;
         return 0;
     }
+    // store fileName in file
     file = fileName;
+    // read CSV file and store contents in readFileTry
     vector<vector<string>> readFileTry = readFile.ReadCSVByPath(fileName);
-    if(readFileTry.empty()) {
+    if (readFileTry.empty()) {
+        // return -1 if reading file fails
         return -1;
     }
+    // cast port to const int
     const int server_port = port;
-    if(server_port < 1024 || server_port > 65535) {
+    // check if port number is out of bounds
+    if (server_port < 1024 || server_port > 65535) {
+        // print error message if port number is out of bounds
         cerr << "number of port is out of bounds" << endl;
         return -1;
     }
+    // create socket
     int sock = socket(AF_INET, SOCK_STREAM, 0);
     if (sock < 0) {
+        // print error message if socket creation fails
         perror("error creating socket");
         return -1;
     }
+    // create sockaddr_in struct
     struct sockaddr_in sin;
+    // clear memory of sin
     memset(&sin, 0, sizeof(sin));
     sin.sin_family = AF_INET;
     sin.sin_addr.s_addr = INADDR_ANY;
     sin.sin_port = htons(server_port);
+    // try to bind socket to address and port
     if (bind(sock, (struct sockaddr *) &sin, sizeof(sin)) < 0) {
+        // print error message if binding fails
         perror("error binding socket");
         return -1;
     }
+    // try to listen on socket
     if (listen(sock, 1) < 0) {
+        // print error message if listening fails
         perror("error listening to a socket");
         return -1;
     }
+    // store sock in sockNum
     sockNum = sock;
-    while(acceptClient()) {
+    // accept client connections and perform actions until acceptClient returns false
+    while (acceptClient()) {
         cout << "waiting for a new client" << endl;
     }
     close(sock);
     return 0;
 }
+
 int Server::acceptClient() {
+    // create sockaddr_in struct to store client address
     struct sockaddr_in client_sin;
+    // initialize address length variable
     unsigned int addr_len = sizeof(client_sin);
+    // try to accept a client connection
     int client_sock = accept(sockNum, (struct sockaddr *) &client_sin, &addr_len);
     if (client_sock < 0) {
+        // print error message if accepting client connection fails
         perror("error accepting client");
         return 1;
     }
+    // infinite loop to classify data sent by client
     while(true) {
+        // classify data sent by client
         string result = serverClassify(client_sock);
         if(result == "") {
+            // return 1 if serverClassify returns empty string
             return 1;
         }
     }
 }
+
+
 string Server::serverClassify(int clientSock) {
+    // initialize result to empty string
     string result = "";
+    // create buffer to store received data
     char buffer[size];
+    // expected length of received data
     int expected_data_len = sizeof(buffer);
+    // clear memory of buffer
     memset(buffer, 0, sizeof(buffer));
+    // print message indicating that server is waiting for data from client
     cout << "waiting for receive by client" << endl;
+    // try to receive data from client
     int read_bytes = recv(clientSock, buffer, expected_data_len, 0);
-    cout << "the buffer is: " << buffer << endl;
     if (read_bytes == 0) {
-        //connection is closed
+        // return empty string if connection is closed by client
         return "";
     }
     else if (read_bytes < 0) {
-        // error
+        // return empty string if there is an error receiving data from client
         return "";
     }
     else {
-        //here should be the classification
-
-        //get out of the buffer the values with integrity checks
+        // create vector to store received data
         vector<double> vec;
+        // num of neighbors
         int k;
         string disType="o";
-
-        istringstream iss(buffer); // create an input string stream from the input string
-
-        //closing the server if the buffer have -1 and that's it
-        cout << "checking for buffer to be -1" << endl;
+        // create stringstream object to parse received data
+        istringstream iss(buffer);
         if(buffer[0] == '-' && buffer[1] == '1' && buffer[2] == '\0') {
-            cout << "buffer is indeed -1" << endl;
             result = "close";
+            // copy result to buffer
             strcpy(buffer,result.c_str());
+            // try to send data in buffer to client
             int sent_bytes = send(clientSock, buffer, result.size(), 0);
             if (sent_bytes < 0) {
+                // print error message if sending data to client fails
                 perror("error sending to client");
             }
-            cout << "returning close client to the while" << endl;
+            // return closeClient
             return "closeClient";
         }
         double num;
         int count = 0;
-        // try to extract values from the input string until the string stream fails
+        // parse received data and store in vec
         while (iss >> num) {
             count++;
             vec.push_back(num);
         }
-        // the input string has the correct format, so extract the values again
-        iss.clear(); // clear the string stream's fail flag
-        iss.seekg(0); // reset the string stream's position to the beginning
+        // reset stringstream object
+        iss.clear();
+        // set stringstream object to beginning
+        iss.seekg(0);
+        // parse received data and store in disType and k
         for (int i = 0; i < count+2; i++) {
             if(i<count) {
                 iss >> num;
@@ -127,27 +157,26 @@ string Server::serverClassify(int clientSock) {
                 iss >> k;
             }
         }
+        // print received data
         cout << iss.str() << endl;
         if (iss.fail()) {
-            // the input string does not have the correct format
+            // set result to "invalid input" if parsing fails
             result = "invalid input";
-            //result.copy(buffer, size-1);
+            // copy result to buffer
             strcpy(buffer,result.c_str());
-            //might need +1 or -1
-            //buffer[result.size()] = '\0';
         } else {
-            // This line calls the inputToClass function to classify the test case
+            // classify received data and store result in result
             result = classification.vectorToClass(file, k, disType, vec);
-            //result.copy(buffer, size - 1);
-            //might need +1 or -1
-            //buffer[result.size()] = '\0';
+            // copy result to buffer
             strcpy(buffer,result.c_str());
         }
     }
-    cout << "sending this to client: " << buffer << endl;
+    // try to send data in buffer to client
     int sent_bytes = send(clientSock, buffer, result.size(), 0);
     if (sent_bytes < 0) {
+        // print error message if sending data to client fails
         perror("error sending to client");
     }
+    // return "good"
     return "good";
 }

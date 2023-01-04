@@ -1,5 +1,3 @@
-
-
 #include "Chebyshev.h"
 
 double Chebyshev::distance(vector<double> v1, vector<double> v2) {
