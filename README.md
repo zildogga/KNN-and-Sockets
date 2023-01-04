@@ -122,7 +122,7 @@ Here are some examples for input:
 |Spaces at the end or beggining|`5 5ㅤ`            |**no error**, the vector is: 5 5            |
 |Chars          |`5g y6.7`|**error message:** invalid input|
 |Double dots| `5.5.5 6`|**error message:** invalid input|
-|Different size vectors|`First vector: 5 5`ㅤㅤㅤ `Second vector: 6 6 6`| **error message:** invalid input
+|Different size vectors|`First vector: 5 5` `Second vector: 6 6 6`| **error message:** invalid input
 
 
 Errors for complete input:
