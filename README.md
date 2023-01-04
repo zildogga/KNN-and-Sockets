@@ -22,6 +22,8 @@ firstly we made a read file class that can read CSV files and convert them into 
 then, we made KNN class that uses the KNN algorithm and by getting vectors as data and a test vector, returns the chosen class.
 lastly we made classification class that combines the two classes above and by using the data from the debug command and the vectors from the user returns the chosen class for this vector and this CSV file.
 
+The third assignment was to create a server and a client that talks to one another. we created a server with his own main, and a client with his own main, where whenever you write the *make* command, the *makefile* knows to make a *server.out* and a *client.out* files with different mains.
+
 This is a rundown about everything we have and did in the project:
 
 # ⚡ Algorithms
@@ -74,12 +76,30 @@ Paste this command to the terminal:
     make
 Than paste this command to the terminal:
 
-    ./a.out [number k] [path to the csv files] [type of distance algorithm]
-❤️ **insert [number k] that represents the number of neighbors by which you would like to check** ❤️
+**Server:**
 
-❤️ **insert [path to the csv files] your own path on the computer to the csv files .** ❤️
+    ./server.out [path to the csv files] [port number]
+    
+**Client:**
+    
+    ./client.out [ip of the server] [port number]
+    
+   ***insert [port number] that represents the port number of the server***
 
-❤️ **insert [type of distance algorithm]  like this:** ❤️
+   ***insert [path to the csv files] your own path on the computer to the csv files***
+
+   ***insert [ip of the server]  as the ip of the computer who opened the server***
+ㅤㅤ
+
+## ✍ Examples for input
+
+The input of the client should be:
+
+[Vector] [Algorithm name] [K number]
+
+   ***insert [Vector] that has the same number of doubles as the vectors in the CSV file***
+
+   ***insert [Algorithm name] in one of these forms:***
 
 |Algorithm name  |[Type of distance algorithm]|
 |----------------|----------------------------|
@@ -87,9 +107,11 @@ Than paste this command to the terminal:
 |Euclidean       |AUC                         |         
 |Chebyshev       |CHB                         | 
 |Canberra        |CAN                         |
-|Minkowski       |MIN                         |ㅤㅤㅤ
+|Minkowski       |MIN                         |ㅤ
 
-## ✍ Examples for input
+
+   ***insert [K number]  as the k in the knn***
+
 
 The program is coded to accept many kind of incorrect input, and the rest of the input is being thrown out with an error message, but it is still possible to **re-input** the vectors after making a mistake.
 Here are some examples for input:
@@ -98,9 +120,23 @@ Here are some examples for input:
 |----------------|-------------------------------|-----------------------------|
 |Double (or more) spaces   |`5ㅤ 5`               |**no error**, the vector is: 5 5|
 |Spaces at the end or beggining|`5 5ㅤ`            |**no error**, the vector is: 5 5            |
-|Chars          |`5g y6.7`|**error message:** The input was not a number.|
-|Double dots| `5.5.5 6`|**error message:** The input was not a number.|
-|Different size vectors|`First vector: 5 5`ㅤㅤㅤ `Second vector: 6 6 6`| **error message:** The vectors aren't the same size
+|Chars          |`5g y6.7`|**error message:** invalid input|
+|Double dots| `5.5.5 6`|**error message:** invalid input|
+|Different size vectors|`First vector: 5 5`ㅤㅤㅤ `Second vector: 6 6 6`| **error message:** invalid input
+
+
+Errors for complete input:
+
+
+|                |Input							 |Error message|
+|----------------|-------------------------------|-----------------------------|
+|Correct sized vector, Algo type and k| `5 5 5 5 MAN 5`|**no error**, will print the class|
+|No Algorithm type   |`5 5 5 5 5`               |**error message:** invalid input|
+|Algorithm type not in bold|`5 5 5 5 man 5`            |**error message:** invalid input            |
+|No k          |`5 5 5 5 MAN`|**error message:** invalid input|
+
+
+❤️ ***on "-1" input, the client will close his connection to the server*** ❤️
 
 ## 📁 Files
 
@@ -131,6 +167,8 @@ distanceClass.cpp-->minkowski.cpp
 distanceClass.cpp-->euclidean.cpp
 distanceClass.cpp-->manhattan.cpp
 distanceClass.cpp-->chebyshev.cpp
+id2{cpp}-->MainServer.cpp
+id2{cpp}-->MainClient.cpp
 id2{cpp}-->main.cpp
 id3{h}-->canberra.h(canberra.h)
 id3{h}-->minkowski.h(minkowski.h)
@@ -141,6 +179,8 @@ id3{h}-->Classification.h(Classification.h)
 id3{h}-->Knn.h(Knn.h)
 id3{h}-->FileReader.h(FileReader.h)
 id3{h}-->distanceClass.h(distanceClass.h)
+id3{h}-->MainServer.h(MainServer.h)
+id3{h}-->MainClient.h(MainClient.h)
 id3{h}-->main.h(main.h)
 style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style id3 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
