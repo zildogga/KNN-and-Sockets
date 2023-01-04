@@ -21,13 +21,13 @@ int main(
     if(serverClient == "server") {
         Server server;
         int succ = 0;
-        succ = server.startServer(5555, "/home/omer/CLionProjects/Advanced-Programming-1-Project/iris_classified.csv");
+        succ = server.startServer("5555", "/home/omer/CLionProjects/Advanced-Programming-1-Project/iris_classified.csv");
     } else {
         Client client;
         string ip = "127.0.0.1";
         char test [ip.size()+1];
         strcpy(test,ip.c_str());
-        client.createClient(test, 5555);
+        client.createClient(test, "5555");
     }
 
     // This line initializes a variable to store the value of k

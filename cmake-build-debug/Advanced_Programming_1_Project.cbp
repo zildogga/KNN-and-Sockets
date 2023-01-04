@@ -132,6 +132,18 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Main.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainClient.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainClient.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainServer.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainServer.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Manhattan.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>

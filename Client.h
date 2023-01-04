@@ -18,7 +18,7 @@
 
 class Client {
 public:
-    int createClient(char *ipAddress, int portNum);
+    int createClient(char *ipAddress, string portNum);
     int vectorToCharArray(const std::vector<double>& vec, char* charArray);
 };
 

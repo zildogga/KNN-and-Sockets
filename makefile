@@ -1,2 +1,3 @@
-a.out:DistanceClass.cpp Main.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp
-	g++ -o a.out DistanceClass.cpp Main.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp -std=c++11
+a.out:DistanceClass.cpp Main.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp
+	g++ -o client.out DistanceClass.cpp MainClient.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp -std=c++11
+	g++ -o server.out DistanceClass.cpp MainServer.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp -std=c++11

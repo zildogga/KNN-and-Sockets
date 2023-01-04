@@ -9,11 +9,23 @@ int sockNum = 0;
 int size = 4096;
 // This line creates a new Classification object
 Classification classification;
+ReadFile readFile;
 
-int Server::startServer(int serverPort, string fileName) {
+int Server::startServer(string serverPort, string fileName) {
+    int port;
+    istringstream iss(serverPort);
+    if (iss >> port) {
+    } else {
+        cerr << "invalid input" << endl;
+        return 0;
+    }
     file = fileName;
-    const int server_port = serverPort;
-    if(serverPort < 1024 || serverPort > 65535) {
+    vector<vector<string>> readFileTry = readFile.ReadCSVByPath(fileName);
+    if(readFileTry.empty()) {
+        return -1;
+    }
+    const int server_port = port;
+    if(server_port < 1024 || server_port > 65535) {
         cerr << "number of port is out of bounds" << endl;
         return -1;
     }
@@ -36,7 +48,9 @@ int Server::startServer(int serverPort, string fileName) {
         return -1;
     }
     sockNum = sock;
-    while(acceptClient()) {}
+    while(acceptClient()) {
+        cout << "waiting for a new client" << endl;
+    }
     close(sock);
     return 0;
 }
@@ -46,12 +60,12 @@ int Server::acceptClient() {
     int client_sock = accept(sockNum, (struct sockaddr *) &client_sin, &addr_len);
     if (client_sock < 0) {
         perror("error accepting client");
-        return -1;
+        return 1;
     }
     while(true) {
         string result = serverClassify(client_sock);
         if(result == "") {
-            return 0;
+            return 1;
         }
     }
 }
@@ -60,7 +74,9 @@ string Server::serverClassify(int clientSock) {
     char buffer[size];
     int expected_data_len = sizeof(buffer);
     memset(buffer, 0, sizeof(buffer));
+    cout << "waiting for receive by client" << endl;
     int read_bytes = recv(clientSock, buffer, expected_data_len, 0);
+    cout << "the buffer is: " << buffer << endl;
     if (read_bytes == 0) {
         //connection is closed
         return "";
@@ -80,14 +96,22 @@ string Server::serverClassify(int clientSock) {
         istringstream iss(buffer); // create an input string stream from the input string
 
         //closing the server if the buffer have -1 and that's it
-        if(buffer[0] == -1 && buffer[1] == '\0') {
-            return "";
+        cout << "checking for buffer to be -1" << endl;
+        if(buffer[0] == '-' && buffer[1] == '1' && buffer[2] == '\0') {
+            cout << "buffer is indeed -1" << endl;
+            result = "close";
+            strcpy(buffer,result.c_str());
+            int sent_bytes = send(clientSock, buffer, result.size(), 0);
+            if (sent_bytes < 0) {
+                perror("error sending to client");
+            }
+            cout << "returning close client to the while" << endl;
+            return "closeClient";
         }
         double num;
         int count = 0;
         // try to extract values from the input string until the string stream fails
         while (iss >> num) {
-            cout << iss.str() << endl;
             count++;
             vec.push_back(num);
         }
@@ -120,6 +144,7 @@ string Server::serverClassify(int clientSock) {
             strcpy(buffer,result.c_str());
         }
     }
+    cout << "sending this to client: " << buffer << endl;
     int sent_bytes = send(clientSock, buffer, result.size(), 0);
     if (sent_bytes < 0) {
         perror("error sending to client");

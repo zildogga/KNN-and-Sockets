@@ -5,12 +5,20 @@
 #include "Client.h"
 using namespace std;
 const int SIZE_OF_BUFFER = 4096;
-int Client::createClient(char *ipAddress, int portNum) {
+int Client::createClient(char *ipAddress, string portNum) {
+    int port;
+    istringstream iss(portNum);
+    if (iss >> port) {
+    } else {
+        cerr << "invalid input" << endl;
+        return 0;
+    }
     const char *ip_address = ipAddress;
-    const int port_no = portNum;
+    const int port_no = port;
     int sock = socket(AF_INET, SOCK_STREAM, 0);
     if (sock < 0) {
         perror("error creating socket");
+        return 0;
     }
     struct sockaddr_in sin;
     memset(&sin, 0, sizeof(sin));
@@ -19,6 +27,7 @@ int Client::createClient(char *ipAddress, int portNum) {
     sin.sin_port = htons(port_no);
     if (connect(sock, (struct sockaddr *) &sin, sizeof(sin)) < 0) {
         perror("error connecting to server");
+        return 0;
     }
     while(true) {
         char data_addr[SIZE_OF_BUFFER];
@@ -32,7 +41,10 @@ int Client::createClient(char *ipAddress, int portNum) {
         int expected_data_len = sizeof(buffer);
         memset(buffer, 0, sizeof(buffer));
         int read_bytes = recv(sock, buffer, expected_data_len, 0);
-        if (read_bytes == 0) {
+        if (strcmp(buffer, "close") == 0){
+            close(sock);
+            return 0;
+        } else if (read_bytes == 0) {
             break;
         } else if (read_bytes < 0) {
             break;

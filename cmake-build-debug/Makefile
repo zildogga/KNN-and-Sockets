@@ -321,6 +321,54 @@ Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
+MainClient.o: MainClient.cpp.o
+.PHONY : MainClient.o
+
+# target to build an object file
+MainClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainClient.cpp.o
+.PHONY : MainClient.cpp.o
+
+MainClient.i: MainClient.cpp.i
+.PHONY : MainClient.i
+
+# target to preprocess a source file
+MainClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainClient.cpp.i
+.PHONY : MainClient.cpp.i
+
+MainClient.s: MainClient.cpp.s
+.PHONY : MainClient.s
+
+# target to generate assembly for a file
+MainClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainClient.cpp.s
+.PHONY : MainClient.cpp.s
+
+MainServer.o: MainServer.cpp.o
+.PHONY : MainServer.o
+
+# target to build an object file
+MainServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainServer.cpp.o
+.PHONY : MainServer.cpp.o
+
+MainServer.i: MainServer.cpp.i
+.PHONY : MainServer.i
+
+# target to preprocess a source file
+MainServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainServer.cpp.i
+.PHONY : MainServer.cpp.i
+
+MainServer.s: MainServer.cpp.s
+.PHONY : MainServer.s
+
+# target to generate assembly for a file
+MainServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainServer.cpp.s
+.PHONY : MainServer.cpp.s
+
 Manhattan.o: Manhattan.cpp.o
 .PHONY : Manhattan.o
 
@@ -450,6 +498,12 @@ help:
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... MainClient.o"
+	@echo "... MainClient.i"
+	@echo "... MainClient.s"
+	@echo "... MainServer.o"
+	@echo "... MainServer.i"
+	@echo "... MainServer.s"
 	@echo "... Manhattan.o"
 	@echo "... Manhattan.i"
 	@echo "... Manhattan.s"

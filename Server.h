@@ -18,7 +18,7 @@ using namespace std;
 
 class Server {
 public:
-    int startServer(int serverPort, string fileName);
+    int startServer(string serverPort, string fileName);
     int acceptClient();
     string serverClassify(int clientSock);
 };

@@ -48,6 +48,7 @@ vector<vector<string>> ReadFile::ReadCSVByPath(
     {
         // This line is executed if the CSV file could not be opened, and prints an error message
         cout << "Failed to open the file." << endl;
+        return result;
     }
 
     // This line returns the 2D vector of values from the CSV file

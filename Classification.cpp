@@ -21,7 +21,7 @@ string Classification::vectorToClass(
     // If the user entered a vector of doubles, this line checks if the vector has the correct size
     if(test.size() != information[0].first.size()){
         // This line sends an error message to the standard error stream
-        return "wrong size vector";
+        return "invalid input";
         // This line continues the loop, prompting the user to enter a valid vector of doubles again
     }
     // CSV file, the value of k, and the distance type
@@ -126,7 +126,7 @@ string Classification::classify (
         string disType
 ) {
     if(k > information.size()){
-        return "Error";
+        return "invalid input";
     }
     // This line creates a new Knn object
     Knn knn;
