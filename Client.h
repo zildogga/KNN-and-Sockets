@@ -18,6 +18,10 @@ public:
     int createClient(char *ipAddress, string portNum);
     // vectorToCharArray function converts a vector of doubles to a char array
     //int vectorToCharArray(const std::vector<double>& vec, char* charArray);
+    void selectCommand();
+
+    void sendBuffer(char data_addr[], int sock);
+    char *getBuffer(char *buffer, int sock);
 };
 
 
