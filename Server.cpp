@@ -120,7 +120,7 @@ string Server::serverClassify(int clientSock) {
         vector<double> vec;
         // num of neighbors
         int k;
-        string disType="o";
+        string disType = "o";
         // create stringstream object to parse received data
         istringstream iss(buffer);
         if(buffer[0] == '-' && buffer[1] == '1' && buffer[2] == '\0') {
