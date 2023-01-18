@@ -20,6 +20,9 @@ public:
     int acceptClient();
     // function to classify data sent by client
     string serverClassify(int clientSock);
+    void sendBuffer(char buffer[], int clientSock, string result);
+    char *getBuffer(char* buffer,int sock);
+    char *checkIfClientCloseConnection(char *buffer, int clientSock);
 };
 
 #endif //ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H

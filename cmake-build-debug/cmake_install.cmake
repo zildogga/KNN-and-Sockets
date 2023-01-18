@@ -1,6 +1,4 @@
-
 # Install script for directory: /home/ofir/CLionProjects/Advanced-Programming-1-Project
-
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -53,5 +51,4 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 file(WRITE "/home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

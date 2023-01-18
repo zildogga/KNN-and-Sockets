@@ -47,9 +47,8 @@ int Client::createClient(char *ipAddress, string portNum) {
         // create buffer to store received data
         char buffer[SIZE_OF_BUFFER];
         // gets the input to the buffer from the socket
-        getBuffer(buffer,sock);
         // if nullptr was returned
-        if(buffer == nullptr) {
+        if(getBuffer(buffer,sock) == nullptr) {
             break;
         } else if (strcmp(buffer, "close") == 0){
             // close socket and return 0 if "close" is received from server
@@ -89,6 +88,7 @@ char *Client::getBuffer(char* buffer,int sock) {
     }
     return buffer;
 }
+
 void Client::selectCommand() {
 
 }
