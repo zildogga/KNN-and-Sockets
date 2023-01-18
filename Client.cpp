@@ -43,30 +43,18 @@ int Client::createClient(char *ipAddress, string portNum) {
         // get input from user
         cin.getline(data_addr, SIZE_OF_BUFFER);
         // get length of data
-        int data_len = strlen(data_addr);
-        // try to send data to server
-        int sent_bytes = send(sock, data_addr, data_len, 0);
-        if (sent_bytes < 0) {
-            // error
-        }
+        sendBuffer(data_addr, sock);
         // create buffer to store received data
         char buffer[SIZE_OF_BUFFER];
-        // expected length of received data
-        int expected_data_len = sizeof(buffer);
-        // clear memory of buffer
-        memset(buffer, 0, sizeof(buffer));
-        // try to receive data from server
-        int read_bytes = recv(sock, buffer, expected_data_len, 0);
-        if (strcmp(buffer, "close") == 0){
+        // gets the input to the buffer from the socket
+        getBuffer(buffer,sock);
+        // if nullptr was returned
+        if(buffer == nullptr) {
+            break;
+        } else if (strcmp(buffer, "close") == 0){
             // close socket and return 0 if "close" is received from server
             close(sock);
             return 0;
-        } else if (read_bytes == 0) {
-            // break loop if connection is closed by server
-            break;
-        } else if (read_bytes < 0) {
-            // break loop if there is an error receiving data from server
-            break;
         } else {
             // print received data
             cout << buffer << endl;
@@ -76,6 +64,35 @@ int Client::createClient(char *ipAddress, string portNum) {
     close(sock);
     return 0;
 }
+void Client::sendBuffer(char data_addr[], int sock) {
+    // get length of data
+    int data_len = strlen(data_addr);
+    // try to send data to server
+    int sent_bytes = send(sock, data_addr, data_len, 0);
+    if (sent_bytes < 0) {
+        // error
+    }
+}
+char *Client::getBuffer(char* buffer,int sock) {
+    // expected length of received data
+    int expected_data_len = SIZE_OF_BUFFER;
+    // clear memory of buffer
+    memset(buffer, 0, SIZE_OF_BUFFER);
+    // try to receive data from server
+    int read_bytes = recv(sock, buffer, expected_data_len, 0);
+    if (read_bytes == 0) {
+        // break loop if connection is closed by server
+        return nullptr;
+    } else if (read_bytes < 0) {
+        // break loop if there is an error receiving data from server
+        return nullptr;
+    }
+    return buffer;
+}
+void Client::selectCommand() {
+
+}
+
 /*
 int Client::vectorToCharArray(const std::vector<double>& vec, char* charArray) {
     // create stringstream object

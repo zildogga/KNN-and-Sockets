@@ -8,8 +8,10 @@
 
 class SocketIO: public DefaultIO{
 public:
+    int sock = 0;
     string read() override;
-    void write(string) override
+    void write(string) override;
+    SocketIO(int socket);
 };
 
 

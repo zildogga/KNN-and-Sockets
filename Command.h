@@ -13,8 +13,8 @@ using namespace std;
 class Command {
 public:
     string description;
-    DefaultIO dio;
-    virtual void execute();
+    DefaultIO *dio;
+    virtual void execute() = 0;
 };
 
 

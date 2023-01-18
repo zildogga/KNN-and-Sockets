@@ -3,7 +3,9 @@
 //
 
 #include "SocketIO.h"
-
+SocketIO::SocketIO(int socket) {
+    sock = socket;
+}
 string SocketIO::read() {
 
 }
