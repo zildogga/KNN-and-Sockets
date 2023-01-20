@@ -93,9 +93,9 @@ int Server::acceptClient() {
     }
 }
 
-void Server::sendBuffer(char buffer[], int clientSock, string result) {
+void Server::sendBuffer(char buffer[], int clientSock) {
     // try to send data in buffer to client
-    int sent_bytes = send(clientSock, buffer, result.size(), 0);
+    int sent_bytes = send(clientSock, buffer, size, 0);
     if (sent_bytes < 0) {
         // print error message if sending data to client fails
         perror("error sending to client");
@@ -133,9 +133,9 @@ char *Server::checkIfClientCloseConnection(char *buffer, int clientSock) {
             perror("error sending to client");
         }
         // return closeClient
-        return "closeClient";
+        return (char*)"closeClient";
     }
-    return "continue";
+    return (char*)"continue";
 }
 
 string Server::serverClassify(int clientSock) {
@@ -144,6 +144,8 @@ string Server::serverClassify(int clientSock) {
     // create buffer to store received data
     char buffer[size];
     // gets the input to the buffer from the socket
+
+
     if (getBuffer(buffer, clientSock) == nullptr) {
         return "";
     }
@@ -192,7 +194,7 @@ string Server::serverClassify(int clientSock) {
         // copy result to buffer
         strcpy(buffer, result.c_str());
     }
-    sendBuffer(buffer, clientSock, result);
+    sendBuffer(buffer, clientSock);
     // return "good"
     return "good";
 }

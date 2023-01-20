@@ -10,6 +10,9 @@
 #include <vector>
 #include "DistanceClass.h"
 #include <sstream>
+#include "Command.h"
+
+#define SIZE_OF_BUFFER 4096
 
 
 class Client {

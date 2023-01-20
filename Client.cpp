@@ -1,6 +1,5 @@
 #include "Client.h"
 using namespace std;
-const int SIZE_OF_BUFFER = 4096;
 int Client::createClient(char *ipAddress, string portNum) {
     // declare and initialize port number
     int port;
