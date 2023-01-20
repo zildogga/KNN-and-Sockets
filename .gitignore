@@ -31,7 +31,7 @@ cmake-build-debug/
 *.exe
 *.out
 *.app
-
+*.log
 # Directories
 cmake-build-debug/
 cmake/CMakeFiles/
