@@ -13,3 +13,6 @@ string StandardIO::read() {
 void StandardIO::write(string text) {
     cout << text << endl;
 }
+StandardIO::StandardIO(Data d) {
+    data = d;
+}

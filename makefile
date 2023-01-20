@@ -1,3 +1,3 @@
 a.out:DistanceClass.cpp Main.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp
-	g++ -o client.out DistanceClass.cpp MainClient.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp Command.cpp UploadCommand.cpp DefaultIO.cpp StandardIO.cpp -std=c++11
-	g++ -o server.out DistanceClass.cpp MainServer.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp -std=c++11
+	g++ -o client.out DistanceClass.cpp MainClient.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp Command.cpp DefaultIO.cpp StandardIO.cpp SocketIO.cpp SettingsCommand.cpp -std=c++11
+	g++ -o server.out DistanceClass.cpp MainServer.cpp Minkowski.cpp Canberra.cpp Chebyshev.cpp Manhattan.cpp Euclidean.cpp ReadFile.cpp Classification.cpp Knn.cpp Server.cpp Client.cpp Command.cpp SocketIO.cpp SettingsCommand.cpp StandardIO.cpp Data.cpp DefaultIO.cpp -std=c++11

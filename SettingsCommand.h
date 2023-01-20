@@ -5,6 +5,8 @@
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_SETTINGSCOMMAND_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_SETTINGSCOMMAND_H
 #include "Command.h"
+#include "StandardIO.h"
+#include "SocketIO.h"
 
 class SettingsCommand: public Command {
 public:

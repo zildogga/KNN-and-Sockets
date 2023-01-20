@@ -57,10 +57,10 @@ RM = /snap/clion/219/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ofir/CLionProjects/Advanced-Programming-1-Project
+CMAKE_SOURCE_DIR = /home/omer/CLionProjects/Advanced-Programming-1-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/CMakeFiles /home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/CMakeFiles /home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -585,6 +585,30 @@ Minkowski.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Minkowski.cpp.s
 .PHONY : Minkowski.cpp.s
 
+ReadCommand.o: ReadCommand.cpp.o
+.PHONY : ReadCommand.o
+
+# target to build an object file
+ReadCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ReadCommand.cpp.o
+.PHONY : ReadCommand.cpp.o
+
+ReadCommand.i: ReadCommand.cpp.i
+.PHONY : ReadCommand.i
+
+# target to preprocess a source file
+ReadCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ReadCommand.cpp.i
+.PHONY : ReadCommand.cpp.i
+
+ReadCommand.s: ReadCommand.cpp.s
+.PHONY : ReadCommand.s
+
+# target to generate assembly for a file
+ReadCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ReadCommand.cpp.s
+.PHONY : ReadCommand.cpp.s
+
 ReadFile.o: ReadFile.cpp.o
 .PHONY : ReadFile.o
 
@@ -608,6 +632,30 @@ ReadFile.s: ReadFile.cpp.s
 ReadFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ReadFile.cpp.s
 .PHONY : ReadFile.cpp.s
+
+SendCommand.o: SendCommand.cpp.o
+.PHONY : SendCommand.o
+
+# target to build an object file
+SendCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SendCommand.cpp.o
+.PHONY : SendCommand.cpp.o
+
+SendCommand.i: SendCommand.cpp.i
+.PHONY : SendCommand.i
+
+# target to preprocess a source file
+SendCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SendCommand.cpp.i
+.PHONY : SendCommand.cpp.i
+
+SendCommand.s: SendCommand.cpp.s
+.PHONY : SendCommand.s
+
+# target to generate assembly for a file
+SendCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SendCommand.cpp.s
+.PHONY : SendCommand.cpp.s
 
 Server.o: Server.cpp.o
 .PHONY : Server.o
@@ -795,9 +843,15 @@ help:
 	@echo "... Minkowski.o"
 	@echo "... Minkowski.i"
 	@echo "... Minkowski.s"
+	@echo "... ReadCommand.o"
+	@echo "... ReadCommand.i"
+	@echo "... ReadCommand.s"
 	@echo "... ReadFile.o"
 	@echo "... ReadFile.i"
 	@echo "... ReadFile.s"
+	@echo "... SendCommand.o"
+	@echo "... SendCommand.i"
+	@echo "... SendCommand.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
