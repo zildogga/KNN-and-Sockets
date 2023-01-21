@@ -8,14 +8,16 @@ void SettingsCommandClient::execute() {
     SocketIO scio(sock);
     dio = &scio;
     dio->write("2");
-    string serverStr = dio->read();
+    char* serverStr = dio->read();
     StandardIO sdio;
     dio = &sdio;
-    dio->write(serverStr);
-    string userString = dio->read();
+    string str1(serverStr);
+    dio->write(str1);
+    char* userString = dio->read();
     dio = &scio;
     dio->write(userString);
     serverStr = dio->read();
     dio = &sdio;
-    dio->write(serverStr);
+    string str2(serverStr);
+    dio->write(str2);
 }
