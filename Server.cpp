@@ -101,7 +101,9 @@ int Server::menu(int client_sock, Data *data) {
                      "8. exit";
         sendBuffer(menu, client_sock);
         char buffer[size];
+        cout << "waiting for client response" << endl;
         char *check = getBuffer(buffer, client_sock);
+        cout << "the response is " << check << endl;
         if (!strcmp(check, "1")) {
 
         } else if (!strcmp(check, "2")) {
@@ -120,6 +122,7 @@ int Server::menu(int client_sock, Data *data) {
 
         }
     }
+    cout << "HOW DID IT HAPPENED" << endl;
 }
 
 void Server::sendBuffer(char buffer[], int clientSock) {

@@ -35,5 +35,5 @@ void SettingsCommandClient::execute() {
     string str2(serverStr2);
     cout << "14" << endl;
     dio->write(str2);
-    cout << "15" << endl;
+    cout << "finished this fucking shit" << endl;
 }
