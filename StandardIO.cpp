@@ -4,7 +4,7 @@
 
 #include "StandardIO.h"
 
-char* StandardIO::read() {
+string StandardIO::read() {
     char* text;
     cin >> text;
     return text;

@@ -6,7 +6,7 @@
 SocketIO::SocketIO(int socket) {
     sock = socket;
 }
-char *SocketIO::read() {
+string SocketIO::read() {
     char buffer[SIZE_OF_BUFFER];
     // expected length of received data
     int expected_data_len = SIZE_OF_BUFFER;

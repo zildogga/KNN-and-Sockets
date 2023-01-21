@@ -22,7 +22,7 @@ using namespace std;
 class SocketIO: public DefaultIO{
 public:
     int sock = 0;
-    char* read() override;
+    string read() override;
     void write(string) override;
     SocketIO(int socket);
 private:
