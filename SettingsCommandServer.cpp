@@ -8,7 +8,7 @@ void SettingsCommandServer::execute() {
     SocketIO socio(data->socketNum);
     dio = &socio;
     dio->write("The current KNN parameters are: K = " + to_string(data->k) + ", distance metric = " + data->algo);
-    char *answer;
+    char *answer = "";
     cout <<"before read " << answer << endl;
     answer = dio->read();
     cout << "after read " << answer << endl;
