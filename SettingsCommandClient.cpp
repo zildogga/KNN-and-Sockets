@@ -27,11 +27,12 @@ void SettingsCommandClient::execute() {
     cout << "10" << endl;
     dio->write(userString);
     cout << "11" << endl;
-    serverStr = dio->read();
+    char* serverStr2 = dio->read();
     cout << "12" << endl;
-    dio = &sdio;
+    StandardIO sdio2;
+    dio = &sdio2;
     cout << "13" << endl;
-    string str2(serverStr);
+    string str2(serverStr2);
     cout << "14" << endl;
     dio->write(str2);
     cout << "15" << endl;
