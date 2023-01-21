@@ -20,7 +20,7 @@ void SettingsCommandClient::execute() {
     dio->write(serverStr);
     cout << "8" << endl;
     string userString = dio->read();
-    cout << "9" << endl;
+    cout << "9 " << userString << endl;
     dio = &scio;
     cout << "10" << endl;
     dio->write(userString);

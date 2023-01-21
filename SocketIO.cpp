@@ -15,7 +15,7 @@ string SocketIO::read() {
     // try to receive data from server
     //cout << "before recv READ" << endl;
     int read_bytes = recv(sock, buffer, expected_data_len, 0);
-    cout << buffer << endl;
+    cout << "the buffer is in read " << buffer << endl;
     if (read_bytes == 0) {
         // break loop if connection is closed by server
         return "";
