@@ -15,7 +15,7 @@ char *SocketIO::read() {
     // try to receive data from server
     //cout << "before recv READ" << endl;
     int read_bytes = recv(sock, buffer, expected_data_len, 0);
-    //cout << "after recv READ" << endl;
+    cout << buffer << endl;
     if (read_bytes == 0) {
         // break loop if connection is closed by server
         return "";
@@ -23,11 +23,9 @@ char *SocketIO::read() {
         // break loop if there is an error receiving data from server
         return "";
     }
-    char* result;
-    result = buffer;
     //cout << buffer << endl;
     //cout << result << endl;
-    return result;
+    return buffer;
 }
 
 void SocketIO::write(string text) {
