@@ -7,6 +7,7 @@
 void SettingsCommandClient::execute() {
     SocketIO scio(sock);
     dio = &scio;
+    dio->write("2");
     string serverStr = dio->read();
     StandardIO sdio;
     dio = &sdio;

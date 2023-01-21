@@ -48,7 +48,10 @@ int Client::createClient(char *ipAddress, string portNum) {
             close(sock);
             return 0;
         } else {
-            if(strcmp(buffer,"2") == 0) {
+            cout << buffer << endl;
+            string choice;
+            cin >> choice;
+            if(choice == "2") {
                 SettingsCommandClient scc(sock);
                 scc.execute();
             }
