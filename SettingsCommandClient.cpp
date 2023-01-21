@@ -11,6 +11,7 @@ void SettingsCommandClient::execute() {
     string serverStr = dio->read();
     StandardIO sdio;
     dio = &sdio;
+    dio->write(serverStr);
     string userString = dio->read();
     dio = &scio;
     dio->write(userString);
