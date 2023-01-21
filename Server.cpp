@@ -105,7 +105,7 @@ int Server::menu(int client_sock, Data *data) {
         if (!strcmp(check, "1")) {
 
         } else if (!strcmp(check, "2")) {
-            SettingsCommand st(data);
+            SettingsCommandServer st(data);
             st.execute();
         } else if (!strcmp(check, "3")) {
 
@@ -114,7 +114,8 @@ int Server::menu(int client_sock, Data *data) {
         } else if (!strcmp(check, "5")) {
 
         } else if (!strcmp(check, "8")) {
-
+            close(data->socketNum);
+            return 0;
         } else {
 
         }
@@ -150,7 +151,7 @@ char *Server::getBuffer(char *buffer, int clientSock) {
 }
 
 char *Server::checkIfClientCloseConnection(char *buffer, int clientSock) {
-    if (buffer[0] == '-' && buffer[1] == '1' && buffer[2] == '\0') {
+    if (buffer[0] == '8' && buffer[1] == '\0') {
         string result = "close";
         // copy result to buffer
         strcpy(buffer, result.c_str());

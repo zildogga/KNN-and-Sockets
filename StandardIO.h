@@ -11,7 +11,6 @@ class StandardIO: public DefaultIO{
 public:
     char* read() override;
     void write(string) override;
-private:
     StandardIO() = default;
 };
 

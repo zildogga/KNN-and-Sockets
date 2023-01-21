@@ -11,7 +11,7 @@
 #include "Classification.h"
 #include "SocketIO.h"
 #include "DefaultIO.h"
-#include "SettingsCommand.h"
+#include "SettingsCommandServer.h"
 #include <thread>
 #include <unistd.h>
 #include <vector>

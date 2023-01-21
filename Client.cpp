@@ -89,28 +89,3 @@ char *Client::getBuffer(char* buffer,int sock) {
     return buffer;
 }
 
-void Client::selectCommand() {
-
-}
-
-/*
-int Client::vectorToCharArray(const std::vector<double>& vec, char* charArray) {
-    // create stringstream object
-    std::stringstream ss;
-    // initialize count variable
-    int count = 0;
-    // iterate through elements in vec
-    for (double d : vec) {
-        // add element to stringstream object
-        ss << d << ' ';
-        // increment count
-        count++;
-    }
-    // convert stringstream object to string
-    std::string s = ss.str();
-    // copy string to charArray
-    strcpy(charArray, s.c_str());
-    // return count
-    return count;
-}
-*/
