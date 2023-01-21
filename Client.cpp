@@ -48,16 +48,20 @@ int Client::createClient(char *ipAddress, string portNum) {
             close(sock);
             return 0;
         } else {
+            if(strcmp(buffer,"2") == 0) {
+                SettingsCommandClient scc(sock);
+                scc.execute();
+            }
             // print received data
-            cout << buffer << endl;
+            //cout << buffer << endl;
         }
 
-        // create char array to store input from user
-        char data_addr[SIZE_OF_BUFFER];
-        // get input from user
-        cin.getline(data_addr, SIZE_OF_BUFFER);
-        // get length of data
-        sendBuffer(data_addr, sock);
+//        // create char array to store input from user
+//        char data_addr[SIZE_OF_BUFFER];
+//        // get input from user
+//        cin.getline(data_addr, SIZE_OF_BUFFER);
+//        // get length of data
+//        sendBuffer(data_addr, sock);
     }
     // close socket
     close(sock);
