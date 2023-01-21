@@ -37,12 +37,6 @@ int Client::createClient(char *ipAddress, string portNum) {
     }
     // infinite loop to send and receive data from server
     while(true) {
-        // create char array to store input from user
-        char data_addr[SIZE_OF_BUFFER];
-        // get input from user
-        cin.getline(data_addr, SIZE_OF_BUFFER);
-        // get length of data
-        sendBuffer(data_addr, sock);
         // create buffer to store received data
         char buffer[SIZE_OF_BUFFER];
         // gets the input to the buffer from the socket
@@ -57,6 +51,13 @@ int Client::createClient(char *ipAddress, string portNum) {
             // print received data
             cout << buffer << endl;
         }
+
+        // create char array to store input from user
+        char data_addr[SIZE_OF_BUFFER];
+        // get input from user
+        cin.getline(data_addr, SIZE_OF_BUFFER);
+        // get length of data
+        sendBuffer(data_addr, sock);
     }
     // close socket
     close(sock);

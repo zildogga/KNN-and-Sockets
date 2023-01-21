@@ -3,6 +3,7 @@
 string file = "";
 int sockNum = 0;
 int size = 4096;
+int numOfUsers = 3;
 // This line creates a new Classification object
 Classification classification;
 ReadFile readFile;
@@ -55,7 +56,7 @@ int Server::startServer(string serverPort, string fileName) {
         return -1;
     }
     // try to listen on socket
-    if (listen(sock, 1) < 0) {
+    if (listen(sock, numOfUsers) < 0) {
         // print error message if listening fails
         perror("error listening to a socket");
         return -1;
@@ -63,14 +64,17 @@ int Server::startServer(string serverPort, string fileName) {
     // store sock in sockNum
     sockNum = sock;
     // accept client connections and perform actions until acceptClient returns false
-    while (acceptClient()) {
-        cout << "waiting for a new client" << endl;
+    while (true) {
+        int client_sock = getSockPerClient();
+        Data *d = new Data(client_sock);
+        thread t(menu, client_sock, d);
+        t.detach();
     }
     close(sock);
     return 0;
 }
 
-int Server::acceptClient() {
+int Server::getSockPerClient() {
     // create sockaddr_in struct to store client address
     struct sockaddr_in client_sin;
     // initialize address length variable
@@ -82,13 +86,37 @@ int Server::acceptClient() {
         perror("error accepting client");
         return 1;
     }
+    return client_sock;
+}
+
+int Server::menu(int client_sock, Data *data) {
     // infinite loop to classify data sent by client
     while (true) {
-        // classify data sent by client
-        string result = serverClassify(client_sock);
-        if (result == "") {
-            // return 1 if serverClassify returns empty string
-            return 1;
+        char *menu = "Welcome to the KNN classifier Server. Please choose an option:\n"
+                     "1. upload an unclassified csv data file\n"
+                     "2. algorithm settings\n"
+                     "3. classify data\n"
+                     "4. display results\n"
+                     "5. download results\n"
+                     "8. exit";
+        sendBuffer(menu, client_sock);
+        char buffer[size];
+        char *check = getBuffer(buffer, client_sock);
+        if (!strcmp(check, "1")) {
+
+        } else if (!strcmp(check, "2")) {
+            SettingsCommand st(data);
+            st.execute();
+        } else if (!strcmp(check, "3")) {
+
+        } else if (!strcmp(check, "4")) {
+
+        } else if (!strcmp(check, "5")) {
+
+        } else if (!strcmp(check, "8")) {
+
+        } else {
+
         }
     }
 }
@@ -133,9 +161,9 @@ char *Server::checkIfClientCloseConnection(char *buffer, int clientSock) {
             perror("error sending to client");
         }
         // return closeClient
-        return (char*)"closeClient";
+        return (char *) "closeClient";
     }
-    return (char*)"continue";
+    return (char *) "continue";
 }
 
 string Server::serverClassify(int clientSock) {
@@ -144,7 +172,6 @@ string Server::serverClassify(int clientSock) {
     // create buffer to store received data
     char buffer[size];
     // gets the input to the buffer from the socket
-
 
     if (getBuffer(buffer, clientSock) == nullptr) {
         return "";
@@ -198,3 +225,4 @@ string Server::serverClassify(int clientSock) {
     // return "good"
     return "good";
 }
+

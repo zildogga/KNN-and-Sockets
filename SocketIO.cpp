@@ -6,16 +6,16 @@
 SocketIO::SocketIO(int socket) {
     sock = socket;
 }
-string SocketIO::read() {
+char *SocketIO::read() {
     char buffer[SIZE_OF_BUFFER];
     // expected length of received data
     int expected_data_len = SIZE_OF_BUFFER;
     // clear memory of buffer
     memset(buffer, 0, SIZE_OF_BUFFER);
     // try to receive data from server
-    cout << "before recv" << endl;
+    cout << "before recv READ" << endl;
     int read_bytes = recv(sock, buffer, expected_data_len, 0);
-    cout << "after recv" << endl;
+    cout << "after recv READ" << endl;
     if (read_bytes == 0) {
         // break loop if connection is closed by server
         return "";
@@ -23,8 +23,10 @@ string SocketIO::read() {
         // break loop if there is an error receiving data from server
         return "";
     }
-    string result;
+    char* result;
     result = buffer;
+    cout << buffer << endl;
+    cout << result << endl;
     return result;
 }
 

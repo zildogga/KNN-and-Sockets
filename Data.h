@@ -12,8 +12,13 @@ using namespace std;
 
 class Data {
 public:
+    int socketNum;
     int k = 5;
     string algo = "AUC";
+    Data(int sockNum) {
+       socketNum = sockNum;
+    };
+private:
     Data() = default;
 };
 

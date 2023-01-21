@@ -13,6 +13,7 @@
 #include <unistd.h>
 #include <string.h>
 #include "Classification.h"
+#include "Data.h"
 
 #define SIZE_OF_BUFFER 4096
 
@@ -21,7 +22,7 @@ using namespace std;
 class SocketIO: public DefaultIO{
 public:
     int sock = 0;
-    string read() override;
+    char* read() override;
     void write(string) override;
     SocketIO(int socket);
 private:

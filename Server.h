@@ -12,21 +12,24 @@
 #include "SocketIO.h"
 #include "DefaultIO.h"
 #include "SettingsCommand.h"
-
+#include <thread>
+#include <unistd.h>
+#include <vector>
+#include "Data.h"
 using namespace std;
 
 class Server {
 public:
     // function to start server
-    int startServer(string serverPort, string fileName);
+    static int startServer(string serverPort, string fileName);
     // function to accept client connection
-    int acceptClient();
+    static int menu(int client_sock, Data *data);
+    static int getSockPerClient();
     // function to classify data sent by client
-    string serverClassify(int clientSock);
-    void sendBuffer(char buffer[], int clientSock);
-    char *getBuffer(char* buffer,int sock);
-    char *checkIfClientCloseConnection(char *buffer, int clientSock);
-
+    static string serverClassify(int clientSock);
+    static void sendBuffer(char buffer[], int clientSock);
+    static char *getBuffer(char* buffer,int sock);
+    static char *checkIfClientCloseConnection(char *buffer, int clientSock);
 };
 
 #endif //ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H

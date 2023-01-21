@@ -7,10 +7,17 @@
 #include "Command.h"
 #include "StandardIO.h"
 #include "SocketIO.h"
+#include "string.h"
+#include "stdio.h"
+using namespace std;
 
 class SettingsCommand: public Command {
 public:
+    Data *data;
     void execute() override;
+    SettingsCommand(Data *d){
+        data = d;
+    };
 };
 
 

@@ -4,8 +4,8 @@
 
 #include "StandardIO.h"
 
-string StandardIO::read() {
-    string text;
+char* StandardIO::read() {
+    char* text;
     cin >> text;
     return text;
 }
@@ -13,6 +13,4 @@ string StandardIO::read() {
 void StandardIO::write(string text) {
     cout << text << endl;
 }
-StandardIO::StandardIO(Data d) {
-    data = d;
-}
+

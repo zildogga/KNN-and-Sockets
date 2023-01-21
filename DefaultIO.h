@@ -11,7 +11,7 @@ using namespace std;
 
 class DefaultIO{
 public:
-    virtual string read() {return "";};
+    virtual char* read() {return "";};
     virtual void write(string) {};
 };
 
