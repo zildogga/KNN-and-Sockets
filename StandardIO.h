@@ -9,7 +9,7 @@
 
 class StandardIO: public DefaultIO{
 public:
-    char* read() override;
+    string read() override;
     void write(string) override;
     StandardIO() = default;
 };

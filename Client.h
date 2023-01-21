@@ -11,6 +11,7 @@
 #include "DistanceClass.h"
 #include <sstream>
 #include "Command.h"
+#include "SettingsCommandClient.h"
 
 #define SIZE_OF_BUFFER 4096
 

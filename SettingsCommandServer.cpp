@@ -8,8 +8,11 @@ void SettingsCommandServer::execute() {
     SocketIO socio(data->socketNum);
     dio = &socio;
     dio->write("The current KNN parameters are: K = " + to_string(data->k) + ", distance metric = " + data->algo);
-    char *answer = dio->read();
-    if (strcmp(answer, "\n") != 0) {
+    string answer = "";
+    cout <<"before read " << answer << endl;
+    answer = dio->read();
+    cout << "after read " << answer << endl;
+    if (!answer.empty()) {
         cout << "enter something different than enter" << endl;
         // change the data
         istringstream iss(answer);
