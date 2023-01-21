@@ -25,7 +25,8 @@ string SocketIO::read() {
     }
     //cout << buffer << endl;
     //cout << result << endl;
-    return buffer;
+    string answer(buffer);
+    return answer;
 }
 
 void SocketIO::write(string text) {
