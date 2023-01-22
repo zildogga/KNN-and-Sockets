@@ -12,6 +12,7 @@
 #include <sstream>
 #include "Command.h"
 #include "SettingsCommandClient.h"
+#include "UploadCommandClient.h"
 
 #define SIZE_OF_BUFFER 4096
 

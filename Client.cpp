@@ -51,6 +51,10 @@ int Client::createClient(char *ipAddress, string portNum) {
             cout << buffer << endl;
             string choice;
             cin >> choice;
+            if(choice == "1") {
+                UploadCommandClient ucc(sock);
+                ucc.execute();
+            }
             if(choice == "2") {
                 SettingsCommandClient scc(sock);
                 scc.execute();

@@ -14,10 +14,10 @@ using namespace std;
 
 class UploadCommandClient: public Command {
 public:
-    Data *data;
+    int sock;
     void execute() override;
-    UploadCommandClient(Data *d){
-        data = d;
+    UploadCommandClient(int sockNum){
+        sock = sockNum;
     };
 private:
     UploadCommandClient() = default;

@@ -4,11 +4,12 @@
 
 #include "UploadCommandClient.h"
 void UploadCommandClient::execute() {
-    SocketIO scio(data->socketNum);
+    SocketIO scio(sock);
     StandardIO stio;
     string serverStr = "";
     string ClientStr = "";
     dio = &scio;
+    dio->write("2");
     serverStr = dio->read();
     dio = &stio;
     dio->write(serverStr);

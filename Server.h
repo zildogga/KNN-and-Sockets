@@ -16,6 +16,7 @@
 #include <unistd.h>
 #include <vector>
 #include "Data.h"
+#include "UploadCommandServer.h"
 using namespace std;
 
 class Server {

@@ -105,7 +105,8 @@ int Server::menu(int client_sock, Data *data) {
         char *check = getBuffer(buffer, client_sock);
         cout << "the response is " << check << endl;
         if (!strcmp(check, "1")) {
-
+            UploadCommandServer up(data);
+            up.execute();
         } else if (!strcmp(check, "2")) {
             SettingsCommandServer st(data);
             st.execute();
