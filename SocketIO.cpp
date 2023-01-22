@@ -22,12 +22,14 @@ string SocketIO::read() {
         return "";
     }
     string answer(buffer);
+    cout << answer << endl;
     return answer;
 }
 
 void SocketIO::write(string text) {
     char buffer[SIZE_OF_BUFFER];
     strcpy(buffer,text.c_str());
+    cout << buffer << endl;
     int sent_bytes = send(sock, buffer, SIZE_OF_BUFFER, 0);
     if (sent_bytes < 0) {
         // print error message if sending data to client fails
