@@ -68,7 +68,10 @@ int Client::createClient(char *ipAddress, string portNum) {
                 dcc.execute();
             }
             if(choice == "5") {
-                thread t(downloadThread, sock);
+                string path;
+                BeforeDownloadCommandClient bdcc(sock,&path);
+                bdcc.execute();
+                thread t(downloadThread, sock, path);
                 t.detach();
             }
             if(choice == "8") {
@@ -82,8 +85,8 @@ int Client::createClient(char *ipAddress, string portNum) {
     close(sock);
     return 0;
 }
-void Client::downloadThread(int sock) {
-    DownloadCommandClient dwcc(sock);
+void Client::downloadThread(int sock,string path) {
+    DownloadCommandClient dwcc(sock,path);
     dwcc.execute();
 }
 void Client::sendBuffer(char data_addr[], int sock) {

@@ -5,13 +5,7 @@
 #include "DownloadCommandClient.h"
 void DownloadCommandClient::execute() {
     SocketIO scio(sock);
-    StandardIO sdio;
     string serverStr;
-    string path;
-    dio = &scio;
-    dio->write("5");
-    dio = &sdio;
-    path = dio->read();
     dio = &scio;
     vector<string> vs;
     while ((serverStr = dio->read())!= "Done.") {
