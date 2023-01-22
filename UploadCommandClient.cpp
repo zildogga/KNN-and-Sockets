@@ -25,20 +25,23 @@ void UploadCommandClient::execute() {
             dio->write(line);
         }
         // This line closes the CSV file
+        cout << "finished the first file" << endl;
         file.close();
         dio->write("endOfFile");
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
     } else {
+        cout << "really invalid" << endl;
         dio->write("endOfFile");
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
         return;
     }
-
+    dio = &stio;
     ClientStr = dio->read();
+    cout << ClientStr << endl;
     dio = &scio;
     string line2;
     // This line initializes a new ifstream object using the path to the CSV file
@@ -50,12 +53,14 @@ void UploadCommandClient::execute() {
             dio->write(line2);
         }
         // This line closes the CSV file
+        cout << "finished the second file" << endl;
         file2.close();
         dio->write("endOfFile");
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
     } else {
+        cout << "really invalid 2" << endl;
         dio->write("endOfFile");
         serverStr = dio->read();
         dio = &stio;
