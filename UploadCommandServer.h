@@ -8,6 +8,8 @@
 #include "StandardIO.h"
 #include "DefaultIO.h"
 #include "SocketIO.h"
+#include "ReadFile.h"
+#include "vector"
 using namespace std;
 
 class UploadCommandServer: public Command {
@@ -17,6 +19,8 @@ public:
     UploadCommandServer(Data *d){
         data = d;
     };
+private:
+    UploadCommandServer() = default;
 };
 
 

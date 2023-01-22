@@ -7,6 +7,7 @@
 #include "stdio.h"
 #include "iostream"
 #include "string.h"
+#include "vector"
 
 using namespace std;
 
@@ -15,6 +16,8 @@ public:
     int socketNum;
     int k = 5;
     string algo = "AUC";
+    vector<vector<string>> trainCSV;
+    vector<vector<string>> testCSV;
     Data(int sockNum) {
        socketNum = sockNum;
     };
