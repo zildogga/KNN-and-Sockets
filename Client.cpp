@@ -63,6 +63,10 @@ int Client::createClient(char *ipAddress, string portNum) {
                 ClassifyCommandClient scc(sock);
                 scc.execute();
             }
+            if(choice == "4") {
+                DisplayCommandClient dcc(sock);
+                dcc.execute();
+            }
             if(choice == "8") {
                 ExitCommandClient ecc(sock);
                 ecc.execute();

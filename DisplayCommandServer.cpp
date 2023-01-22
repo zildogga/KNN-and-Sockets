@@ -16,5 +16,6 @@ void DisplayCommandServer::execute() {
         temp = to_string(i) + " " + data->classified[i];
         dio->write(temp);
     }
+    dio->write("endOfFile");
     return;
 }
