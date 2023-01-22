@@ -68,8 +68,8 @@ int Client::createClient(char *ipAddress, string portNum) {
                 dcc.execute();
             }
             if(choice == "5") {
-                DownloadCommandClient dwcc(sock);
-                dwcc.execute();
+                thread t(downloadThread, sock);
+                t.detach();
             }
             if(choice == "8") {
                 ExitCommandClient ecc(sock);
@@ -81,6 +81,10 @@ int Client::createClient(char *ipAddress, string portNum) {
     // close socket
     close(sock);
     return 0;
+}
+void Client::downloadThread(int sock) {
+    DownloadCommandClient dwcc(sock);
+    dwcc.execute();
 }
 void Client::sendBuffer(char data_addr[], int sock) {
     // get length of data
