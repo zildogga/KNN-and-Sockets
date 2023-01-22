@@ -20,6 +20,7 @@
 #include "ExitCommandServer.h"
 #include "ClassifyCommandServer.h"
 #include "DisplayCommandServer.h"
+#include "DownloadCommandServer.h"
 using namespace std;
 
 class Server {

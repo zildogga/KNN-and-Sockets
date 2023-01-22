@@ -67,6 +67,10 @@ int Client::createClient(char *ipAddress, string portNum) {
                 DisplayCommandClient dcc(sock);
                 dcc.execute();
             }
+            if(choice == "5") {
+                DownloadCommandClient dwcc(sock);
+                dwcc.execute();
+            }
             if(choice == "8") {
                 ExitCommandClient ecc(sock);
                 ecc.execute();

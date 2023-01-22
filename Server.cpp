@@ -117,7 +117,8 @@ int Server::menu(int client_sock, Data *data) {
             DisplayCommandServer dcs(data);
             dcs.execute();
         } else if (!strcmp(check, "5")) {
-
+            DownloadCommandServer dwcs(data);
+            dwcs.execute();
         } else if (!strcmp(check, "8")) {
             ExitCommandServer ecs(data->socketNum);
             ecs.execute();

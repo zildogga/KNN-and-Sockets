@@ -50,7 +50,23 @@ vector<vector<string>> ReadFile::ReadCSVByPath(
     // This line returns the 2D vector of values from the CSV file
     return result;
 }
+void ReadFile::WriteCSVByVector(vector<string> information, string path, string fileName) {
+    // Open the file in output mode
+    string fullPath = path+'/'+fileName;
+    ofstream file(fullPath, ios::out);
 
+    if(file.is_open()) {
+        // Write each string in the vector to a new line in the file
+        for (const auto& s : information) {
+            file << s << endl;
+        }
+
+        // Close the file
+        file.close();
+    } else {
+        cout<<"Unable to open or create the file"<<endl;
+    }
+}
 vector<vector<string>> ReadFile::ReadCSVByList(list<string> list) {
     // This line initializes an empty 2D vector of strings to store the data from the CSV file
     vector<vector<string>> result;
