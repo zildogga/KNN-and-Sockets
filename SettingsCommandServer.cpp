@@ -42,7 +42,7 @@ void SettingsCommandServer::execute() {
             dio->write("invalid value for metric");
         }
     } else {
-        dio->write("user press Enter");
+        dio->write("User pressed enter");
     }
     cout << "k = " << data->k << " algo = " << data->algo << endl;
     return;
