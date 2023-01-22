@@ -14,9 +14,11 @@
 class DownloadCommandClient: public Command {
 public:
     int sock;
+    string path;
     void execute() override;
-    DownloadCommandClient(int sockNum){
+    DownloadCommandClient(int sockNum, string pathConstructor){
         sock = sockNum;
+        path = pathConstructor;
     };
 private:
     DownloadCommandClient() = default;
