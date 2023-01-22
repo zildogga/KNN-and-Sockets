@@ -1,4 +1,3 @@
-
 #include "DisplayCommandServer.h"
 void DisplayCommandServer::execute() {
     SocketIO socio(data->socketNum);
@@ -13,9 +12,9 @@ void DisplayCommandServer::execute() {
         return;
     }
     for (int i = 0; i < data->classified.size(); i++) {
-        temp = to_string(i) + " " + data->classified[i];
+        temp = to_string(i+1) + " " + data->classified[i];
         dio->write(temp);
     }
-    dio->write("endOfFile");
+    dio->write("Done.");
     return;
 }

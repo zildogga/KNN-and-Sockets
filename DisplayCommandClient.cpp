@@ -16,11 +16,13 @@ void DisplayCommandClient::execute() {
         dio->write(serverStr);
         return;
     }
-    while(serverStr != "endOfFile") {
-        dio = &scio;
-        serverStr = dio->read();
+    while(serverStr != "Done.") {
         dio = &sdio;
         dio->write(serverStr);
+        dio = &scio;
+        serverStr = dio->read();
     }
+    dio = &sdio;
+    dio->write("Done.");
     return;
 }
