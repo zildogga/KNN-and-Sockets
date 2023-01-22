@@ -16,7 +16,6 @@ void UploadCommandClient::execute() {
     ClientStr = dio->read();
     dio = &scio;
     string line;
-    cout << ClientStr << endl;
     // This line initializes a new ifstream object using the path to the CSV file
     if(ClientStr[0]!='/') {
         string temp = "/";
@@ -31,14 +30,12 @@ void UploadCommandClient::execute() {
             dio->write(line);
         }
         // This line closes the CSV file
-        cout << "finished the first file" << endl;
         file.close();
         dio->write("endOfFile");
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
     } else {
-        cout << "really invalid" << endl;
         dio->write("endOfFile");
         serverStr = dio->read();
         dio = &stio;
@@ -47,7 +44,6 @@ void UploadCommandClient::execute() {
     }
     dio = &stio;
     string ClientStr2 = dio->read();
-    cout << ClientStr2 << endl;
     if(ClientStr2[0]!='/') {
         string temp = "/";
         temp.append(ClientStr);
@@ -64,14 +60,12 @@ void UploadCommandClient::execute() {
             dio->write(line2);
         }
         // This line closes the CSV file
-        cout << "finished the second file" << endl;
         file2.close();
         dio->write("endOfFile");
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
     } else {
-        cout << "really invalid 2" << endl;
         dio->write("endOfFile");
         serverStr = dio->read();
         dio = &stio;
