@@ -9,11 +9,8 @@ void SettingsCommandServer::execute() {
     dio = &socio;
     dio->write("The current KNN parameters are: K = " + to_string(data->k) + ", distance metric = " + data->algo);
     string answer = "";
-    cout <<"before read " << answer << endl;
     answer = dio->read();
-    cout << "after read " << answer << endl;
     if (!answer.empty()) {
-        cout << "enter something different than enter" << endl;
         // change the data
         istringstream iss(answer);
         int numTemp;
@@ -44,6 +41,8 @@ void SettingsCommandServer::execute() {
         } else if (strFlag == false) {
             dio->write("invalid value for metric");
         }
+    } else {
+        dio->write("user press Enter");
     }
     cout << "k = " << data->k << " algo = " << data->algo << endl;
     return;

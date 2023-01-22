@@ -8,7 +8,6 @@ string StandardIO::read() {
     string text;
     cin.ignore();
     getline(cin,text);
-    cout << "in standartIO: " << text << endl;
     return text;
 }
 

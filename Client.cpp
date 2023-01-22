@@ -42,10 +42,8 @@ int Client::createClient(char *ipAddress, string portNum) {
         // gets the input to the buffer from the socket
         // if nullptr was returned
         if(getBuffer(buffer,sock) == nullptr) {
-            cout << "wtf why" << endl;
             break;
         } else if (strcmp(buffer, "close") == 0){
-            cout << "wtf why 2" << endl;
             // close socket and return 0 if "close" is received from server
             close(sock);
             return 0;
@@ -54,22 +52,11 @@ int Client::createClient(char *ipAddress, string portNum) {
             string choice;
             cin >> choice;
             if(choice == "2") {
-                cout << "cmon dumbass work" << endl;
                 SettingsCommandClient scc(sock);
                 scc.execute();
             }
-            // print received data
-            //cout << buffer << endl;
         }
-
-//        // create char array to store input from user
-//        char data_addr[SIZE_OF_BUFFER];
-//        // get input from user
-//        cin.getline(data_addr, SIZE_OF_BUFFER);
-//        // get length of data
-//        sendBuffer(data_addr, sock);
     }
-    cout << "but WHYYYYY" << endl;
     // close socket
     close(sock);
     return 0;
