@@ -16,6 +16,7 @@ void UploadCommandClient::execute() {
     ClientStr = dio->read();
     dio = &scio;
     string line;
+    cout << ClientStr << endl;
     // This line initializes a new ifstream object using the path to the CSV file
     ifstream file(ClientStr);
     // This if block is executed if the CSV file was successfully opened
