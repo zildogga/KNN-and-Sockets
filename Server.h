@@ -18,6 +18,7 @@
 #include "Data.h"
 #include "UploadCommandServer.h"
 #include "ExitCommandServer.h"
+#include "ClassifyCommandServer.h"
 using namespace std;
 
 class Server {

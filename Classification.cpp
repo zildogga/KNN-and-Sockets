@@ -160,11 +160,12 @@ string Classification::classifyTestByTrain(vector<string> testVector, vector<vec
     // This line creates a new empty vector of doubles
     vector<double> vTemp;
     // This loop iterates over each element in the current row of the CSV file
+
     for (int j = 0; j < testVector.size(); ++j) {
         // If the current element is not the last element in the row (i.e. not the class name), this line converts the string to a double and adds it to the vector of doubles
         double x = distanceClass.checkValidation(testVector.at(j));
         vTemp.push_back(x);
     }
-    string className = classify(vTemp, information, k, disType);
-    return className;
+    string finalClassName = classify(vTemp, information, k, disType);
+    return finalClassName;
 }

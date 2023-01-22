@@ -6,7 +6,6 @@ void ClassifyCommandServer::execute() {
     dio = &scio;
     if(data->trainCSV.empty() || data->testCSV.empty()) {
         dio->write("please upload data");
-        return;
     } else {
         Classification cl;
         for (int i = 0; i < data->testCSV.size(); i++) {
@@ -14,4 +13,5 @@ void ClassifyCommandServer::execute() {
         }
         dio->write("classifying data complete");
     }
+    return;
 }

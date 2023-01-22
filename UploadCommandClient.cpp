@@ -1,8 +1,5 @@
-//
-// Created by ofir on 1/21/23.
-//
-
 #include "UploadCommandClient.h"
+
 void UploadCommandClient::execute() {
     SocketIO scio(sock);
     StandardIO stio;
@@ -17,7 +14,7 @@ void UploadCommandClient::execute() {
     dio = &scio;
     string line;
     // This line initializes a new ifstream object using the path to the CSV file
-    if(ClientStr[0]!='/') {
+    if (ClientStr[0] != '/') {
         string temp = "/";
         temp.append(ClientStr);
         ClientStr = temp;
@@ -44,9 +41,9 @@ void UploadCommandClient::execute() {
     }
     dio = &stio;
     string ClientStr2 = dio->read();
-    if(ClientStr2[0]!='/') {
+    if (ClientStr2[0] != '/') {
         string temp = "/";
-        temp.append(ClientStr);
+        temp.append(ClientStr2);
         ClientStr2 = temp;
     }
     dio = &scio;
@@ -57,6 +54,10 @@ void UploadCommandClient::execute() {
     if (file2.is_open()) {
         // This infinite loop reads the CSV file line by line
         while (getline(file2, line2)) {
+            size_t pos = line2.find_last_of(" \t\n\r\f\v");
+            if (pos != string::npos) {
+                line2.erase(pos, 1);
+            }
             dio->write(line2);
         }
         // This line closes the CSV file

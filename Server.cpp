@@ -111,7 +111,8 @@ int Server::menu(int client_sock, Data *data) {
             SettingsCommandServer st(data);
             st.execute();
         } else if (!strcmp(check, "3")) {
-
+            ClassifyCommandServer ccs(data);
+            ccs.execute();
         } else if (!strcmp(check, "4")) {
 
         } else if (!strcmp(check, "5")) {
