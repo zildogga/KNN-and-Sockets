@@ -19,6 +19,7 @@
 #include "UploadCommandServer.h"
 #include "ExitCommandServer.h"
 #include "ClassifyCommandServer.h"
+#include "DisplayCommandServer.h"
 using namespace std;
 
 class Server {
