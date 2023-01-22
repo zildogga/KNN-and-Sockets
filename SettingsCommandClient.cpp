@@ -16,7 +16,7 @@ void SettingsCommandClient::execute() {
     dio = &scio;
     dio->write(userString);
     string serverStr2 = dio->read();
-    if(serverStr == "User pressed enter") {
+    if(serverStr2 == "User pressed enter") {
         return;
     }
     StandardIO sdio2;
