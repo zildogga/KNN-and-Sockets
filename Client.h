@@ -14,6 +14,7 @@
 #include "SettingsCommandClient.h"
 #include "UploadCommandClient.h"
 #include "ExitCommandClient.h"
+#include "ClassifyCommandClient.h"
 
 #define SIZE_OF_BUFFER 4096
 

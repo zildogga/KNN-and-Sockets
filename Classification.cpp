@@ -132,8 +132,7 @@ string Classification::classify(
     return chosenClass;
 }
 
-string
-Classification::classifyTestByTrain(vector<string> testVector, vector<vector<string>> trainCSV, int k, string disType) {
+string Classification::classifyTestByTrain(vector<string> testVector, vector<vector<string>> trainCSV, int k, string disType) {
     DistanceClass distanceClass;
     // This line creates a new empty vector of pairs of vectors of doubles and strings
     vector<pair<vector<double>, string>> information;
