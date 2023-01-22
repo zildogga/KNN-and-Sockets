@@ -16,6 +16,7 @@ void UploadCommandServer::execute() {
     }
     if (trainCSVList.empty()) {
         dio->write("invalid input");
+        return;
     }
     vector<vector<string>> trainCSVVector;
     ReadFile rf1;
@@ -32,6 +33,7 @@ void UploadCommandServer::execute() {
     }
     if (testCSVList.empty()) {
         dio->write("invalid input");
+        return;
     }
     vector<vector<string>> testCSVVector;
     ReadFile rf2;

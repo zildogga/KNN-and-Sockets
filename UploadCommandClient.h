@@ -8,6 +8,7 @@
 #include "StandardIO.h"
 #include "DefaultIO.h"
 #include "SocketIO.h"
+#include "Data.h"
 
 using namespace std;
 
@@ -18,6 +19,8 @@ public:
     UploadCommandClient(Data *d){
         data = d;
     };
+private:
+    UploadCommandClient() = default;
 };
 
 
