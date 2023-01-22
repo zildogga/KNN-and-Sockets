@@ -17,6 +17,7 @@
 #include "ClassifyCommandClient.h"
 #include "DisplayCommandClient.h"
 #include "DownloadCommandClient.h"
+#include "thread"
 
 #define SIZE_OF_BUFFER 4096
 
@@ -27,6 +28,8 @@ public:
     int createClient(char *ipAddress, string portNum);
     void sendBuffer(char data_addr[], int sock);
     char *getBuffer(char *buffer, int sock);
+
+    static void downloadThread(int sock);
 };
 
 
