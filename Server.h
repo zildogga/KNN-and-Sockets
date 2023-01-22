@@ -17,6 +17,7 @@
 #include <vector>
 #include "Data.h"
 #include "UploadCommandServer.h"
+#include "ExitCommandServer.h"
 using namespace std;
 
 class Server {

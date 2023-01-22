@@ -117,7 +117,8 @@ int Server::menu(int client_sock, Data *data) {
         } else if (!strcmp(check, "5")) {
 
         } else if (!strcmp(check, "8")) {
-            close(data->socketNum);
+            ExitCommandServer ecs(data->socketNum);
+            ecs.execute();
             return 0;
         } else {
 
