@@ -8,7 +8,7 @@
 #include "iostream"
 #include "string.h"
 #include "vector"
-
+#include "map"
 using namespace std;
 
 class Data {
@@ -18,6 +18,7 @@ public:
     string algo = "AUC";
     vector<vector<string>> trainCSV;
     vector<vector<string>> testCSV;
+    map<int,string> classified;
     Data(int sockNum) {
        socketNum = sockNum;
     };
