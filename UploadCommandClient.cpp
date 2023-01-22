@@ -41,12 +41,12 @@ void UploadCommandClient::execute() {
         return;
     }
     dio = &stio;
-    ClientStr = dio->read();
-    cout << ClientStr << endl;
+    string ClientStr2 = dio->read();
+    cout << ClientStr2 << endl;
     dio = &scio;
     string line2;
     // This line initializes a new ifstream object using the path to the CSV file
-    ifstream file2(ClientStr);
+    ifstream file2(ClientStr2);
     // This if block is executed if the CSV file was successfully opened
     if (file2.is_open()) {
         // This infinite loop reads the CSV file line by line
