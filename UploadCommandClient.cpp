@@ -9,7 +9,7 @@ void UploadCommandClient::execute() {
     string serverStr = "";
     string ClientStr = "";
     dio = &scio;
-    dio->write("2");
+    dio->write("1");
     serverStr = dio->read();
     dio = &stio;
     dio->write(serverStr);
