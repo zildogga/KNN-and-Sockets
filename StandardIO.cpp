@@ -6,9 +6,8 @@
 
 string StandardIO::read() {
     string text;
+    cin.ignore();
     getline(cin,text);
-    cin.clear();
-    cout << text << endl;
     return text;
 }
 

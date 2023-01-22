@@ -18,6 +18,12 @@ void UploadCommandClient::execute() {
     string line;
     cout << ClientStr << endl;
     // This line initializes a new ifstream object using the path to the CSV file
+    if(ClientStr[0]!='/') {
+        string temp;
+        temp[0] = '/';
+        temp.append(ClientStr);
+        ClientStr = temp;
+    }
     ifstream file(ClientStr);
     // This if block is executed if the CSV file was successfully opened
     if (file.is_open()) {
@@ -43,6 +49,12 @@ void UploadCommandClient::execute() {
     dio = &stio;
     string ClientStr2 = dio->read();
     cout << ClientStr2 << endl;
+    if(ClientStr2[0]!='/') {
+        string temp;
+        temp[0] = '/';
+        temp.append(ClientStr);
+        ClientStr2 = temp;
+    }
     dio = &scio;
     string line2;
     // This line initializes a new ifstream object using the path to the CSV file
