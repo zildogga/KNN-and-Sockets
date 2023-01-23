@@ -35,6 +35,7 @@ public:
     static void sendBuffer(char buffer[], int clientSock);
     static char *getBuffer(char* buffer,int sock);
     static char *checkIfClientCloseConnection(char *buffer, int clientSock);
+    static void runDownloadCommand(Data *data);
 };
 
 #endif //ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H

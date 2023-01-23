@@ -1,5 +1,7 @@
 #include "Client.h"
+
 using namespace std;
+
 int Client::createClient(char *ipAddress, string portNum) {
     // declare and initialize port number
     int port;
@@ -37,24 +39,25 @@ int Client::createClient(char *ipAddress, string portNum) {
     }
 
     SocketIO scio(sock);
-    thread getMsg(&Client::ReciveMsg,this,scio);
+    thread getMsg(&Client::ReciveMsg, this, scio);
     getMsg.detach();
     // infinite loop to send and receive data from server
     //thread menuThread(&Client::menu,this,scio, sock);
     //menuThread.detach();
     menu(scio, sock);
+    return 1;
 }
 
 void Client::menu(SocketIO scio, int sock) {
-    while(true) {
+    while (true) {
         // create buffer to store received data
         char buffer[SIZE_OF_BUFFER];
         // gets the input to the buffer from the socket
         // if nullptr was returned
-        strcpy(buffer,scio.read2().c_str());
-        if(buffer == nullptr) {
+        strcpy(buffer, scio.read2().c_str());
+        if (buffer == nullptr) {
             break;
-        } else if (strcmp(buffer, "close") == 0){
+        } else if (strcmp(buffer, "close") == 0) {
             // close socket and return 0 if "close" is received from server
             close(sock);
             return;
@@ -62,31 +65,31 @@ void Client::menu(SocketIO scio, int sock) {
             cout << buffer << endl;
             string choice;
             cin >> choice;
-            if(choice == "1") {
-                UploadCommandClient ucc(sock,scio);
+            if (choice == "1") {
+                UploadCommandClient ucc(sock, scio);
                 ucc.execute();
             }
-            if(choice == "2") {
-                SettingsCommandClient scc(sock,scio);
+            if (choice == "2") {
+                SettingsCommandClient scc(sock, scio);
                 scc.execute();
             }
-            if(choice == "3") {
-                ClassifyCommandClient scc(sock,scio);
+            if (choice == "3") {
+                ClassifyCommandClient scc(sock, scio);
                 scc.execute();
             }
-            if(choice == "4") {
-                DisplayCommandClient dcc(sock,scio);
+            if (choice == "4") {
+                DisplayCommandClient dcc(sock, scio);
                 dcc.execute();
             }
-            if(choice == "5") {
+            if (choice == "5") {
                 string path;
-                BeforeDownloadCommandClient bdcc(sock,&path,scio);
+                BeforeDownloadCommandClient bdcc(sock, &path, scio);
                 bdcc.execute();
-                thread downloadThread(&Client::downloadCommand,this,sock, path, scio);
+                thread downloadThread(&Client::downloadCommand, this, sock, path, scio);
                 downloadThread.detach();
             }
-            if(choice == "8") {
-                ExitCommandClient ecc(sock,scio);
+            if (choice == "8") {
+                ExitCommandClient ecc(sock, scio);
                 ecc.execute();
                 break;
             }
@@ -96,10 +99,12 @@ void Client::menu(SocketIO scio, int sock) {
     close(sock);
     return;
 }
+
 void Client::downloadCommand(int sock, string path, SocketIO scio) {
-    DownloadCommandClient dwcc (sock, path,scio);
+    DownloadCommandClient dwcc(sock, path, scio);
     dwcc.execute();
 }
+
 void Client::sendBuffer(char data_addr[], int sock) {
     // get length of data
     int data_len = strlen(data_addr);
@@ -109,7 +114,8 @@ void Client::sendBuffer(char data_addr[], int sock) {
         // error
     }
 }
-char *Client::getBuffer(char* buffer,int sock) {
+
+char *Client::getBuffer(char *buffer, int sock) {
     // expected length of received data
     int expected_data_len = SIZE_OF_BUFFER;
     // clear memory of buffer
@@ -127,7 +133,7 @@ char *Client::getBuffer(char* buffer,int sock) {
 }
 
 void Client::ReciveMsg(SocketIO scio) {
-    while(true) {
+    while (true) {
         this_thread::sleep_for(chrono::milliseconds(100));
         scio.reciveMsg();
     }

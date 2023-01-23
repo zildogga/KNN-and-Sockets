@@ -115,8 +115,8 @@ int Server::menu(int client_sock, Data *data) {
             DisplayCommandServer dcs(data);
             dcs.execute();
         } else if (!strcmp(check, "5")) {
-            DownloadCommandServer dwcs(data);
-            dwcs.execute();
+            thread t(runDownloadCommand, data);
+            t.detach();
         } else if (!strcmp(check, "8")) {
             ExitCommandServer ecs(data->socketNum);
             ecs.execute();
@@ -126,6 +126,11 @@ int Server::menu(int client_sock, Data *data) {
         }
     }
     cout << "HOW DID IT HAPPENED" << endl;
+}
+
+void Server::runDownloadCommand(Data *data) {
+    DownloadCommandServer dwcs(data);
+    dwcs.execute();
 }
 
 void Server::sendBuffer(char buffer[], int clientSock) {
