@@ -41,7 +41,7 @@ string SocketIO::readFive() {
     return result;
 }
 void SocketIO::reciveMsg() {
-    string msg = read2();
+    string msg = read();
     if (msg.find("fiveAss") != string::npos) {
         fiveMsg.push(msg);
     } else {

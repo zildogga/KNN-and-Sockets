@@ -41,18 +41,22 @@ int Client::createClient(char *ipAddress, string portNum) {
     thread getMsg(&Client::ReciveMsg,this,scio);
     getMsg.detach();
     // infinite loop to send and receive data from server
+    thread menuThread(&Client::menu,this,scio, sock);
+    getMsg.detach();
+}
+void Client::menu(SocketIO scio, int sock) {
     while(true) {
         // create buffer to store received data
         char buffer[SIZE_OF_BUFFER];
         // gets the input to the buffer from the socket
         // if nullptr was returned
-        strcpy(buffer,scio.read().c_str());
+        strcpy(buffer,scio.read2().c_str());
         if(buffer == nullptr) {
             break;
         } else if (strcmp(buffer, "close") == 0){
             // close socket and return 0 if "close" is received from server
             close(sock);
-            return 0;
+            return;
         } else {
             cout << buffer << endl;
             string choice;
@@ -89,7 +93,7 @@ int Client::createClient(char *ipAddress, string portNum) {
     }
     // close socket
     close(sock);
-    return 0;
+    return;
 }
 void Client::sendBuffer(char data_addr[], int sock) {
     // get length of data
