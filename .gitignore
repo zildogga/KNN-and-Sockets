@@ -31,7 +31,6 @@ cmake-build-debug/
 *.exe
 *.out
 *.app
-
 # Directories
 cmake-build-debug/
 cmake/CMakeFiles/

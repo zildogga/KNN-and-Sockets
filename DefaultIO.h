@@ -4,7 +4,6 @@
 
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_DEFAULTIO_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_DEFAULTIO_H
-#include "Command.h"
 #include "stdio.h"
 #include "iostream"
 #include "string.h"
@@ -12,8 +11,8 @@ using namespace std;
 
 class DefaultIO{
 public:
-    virtual string read();
-    virtual void write(string);
+    virtual string read() {return "";};
+    virtual void write(string) {};
 };
 
 

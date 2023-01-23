@@ -57,10 +57,10 @@ RM = /snap/clion/219/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/omer/CLionProjects/Advanced-Programming-1-Project
+CMAKE_SOURCE_DIR = /home/ofir/CLionProjects/Advanced-Programming-1-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/CMakeFiles /home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/CMakeFiles /home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/omer/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ofir/CLionProjects/Advanced-Programming-1-Project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ Advanced_Programming_1_Project: cmake_check_build_system
 Advanced_Programming_1_Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/build
 .PHONY : Advanced_Programming_1_Project/fast
+
+BeforeDownloadCommandClient.o: BeforeDownloadCommandClient.cpp.o
+.PHONY : BeforeDownloadCommandClient.o
+
+# target to build an object file
+BeforeDownloadCommandClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/BeforeDownloadCommandClient.cpp.o
+.PHONY : BeforeDownloadCommandClient.cpp.o
+
+BeforeDownloadCommandClient.i: BeforeDownloadCommandClient.cpp.i
+.PHONY : BeforeDownloadCommandClient.i
+
+# target to preprocess a source file
+BeforeDownloadCommandClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/BeforeDownloadCommandClient.cpp.i
+.PHONY : BeforeDownloadCommandClient.cpp.i
+
+BeforeDownloadCommandClient.s: BeforeDownloadCommandClient.cpp.s
+.PHONY : BeforeDownloadCommandClient.s
+
+# target to generate assembly for a file
+BeforeDownloadCommandClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/BeforeDownloadCommandClient.cpp.s
+.PHONY : BeforeDownloadCommandClient.cpp.s
 
 CLI.o: CLI.cpp.o
 .PHONY : CLI.o
@@ -225,29 +249,53 @@ Classification.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Classification.cpp.s
 .PHONY : Classification.cpp.s
 
-ClassifyCommand.o: ClassifyCommand.cpp.o
-.PHONY : ClassifyCommand.o
+ClassifyCommandClient.o: ClassifyCommandClient.cpp.o
+.PHONY : ClassifyCommandClient.o
 
 # target to build an object file
-ClassifyCommand.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommand.cpp.o
-.PHONY : ClassifyCommand.cpp.o
+ClassifyCommandClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommandClient.cpp.o
+.PHONY : ClassifyCommandClient.cpp.o
 
-ClassifyCommand.i: ClassifyCommand.cpp.i
-.PHONY : ClassifyCommand.i
+ClassifyCommandClient.i: ClassifyCommandClient.cpp.i
+.PHONY : ClassifyCommandClient.i
 
 # target to preprocess a source file
-ClassifyCommand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommand.cpp.i
-.PHONY : ClassifyCommand.cpp.i
+ClassifyCommandClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommandClient.cpp.i
+.PHONY : ClassifyCommandClient.cpp.i
 
-ClassifyCommand.s: ClassifyCommand.cpp.s
-.PHONY : ClassifyCommand.s
+ClassifyCommandClient.s: ClassifyCommandClient.cpp.s
+.PHONY : ClassifyCommandClient.s
 
 # target to generate assembly for a file
-ClassifyCommand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommand.cpp.s
-.PHONY : ClassifyCommand.cpp.s
+ClassifyCommandClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommandClient.cpp.s
+.PHONY : ClassifyCommandClient.cpp.s
+
+ClassifyCommandServer.o: ClassifyCommandServer.cpp.o
+.PHONY : ClassifyCommandServer.o
+
+# target to build an object file
+ClassifyCommandServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommandServer.cpp.o
+.PHONY : ClassifyCommandServer.cpp.o
+
+ClassifyCommandServer.i: ClassifyCommandServer.cpp.i
+.PHONY : ClassifyCommandServer.i
+
+# target to preprocess a source file
+ClassifyCommandServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommandServer.cpp.i
+.PHONY : ClassifyCommandServer.cpp.i
+
+ClassifyCommandServer.s: ClassifyCommandServer.cpp.s
+.PHONY : ClassifyCommandServer.s
+
+# target to generate assembly for a file
+ClassifyCommandServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ClassifyCommandServer.cpp.s
+.PHONY : ClassifyCommandServer.cpp.s
 
 Client.o: Client.cpp.o
 .PHONY : Client.o
@@ -297,6 +345,30 @@ Command.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Command.cpp.s
 .PHONY : Command.cpp.s
 
+Data.o: Data.cpp.o
+.PHONY : Data.o
+
+# target to build an object file
+Data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Data.cpp.o
+.PHONY : Data.cpp.o
+
+Data.i: Data.cpp.i
+.PHONY : Data.i
+
+# target to preprocess a source file
+Data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Data.cpp.i
+.PHONY : Data.cpp.i
+
+Data.s: Data.cpp.s
+.PHONY : Data.s
+
+# target to generate assembly for a file
+Data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Data.cpp.s
+.PHONY : Data.cpp.s
+
 DefaultIO.o: DefaultIO.cpp.o
 .PHONY : DefaultIO.o
 
@@ -321,29 +393,53 @@ DefaultIO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DefaultIO.cpp.s
 .PHONY : DefaultIO.cpp.s
 
-DisplayCommand.o: DisplayCommand.cpp.o
-.PHONY : DisplayCommand.o
+DisplayCommandClient.o: DisplayCommandClient.cpp.o
+.PHONY : DisplayCommandClient.o
 
 # target to build an object file
-DisplayCommand.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommand.cpp.o
-.PHONY : DisplayCommand.cpp.o
+DisplayCommandClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommandClient.cpp.o
+.PHONY : DisplayCommandClient.cpp.o
 
-DisplayCommand.i: DisplayCommand.cpp.i
-.PHONY : DisplayCommand.i
+DisplayCommandClient.i: DisplayCommandClient.cpp.i
+.PHONY : DisplayCommandClient.i
 
 # target to preprocess a source file
-DisplayCommand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommand.cpp.i
-.PHONY : DisplayCommand.cpp.i
+DisplayCommandClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommandClient.cpp.i
+.PHONY : DisplayCommandClient.cpp.i
 
-DisplayCommand.s: DisplayCommand.cpp.s
-.PHONY : DisplayCommand.s
+DisplayCommandClient.s: DisplayCommandClient.cpp.s
+.PHONY : DisplayCommandClient.s
 
 # target to generate assembly for a file
-DisplayCommand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommand.cpp.s
-.PHONY : DisplayCommand.cpp.s
+DisplayCommandClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommandClient.cpp.s
+.PHONY : DisplayCommandClient.cpp.s
+
+DisplayCommandServer.o: DisplayCommandServer.cpp.o
+.PHONY : DisplayCommandServer.o
+
+# target to build an object file
+DisplayCommandServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommandServer.cpp.o
+.PHONY : DisplayCommandServer.cpp.o
+
+DisplayCommandServer.i: DisplayCommandServer.cpp.i
+.PHONY : DisplayCommandServer.i
+
+# target to preprocess a source file
+DisplayCommandServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommandServer.cpp.i
+.PHONY : DisplayCommandServer.cpp.i
+
+DisplayCommandServer.s: DisplayCommandServer.cpp.s
+.PHONY : DisplayCommandServer.s
+
+# target to generate assembly for a file
+DisplayCommandServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DisplayCommandServer.cpp.s
+.PHONY : DisplayCommandServer.cpp.s
 
 DistanceClass.o: DistanceClass.cpp.o
 .PHONY : DistanceClass.o
@@ -369,29 +465,53 @@ DistanceClass.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DistanceClass.cpp.s
 .PHONY : DistanceClass.cpp.s
 
-DownloadCommand.o: DownloadCommand.cpp.o
-.PHONY : DownloadCommand.o
+DownloadCommandClient.o: DownloadCommandClient.cpp.o
+.PHONY : DownloadCommandClient.o
 
 # target to build an object file
-DownloadCommand.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommand.cpp.o
-.PHONY : DownloadCommand.cpp.o
+DownloadCommandClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommandClient.cpp.o
+.PHONY : DownloadCommandClient.cpp.o
 
-DownloadCommand.i: DownloadCommand.cpp.i
-.PHONY : DownloadCommand.i
+DownloadCommandClient.i: DownloadCommandClient.cpp.i
+.PHONY : DownloadCommandClient.i
 
 # target to preprocess a source file
-DownloadCommand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommand.cpp.i
-.PHONY : DownloadCommand.cpp.i
+DownloadCommandClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommandClient.cpp.i
+.PHONY : DownloadCommandClient.cpp.i
 
-DownloadCommand.s: DownloadCommand.cpp.s
-.PHONY : DownloadCommand.s
+DownloadCommandClient.s: DownloadCommandClient.cpp.s
+.PHONY : DownloadCommandClient.s
 
 # target to generate assembly for a file
-DownloadCommand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommand.cpp.s
-.PHONY : DownloadCommand.cpp.s
+DownloadCommandClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommandClient.cpp.s
+.PHONY : DownloadCommandClient.cpp.s
+
+DownloadCommandServer.o: DownloadCommandServer.cpp.o
+.PHONY : DownloadCommandServer.o
+
+# target to build an object file
+DownloadCommandServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommandServer.cpp.o
+.PHONY : DownloadCommandServer.cpp.o
+
+DownloadCommandServer.i: DownloadCommandServer.cpp.i
+.PHONY : DownloadCommandServer.i
+
+# target to preprocess a source file
+DownloadCommandServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommandServer.cpp.i
+.PHONY : DownloadCommandServer.cpp.i
+
+DownloadCommandServer.s: DownloadCommandServer.cpp.s
+.PHONY : DownloadCommandServer.s
+
+# target to generate assembly for a file
+DownloadCommandServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/DownloadCommandServer.cpp.s
+.PHONY : DownloadCommandServer.cpp.s
 
 Euclidean.o: Euclidean.cpp.o
 .PHONY : Euclidean.o
@@ -417,29 +537,53 @@ Euclidean.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Euclidean.cpp.s
 .PHONY : Euclidean.cpp.s
 
-ExitCommand.o: ExitCommand.cpp.o
-.PHONY : ExitCommand.o
+ExitCommandClient.o: ExitCommandClient.cpp.o
+.PHONY : ExitCommandClient.o
 
 # target to build an object file
-ExitCommand.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommand.cpp.o
-.PHONY : ExitCommand.cpp.o
+ExitCommandClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommandClient.cpp.o
+.PHONY : ExitCommandClient.cpp.o
 
-ExitCommand.i: ExitCommand.cpp.i
-.PHONY : ExitCommand.i
+ExitCommandClient.i: ExitCommandClient.cpp.i
+.PHONY : ExitCommandClient.i
 
 # target to preprocess a source file
-ExitCommand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommand.cpp.i
-.PHONY : ExitCommand.cpp.i
+ExitCommandClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommandClient.cpp.i
+.PHONY : ExitCommandClient.cpp.i
 
-ExitCommand.s: ExitCommand.cpp.s
-.PHONY : ExitCommand.s
+ExitCommandClient.s: ExitCommandClient.cpp.s
+.PHONY : ExitCommandClient.s
 
 # target to generate assembly for a file
-ExitCommand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommand.cpp.s
-.PHONY : ExitCommand.cpp.s
+ExitCommandClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommandClient.cpp.s
+.PHONY : ExitCommandClient.cpp.s
+
+ExitCommandServer.o: ExitCommandServer.cpp.o
+.PHONY : ExitCommandServer.o
+
+# target to build an object file
+ExitCommandServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommandServer.cpp.o
+.PHONY : ExitCommandServer.cpp.o
+
+ExitCommandServer.i: ExitCommandServer.cpp.i
+.PHONY : ExitCommandServer.i
+
+# target to preprocess a source file
+ExitCommandServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommandServer.cpp.i
+.PHONY : ExitCommandServer.cpp.i
+
+ExitCommandServer.s: ExitCommandServer.cpp.s
+.PHONY : ExitCommandServer.s
+
+# target to generate assembly for a file
+ExitCommandServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/ExitCommandServer.cpp.s
+.PHONY : ExitCommandServer.cpp.s
 
 Knn.o: Knn.cpp.o
 .PHONY : Knn.o
@@ -465,30 +609,6 @@ Knn.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Knn.cpp.s
 .PHONY : Knn.cpp.s
 
-Main.o: Main.cpp.o
-.PHONY : Main.o
-
-# target to build an object file
-Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Main.cpp.o
-.PHONY : Main.cpp.o
-
-Main.i: Main.cpp.i
-.PHONY : Main.i
-
-# target to preprocess a source file
-Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Main.cpp.i
-.PHONY : Main.cpp.i
-
-Main.s: Main.cpp.s
-.PHONY : Main.s
-
-# target to generate assembly for a file
-Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Main.cpp.s
-.PHONY : Main.cpp.s
-
 MainClient.o: MainClient.cpp.o
 .PHONY : MainClient.o
 
@@ -512,30 +632,6 @@ MainClient.s: MainClient.cpp.s
 MainClient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainClient.cpp.s
 .PHONY : MainClient.cpp.s
-
-MainServer.o: MainServer.cpp.o
-.PHONY : MainServer.o
-
-# target to build an object file
-MainServer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainServer.cpp.o
-.PHONY : MainServer.cpp.o
-
-MainServer.i: MainServer.cpp.i
-.PHONY : MainServer.i
-
-# target to preprocess a source file
-MainServer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainServer.cpp.i
-.PHONY : MainServer.cpp.i
-
-MainServer.s: MainServer.cpp.s
-.PHONY : MainServer.s
-
-# target to generate assembly for a file
-MainServer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/MainServer.cpp.s
-.PHONY : MainServer.cpp.s
 
 Manhattan.o: Manhattan.cpp.o
 .PHONY : Manhattan.o
@@ -633,29 +729,53 @@ Server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/Server.cpp.s
 .PHONY : Server.cpp.s
 
-SettingsCommand.o: SettingsCommand.cpp.o
-.PHONY : SettingsCommand.o
+SettingsCommandClient.o: SettingsCommandClient.cpp.o
+.PHONY : SettingsCommandClient.o
 
 # target to build an object file
-SettingsCommand.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommand.cpp.o
-.PHONY : SettingsCommand.cpp.o
+SettingsCommandClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommandClient.cpp.o
+.PHONY : SettingsCommandClient.cpp.o
 
-SettingsCommand.i: SettingsCommand.cpp.i
-.PHONY : SettingsCommand.i
+SettingsCommandClient.i: SettingsCommandClient.cpp.i
+.PHONY : SettingsCommandClient.i
 
 # target to preprocess a source file
-SettingsCommand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommand.cpp.i
-.PHONY : SettingsCommand.cpp.i
+SettingsCommandClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommandClient.cpp.i
+.PHONY : SettingsCommandClient.cpp.i
 
-SettingsCommand.s: SettingsCommand.cpp.s
-.PHONY : SettingsCommand.s
+SettingsCommandClient.s: SettingsCommandClient.cpp.s
+.PHONY : SettingsCommandClient.s
 
 # target to generate assembly for a file
-SettingsCommand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommand.cpp.s
-.PHONY : SettingsCommand.cpp.s
+SettingsCommandClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommandClient.cpp.s
+.PHONY : SettingsCommandClient.cpp.s
+
+SettingsCommandServer.o: SettingsCommandServer.cpp.o
+.PHONY : SettingsCommandServer.o
+
+# target to build an object file
+SettingsCommandServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommandServer.cpp.o
+.PHONY : SettingsCommandServer.cpp.o
+
+SettingsCommandServer.i: SettingsCommandServer.cpp.i
+.PHONY : SettingsCommandServer.i
+
+# target to preprocess a source file
+SettingsCommandServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommandServer.cpp.i
+.PHONY : SettingsCommandServer.cpp.i
+
+SettingsCommandServer.s: SettingsCommandServer.cpp.s
+.PHONY : SettingsCommandServer.s
+
+# target to generate assembly for a file
+SettingsCommandServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/SettingsCommandServer.cpp.s
+.PHONY : SettingsCommandServer.cpp.s
 
 SocketIO.o: SocketIO.cpp.o
 .PHONY : SocketIO.o
@@ -705,29 +825,53 @@ StandardIO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/StandardIO.cpp.s
 .PHONY : StandardIO.cpp.s
 
-UploadCommand.o: UploadCommand.cpp.o
-.PHONY : UploadCommand.o
+UploadCommandClient.o: UploadCommandClient.cpp.o
+.PHONY : UploadCommandClient.o
 
 # target to build an object file
-UploadCommand.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommand.cpp.o
-.PHONY : UploadCommand.cpp.o
+UploadCommandClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommandClient.cpp.o
+.PHONY : UploadCommandClient.cpp.o
 
-UploadCommand.i: UploadCommand.cpp.i
-.PHONY : UploadCommand.i
+UploadCommandClient.i: UploadCommandClient.cpp.i
+.PHONY : UploadCommandClient.i
 
 # target to preprocess a source file
-UploadCommand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommand.cpp.i
-.PHONY : UploadCommand.cpp.i
+UploadCommandClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommandClient.cpp.i
+.PHONY : UploadCommandClient.cpp.i
 
-UploadCommand.s: UploadCommand.cpp.s
-.PHONY : UploadCommand.s
+UploadCommandClient.s: UploadCommandClient.cpp.s
+.PHONY : UploadCommandClient.s
 
 # target to generate assembly for a file
-UploadCommand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommand.cpp.s
-.PHONY : UploadCommand.cpp.s
+UploadCommandClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommandClient.cpp.s
+.PHONY : UploadCommandClient.cpp.s
+
+UploadCommandServer.o: UploadCommandServer.cpp.o
+.PHONY : UploadCommandServer.o
+
+# target to build an object file
+UploadCommandServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommandServer.cpp.o
+.PHONY : UploadCommandServer.cpp.o
+
+UploadCommandServer.i: UploadCommandServer.cpp.i
+.PHONY : UploadCommandServer.i
+
+# target to preprocess a source file
+UploadCommandServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommandServer.cpp.i
+.PHONY : UploadCommandServer.cpp.i
+
+UploadCommandServer.s: UploadCommandServer.cpp.s
+.PHONY : UploadCommandServer.s
+
+# target to generate assembly for a file
+UploadCommandServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Advanced_Programming_1_Project.dir/build.make CMakeFiles/Advanced_Programming_1_Project.dir/UploadCommandServer.cpp.s
+.PHONY : UploadCommandServer.cpp.s
 
 # Help Target
 help:
@@ -738,6 +882,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Advanced_Programming_1_Project"
+	@echo "... BeforeDownloadCommandClient.o"
+	@echo "... BeforeDownloadCommandClient.i"
+	@echo "... BeforeDownloadCommandClient.s"
 	@echo "... CLI.o"
 	@echo "... CLI.i"
 	@echo "... CLI.s"
@@ -750,45 +897,54 @@ help:
 	@echo "... Classification.o"
 	@echo "... Classification.i"
 	@echo "... Classification.s"
-	@echo "... ClassifyCommand.o"
-	@echo "... ClassifyCommand.i"
-	@echo "... ClassifyCommand.s"
+	@echo "... ClassifyCommandClient.o"
+	@echo "... ClassifyCommandClient.i"
+	@echo "... ClassifyCommandClient.s"
+	@echo "... ClassifyCommandServer.o"
+	@echo "... ClassifyCommandServer.i"
+	@echo "... ClassifyCommandServer.s"
 	@echo "... Client.o"
 	@echo "... Client.i"
 	@echo "... Client.s"
 	@echo "... Command.o"
 	@echo "... Command.i"
 	@echo "... Command.s"
+	@echo "... Data.o"
+	@echo "... Data.i"
+	@echo "... Data.s"
 	@echo "... DefaultIO.o"
 	@echo "... DefaultIO.i"
 	@echo "... DefaultIO.s"
-	@echo "... DisplayCommand.o"
-	@echo "... DisplayCommand.i"
-	@echo "... DisplayCommand.s"
+	@echo "... DisplayCommandClient.o"
+	@echo "... DisplayCommandClient.i"
+	@echo "... DisplayCommandClient.s"
+	@echo "... DisplayCommandServer.o"
+	@echo "... DisplayCommandServer.i"
+	@echo "... DisplayCommandServer.s"
 	@echo "... DistanceClass.o"
 	@echo "... DistanceClass.i"
 	@echo "... DistanceClass.s"
-	@echo "... DownloadCommand.o"
-	@echo "... DownloadCommand.i"
-	@echo "... DownloadCommand.s"
+	@echo "... DownloadCommandClient.o"
+	@echo "... DownloadCommandClient.i"
+	@echo "... DownloadCommandClient.s"
+	@echo "... DownloadCommandServer.o"
+	@echo "... DownloadCommandServer.i"
+	@echo "... DownloadCommandServer.s"
 	@echo "... Euclidean.o"
 	@echo "... Euclidean.i"
 	@echo "... Euclidean.s"
-	@echo "... ExitCommand.o"
-	@echo "... ExitCommand.i"
-	@echo "... ExitCommand.s"
+	@echo "... ExitCommandClient.o"
+	@echo "... ExitCommandClient.i"
+	@echo "... ExitCommandClient.s"
+	@echo "... ExitCommandServer.o"
+	@echo "... ExitCommandServer.i"
+	@echo "... ExitCommandServer.s"
 	@echo "... Knn.o"
 	@echo "... Knn.i"
 	@echo "... Knn.s"
-	@echo "... Main.o"
-	@echo "... Main.i"
-	@echo "... Main.s"
 	@echo "... MainClient.o"
 	@echo "... MainClient.i"
 	@echo "... MainClient.s"
-	@echo "... MainServer.o"
-	@echo "... MainServer.i"
-	@echo "... MainServer.s"
 	@echo "... Manhattan.o"
 	@echo "... Manhattan.i"
 	@echo "... Manhattan.s"
@@ -801,18 +957,24 @@ help:
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
-	@echo "... SettingsCommand.o"
-	@echo "... SettingsCommand.i"
-	@echo "... SettingsCommand.s"
+	@echo "... SettingsCommandClient.o"
+	@echo "... SettingsCommandClient.i"
+	@echo "... SettingsCommandClient.s"
+	@echo "... SettingsCommandServer.o"
+	@echo "... SettingsCommandServer.i"
+	@echo "... SettingsCommandServer.s"
 	@echo "... SocketIO.o"
 	@echo "... SocketIO.i"
 	@echo "... SocketIO.s"
 	@echo "... StandardIO.o"
 	@echo "... StandardIO.i"
 	@echo "... StandardIO.s"
-	@echo "... UploadCommand.o"
-	@echo "... UploadCommand.i"
-	@echo "... UploadCommand.s"
+	@echo "... UploadCommandClient.o"
+	@echo "... UploadCommandClient.i"
+	@echo "... UploadCommandClient.s"
+	@echo "... UploadCommandServer.o"
+	@echo "... UploadCommandServer.i"
+	@echo "... UploadCommandServer.s"
 .PHONY : help
 
 

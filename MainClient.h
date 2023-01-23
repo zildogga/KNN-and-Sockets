@@ -16,6 +16,7 @@
 #include "Classification.h"
 #include "Server.h"
 #include "Client.h"
+#include "UploadCommandServer.h"
 
 
 using namespace std;

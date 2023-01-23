@@ -10,14 +10,33 @@
 #include <vector>
 #include "DistanceClass.h"
 #include <sstream>
+#include "Command.h"
+#include "SettingsCommandClient.h"
+#include "UploadCommandClient.h"
+#include "ExitCommandClient.h"
+#include "ClassifyCommandClient.h"
+#include "DisplayCommandClient.h"
+#include "DownloadCommandClient.h"
+#include "BeforeDownloadCommandClient.h"
+#include "thread"
+#include "queue"
+#include "mutex"
+
+#define SIZE_OF_BUFFER 4096
 
 
 class Client {
 public:
     // createClient function creates a socket and connects to a server
+
     int createClient(char *ipAddress, string portNum);
-    // vectorToCharArray function converts a vector of doubles to a char array
-    //int vectorToCharArray(const std::vector<double>& vec, char* charArray);
+
+    void downloadCommand(int sock, string path, SocketIO scio);
+
+    void sendBuffer(char data_addr[], int sock);
+    char *getBuffer(char *buffer, int sock);
+    void ReciveMsg(SocketIO scio);
+    void menu(SocketIO scio, int sock);
 };
 
 
