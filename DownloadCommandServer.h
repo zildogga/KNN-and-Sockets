@@ -10,7 +10,8 @@ public:
     Data *data;
     void execute() override;
     DownloadCommandServer(Data *d){
-        data = d;
+        data = new Data(d->socketNum, d->k, d->algo, d->trainCSV, d->testCSV, d->classified);
+        //data = d;
     };
 private:
     DownloadCommandServer() = default;

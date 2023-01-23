@@ -21,30 +21,29 @@ void CLI::start() {
             if (choice == "1") {
                 UploadCommandClient ucc(sock, scio);
                 ucc.execute();
-            }
-            if (choice == "2") {
+            } else if (choice == "2") {
                 SettingsCommandClient scc(sock, scio);
                 scc.execute();
-            }
-            if (choice == "3") {
+            } else if (choice == "3") {
                 ClassifyCommandClient scc(sock, scio);
                 scc.execute();
-            }
-            if (choice == "4") {
+            } else if (choice == "4") {
                 DisplayCommandClient dcc(sock, scio);
                 dcc.execute();
-            }
-            if (choice == "5") {
+            } else if (choice == "5") {
                 string path;
                 BeforeDownloadCommandClient bdcc(sock, &path, scio);
                 bdcc.execute();
                 thread downloadThread(&CLI::downloadCommand, this, sock, path, scio);
                 downloadThread.detach();
-            }
-            if (choice == "8") {
+            } else if (choice == "8") {
                 ExitCommandClient ecc(sock, scio);
                 ecc.execute();
                 break;
+            } else{
+                scio.write("wrong option");
+                cout << "wrong option" << endl;
+                scio.read();
             }
         }
     }

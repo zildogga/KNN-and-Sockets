@@ -9,15 +9,14 @@ int main(
         int argc, char* argv[]
 ) {
     // check if their more arguments than needed
-    if (argc <= 2) {
+    if (argc <= 1) {
         // if so print Error message
-        cerr << "Error" << endl;
+        cerr << "To much parameters inserted to make line" << endl;
         return -1;
     }
     Server server;
-    // args[1] = fileName
     // args[2] = serverPort
-    server.startServer(argv[2], argv[1]);
+    server.startServer(argv[1]);
 }
 
 

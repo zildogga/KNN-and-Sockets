@@ -44,7 +44,6 @@ void SettingsCommandServer::execute() {
     } else {
             dio->write("User pressed enter");
     }
-    cout << "k = " << data->k << " algo = " << data->algo << endl;
     return;
 }
 

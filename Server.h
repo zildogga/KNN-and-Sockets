@@ -25,16 +25,9 @@ using namespace std;
 
 class Server {
 public:
-    // function to start server
-    static int startServer(string serverPort, string fileName);
-    // function to accept client connection
+    static int startServer(string serverPort);
     static int menu(int client_sock, Data *data);
-    static int getSockPerClient();
-    // function to classify data sent by client
-    static string serverClassify(int clientSock);
-    static void sendBuffer(char buffer[], int clientSock);
-    static char *getBuffer(char* buffer,int sock);
-    static char *checkIfClientCloseConnection(char *buffer, int clientSock);
+    static int getSockPerClient(int sockNum);
     static void runDownloadCommand(Data *data);
 };
 
