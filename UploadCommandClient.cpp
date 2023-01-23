@@ -1,7 +1,6 @@
 #include "UploadCommandClient.h"
 
 void UploadCommandClient::execute() {
-    SocketIO scio(sock);
     StandardIO stio;
     string serverStr = "";
     string ClientStr = "";

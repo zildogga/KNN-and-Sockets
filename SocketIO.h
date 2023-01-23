@@ -14,7 +14,7 @@
 #include <string.h>
 #include "Classification.h"
 #include "Data.h"
-#include "Client.h"
+#include "queue"
 
 #define SIZE_OF_BUFFER 4096
 
@@ -23,11 +23,15 @@ using namespace std;
 class SocketIO: public DefaultIO{
 public:
     int sock = 0;
+    queue<string> allMsg;
+    queue<string> fiveMsg;
+
     string read() override;
     string read2();
+    string readFive();
     void write(string) override;
+    void reciveMsg();
     SocketIO(int socket);
-private:
     SocketIO()= default;
 };
 

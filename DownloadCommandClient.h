@@ -11,16 +11,17 @@
 #include "StandardIO.h"
 #include "DefaultIO.h"
 #include "ReadFile.h"
-#include "Client.h"
 
 class DownloadCommandClient: public Command {
 public:
     int sock;
     string path;
+    SocketIO scio;
     void execute() override;
-    DownloadCommandClient(int sockNum, string pathConstructor){
+    DownloadCommandClient(int sockNum, string pathConstructor, SocketIO sc){
         sock = sockNum;
         path = pathConstructor;
+        scio = sc;
     };
 private:
     DownloadCommandClient() = default;

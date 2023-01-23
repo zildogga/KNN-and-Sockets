@@ -4,7 +4,6 @@
 
 #include "DisplayCommandClient.h"
 void DisplayCommandClient::execute() {
-    SocketIO scio(sock);
     StandardIO sdio;
     string serverStr;
     string clientStr;

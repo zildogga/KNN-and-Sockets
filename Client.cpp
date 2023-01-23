@@ -35,7 +35,10 @@ int Client::createClient(char *ipAddress, string portNum) {
         perror("error connecting to server");
         return 0;
     }
-    thread getMsg(&Client::ReciveMsg,this,sock);
+
+    SocketIO scio(sock);
+
+    thread getMsg(&Client::ReciveMsg,this,scio);
     getMsg.detach();
     // infinite loop to send and receive data from server
     while(true) {
@@ -43,11 +46,7 @@ int Client::createClient(char *ipAddress, string portNum) {
         char buffer[SIZE_OF_BUFFER];
         // gets the input to the buffer from the socket
         // if nullptr was returned
-        while(allMsg.empty()) {
-
-        }
-        strcpy(buffer, allMsg.front().c_str());
-        allMsg.pop();
+        strcpy(buffer,scio.read().c_str());
         if(buffer == nullptr) {
             break;
         } else if (strcmp(buffer, "close") == 0){
@@ -59,30 +58,30 @@ int Client::createClient(char *ipAddress, string portNum) {
             string choice;
             cin >> choice;
             if(choice == "1") {
-                UploadCommandClient ucc(sock);
+                UploadCommandClient ucc(sock,scio);
                 ucc.execute();
             }
             if(choice == "2") {
-                SettingsCommandClient scc(sock);
+                SettingsCommandClient scc(sock,scio);
                 scc.execute();
             }
             if(choice == "3") {
-                ClassifyCommandClient scc(sock);
+                ClassifyCommandClient scc(sock,scio);
                 scc.execute();
             }
             if(choice == "4") {
-                DisplayCommandClient dcc(sock);
+                DisplayCommandClient dcc(sock,scio);
                 dcc.execute();
             }
             if(choice == "5") {
                 string path;
-                BeforeDownloadCommandClient bdcc(sock,&path);
+                BeforeDownloadCommandClient bdcc(sock,&path,scio);
                 bdcc.execute();
-                thread t(downloadThread, sock, path);
-                t.detach();
+                DownloadCommandClient dwcc (sock, path,scio);
+                dwcc.execute();
             }
             if(choice == "8") {
-                ExitCommandClient ecc(sock);
+                ExitCommandClient ecc(sock,scio);
                 ecc.execute();
                 break;
             }
@@ -91,10 +90,6 @@ int Client::createClient(char *ipAddress, string portNum) {
     // close socket
     close(sock);
     return 0;
-}
-void Client::downloadThread(int sock,string path) {
-    DownloadCommandClient dwcc(sock,path);
-    dwcc.execute();
 }
 void Client::sendBuffer(char data_addr[], int sock) {
     // get length of data
@@ -122,15 +117,7 @@ char *Client::getBuffer(char* buffer,int sock) {
     return buffer;
 }
 
-void Client::ReciveMsg(int sock) {
-    SocketIO scio(sock);
-    while(true) {
-        string msg = scio.read2();
-        if (msg.find("fiveAss") != string::npos) {
-            fiveMsg.push(msg);
-        } else {
-            allMsg.push(msg);
-        }
-    }
+void Client::ReciveMsg(SocketIO scio) {
+    scio.reciveMsg();
 }
 

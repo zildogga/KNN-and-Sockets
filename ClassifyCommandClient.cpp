@@ -4,7 +4,6 @@
 
 #include "ClassifyCommandClient.h"
 void ClassifyCommandClient::execute() {
-    SocketIO scio(sock);
     StandardIO sdio;
     string serverStr;
     dio = &scio;

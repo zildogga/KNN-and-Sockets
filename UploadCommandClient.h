@@ -15,9 +15,11 @@ using namespace std;
 class UploadCommandClient: public Command {
 public:
     int sock;
+    SocketIO scio;
     void execute() override;
-    UploadCommandClient(int sockNum){
+    UploadCommandClient(int sockNum, SocketIO sc) {
         sock = sockNum;
+        scio = sc;
     };
 private:
     UploadCommandClient() = default;

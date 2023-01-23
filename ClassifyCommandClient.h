@@ -11,9 +11,11 @@
 class ClassifyCommandClient: public Command{
 public:
     int sock;
+    SocketIO scio;
     void execute() override;
-    ClassifyCommandClient(int sockNum) {
+    ClassifyCommandClient(int sockNum, SocketIO sc) {
         sock = sockNum;
+        scio = sc;
     };
 private:
     ClassifyCommandClient() = default;
