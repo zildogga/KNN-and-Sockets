@@ -11,9 +11,8 @@ SocketIO::SocketIO(int socket) {
 }
 
 string SocketIO::tryToRead() {
-    //unique_lock<mutex> lock(mtx, try_to_lock);
     while (!mtx.try_lock()) {
-        this_thread::sleep_for(chrono::milliseconds(100));
+        this_thread::sleep_for(chrono::milliseconds(10));
     }
     if (!allMsg->empty()) {
         string result = allMsg->front();
@@ -23,7 +22,6 @@ string SocketIO::tryToRead() {
         return result;
     }
     mtx.unlock();
-    //lock.unlock();
     return "notReady";
 }
 
@@ -56,19 +54,16 @@ string SocketIO::read() {
     return answer;
 }
 string SocketIO::tryToReadFive() {
-    //unique_lock<mutex> lock(mtx, try_to_lock);
     while (!mtx.try_lock()) {
         this_thread::sleep_for(chrono::milliseconds(100));
     }
     if (!fiveMsg->empty()) {
         string result = fiveMsg->front();
         fiveMsg->pop();
-        //lock.unlock();
         mtx.unlock();
         return result;
     }
     mtx.unlock();
-    //lock.unlock();
     return "notReady";
 };
 string SocketIO::readFive() {
@@ -81,11 +76,10 @@ string SocketIO::readFive() {
 }
 
 void SocketIO::reciveMsg() {
-    string msg = read();
-    //unique_lock<mutex> lock(mtx, try_to_lock);
     while (!mtx.try_lock()) {
         this_thread::sleep_for(chrono::milliseconds(100));
     }
+    string msg = read();
     size_t wordPos;
     if ((wordPos = msg.find("fiveAss")) != string::npos) {
         msg.erase(wordPos,7);
@@ -97,6 +91,7 @@ void SocketIO::reciveMsg() {
 }
 
 void SocketIO::write(string text) {
+    this_thread::sleep_for(chrono::milliseconds(100));
     char buffer[SIZE_OF_BUFFER];
     strcpy(buffer, text.c_str());
     int sent_bytes = send(sock, buffer, SIZE_OF_BUFFER, 0);

@@ -6,8 +6,8 @@
 void BeforeDownloadCommandClient::execute() {
     StandardIO sdio;
     string serverStr;
+    dio = &sdio;
+    *path = dio->read();
     dio = &scio;
     dio->write("5");
-    dio = &sdio;
-    *path = scio.read2();
 }

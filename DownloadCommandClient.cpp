@@ -3,7 +3,7 @@ void DownloadCommandClient::execute() {
     string serverStr;
     dio = &scio;
     vector<string> vs;
-    while ((serverStr = scio.readFive())!= "Done.") {
+    while ((serverStr = scio.readFive()) != "Done.") {
         vs.push_back(serverStr);
     }
     ReadFile rf;

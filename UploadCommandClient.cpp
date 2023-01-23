@@ -23,6 +23,10 @@ void UploadCommandClient::execute() {
     if (file.is_open()) {
         // This infinite loop reads the CSV file line by line
         while (getline(file, line)) {
+            size_t pos = line.find_last_of(" \t\n\r\f\v");
+            if (pos != string::npos) {
+                line.erase(pos, 1);
+            }
             dio->write(line);
         }
         // This line closes the CSV file

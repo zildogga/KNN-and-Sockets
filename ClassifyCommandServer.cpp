@@ -2,7 +2,6 @@
 #include "ClassifyCommandServer.h"
 void ClassifyCommandServer::execute() {
     SocketIO scio(data->socketNum);
-    StandardIO stio;
     dio = &scio;
     if(data->trainCSV.empty() || data->testCSV.empty()) {
         dio->write("please upload data");
