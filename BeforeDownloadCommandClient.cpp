@@ -9,5 +9,5 @@ void BeforeDownloadCommandClient::execute() {
     dio = &scio;
     dio->write("5");
     dio = &sdio;
-    *path = dio->read();
+    *path = scio.read2();
 }

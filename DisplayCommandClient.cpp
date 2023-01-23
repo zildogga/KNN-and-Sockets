@@ -9,7 +9,7 @@ void DisplayCommandClient::execute() {
     string clientStr;
     dio = &scio;
     dio->write("4");
-    serverStr = dio->read();
+    serverStr = scio.read2();
     if(serverStr == "please upload data" || serverStr == "please classify the data") {
         dio = &sdio;
         dio->write(serverStr);
@@ -19,7 +19,7 @@ void DisplayCommandClient::execute() {
         dio = &sdio;
         dio->write(serverStr);
         dio = &scio;
-        serverStr = dio->read();
+        serverStr = scio.read2();
     }
     dio = &sdio;
     dio->write("Done.");

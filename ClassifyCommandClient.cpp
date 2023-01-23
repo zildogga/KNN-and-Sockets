@@ -8,7 +8,7 @@ void ClassifyCommandClient::execute() {
     string serverStr;
     dio = &scio;
     dio->write("3");
-    serverStr = dio->read();
+    serverStr = scio.read2();
     dio = &sdio;
     dio->write(serverStr);
 }

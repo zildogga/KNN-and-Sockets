@@ -7,14 +7,14 @@
 void SettingsCommandClient::execute() {
     dio = &scio;
     dio->write("2");
-    string serverStr = dio->read();
+    string serverStr = scio.read2();
     StandardIO sdio;
     dio = &sdio;
     dio->write(serverStr);
     string userString = dio->read();
     dio = &scio;
     dio->write(userString);
-    string serverStr2 = dio->read();
+    string serverStr2 = scio.read2();
     if(serverStr2 == "User pressed enter") {
         return;
     }
