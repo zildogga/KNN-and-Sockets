@@ -44,7 +44,9 @@ int Client::createClient(char *ipAddress, string portNum) {
     // infinite loop to send and receive data from server
     //thread menuThread(&Client::menu,this,scio, sock);
     //menuThread.detach();
-    menu(scio, sock);
+    CLI cli(scio, sock);
+    cli.start();
+    //menu(scio, sock);
     return 1;
 }
 
