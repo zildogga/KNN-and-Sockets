@@ -21,6 +21,7 @@
 #include "thread"
 #include "queue"
 #include "mutex"
+#include "CLI.h"
 
 #define SIZE_OF_BUFFER 4096
 
