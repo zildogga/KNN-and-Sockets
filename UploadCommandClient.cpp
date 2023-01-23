@@ -6,7 +6,7 @@ void UploadCommandClient::execute() {
     string ClientStr = "";
     dio = &scio;
     dio->write("1");
-    serverStr = dio->read();
+    serverStr = scio.read2();
     dio = &stio;
     dio->write(serverStr);
     ClientStr = dio->read();
@@ -28,12 +28,12 @@ void UploadCommandClient::execute() {
         // This line closes the CSV file
         file.close();
         dio->write("endOfFile");
-        serverStr = dio->read();
+        serverStr = scio.read2();
         dio = &stio;
         dio->write(serverStr);
     } else {
         dio->write("endOfFile");
-        serverStr = dio->read();
+        serverStr = scio.read2();
         dio = &stio;
         dio->write(serverStr);
         return;
@@ -62,12 +62,12 @@ void UploadCommandClient::execute() {
         // This line closes the CSV file
         file2.close();
         dio->write("endOfFile");
-        serverStr = dio->read();
+        serverStr = scio.read2();
         dio = &stio;
         dio->write(serverStr);
     } else {
         dio->write("endOfFile");
-        serverStr = dio->read();
+        serverStr = scio.read2();
         dio = &stio;
         dio->write(serverStr);
         return;
