@@ -37,32 +37,24 @@ int Client::createClient(char *ipAddress, string portNum) {
     }
 
     SocketIO scio(sock);
-    cout << "1" << endl;
     thread getMsg(&Client::ReciveMsg,this,scio);
     getMsg.detach();
-    cout << "2" << endl;
     // infinite loop to send and receive data from server
-    thread menuThread(&Client::menu,this,scio, sock);
-    getMsg.detach();
-    cout << "3" << endl;
+    //thread menuThread(&Client::menu,this,scio, sock);
+    //menuThread.detach();
+    menu(scio, sock);
 }
 
 void Client::menu(SocketIO scio, int sock) {
-    cout << "1" << endl;
     while(true) {
-        cout << "2" << endl;
         // create buffer to store received data
         char buffer[SIZE_OF_BUFFER];
         // gets the input to the buffer from the socket
         // if nullptr was returned
-        cout << "3" << endl;
         strcpy(buffer,scio.read2().c_str());
-        cout << "4" << endl;
         if(buffer == nullptr) {
-            cout << "5" << endl;
             break;
         } else if (strcmp(buffer, "close") == 0){
-            cout << "6" << endl;
             // close socket and return 0 if "close" is received from server
             close(sock);
             return;
@@ -131,13 +123,9 @@ char *Client::getBuffer(char* buffer,int sock) {
 }
 
 void Client::ReciveMsg(SocketIO scio) {
-    cout << "starting ReciveMsg" << endl;
     while(true) {
-        cout << "start while ReciveMsg" << endl;
         this_thread::sleep_for(chrono::milliseconds(100));
-        cout << "middle while ReciveMsg" << endl;
         scio.reciveMsg();
-        cout << "end ReciveMsg" << endl;
     }
 }
 
