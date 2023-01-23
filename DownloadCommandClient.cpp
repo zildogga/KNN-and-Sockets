@@ -4,6 +4,7 @@ void DownloadCommandClient::execute() {
     dio = &scio;
     vector<string> vs;
     cout << "before while" << endl;
+    scio.write("ok");
     while ((serverStr = scio.readFive()) != "Done.") {
         cout << "before ok" << endl;
         scio.write("ok");
