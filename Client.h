@@ -20,6 +20,7 @@
 #include "BeforeDownloadCommandClient.h"
 #include "thread"
 #include "queue"
+#include "mutex"
 
 #define SIZE_OF_BUFFER 4096
 
