@@ -10,7 +10,7 @@ void DownloadCommandClient::execute() {
         scio.write("ok");
         cout << "sent ok in download" << endl;
         vs.push_back(serverStr);
-        cout <<"before display readFive the buffer is empty : " << scio.fiveMsg->empty();
+        cout <<"before display readFive the buffer is empty : " << scio.fiveMsg->empty() << endl;
     }
     cout << "after while" << endl;
     ReadFile rf;
