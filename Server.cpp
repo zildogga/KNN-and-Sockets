@@ -92,13 +92,22 @@ int Server::getSockPerClient() {
 int Server::menu(int client_sock, Data *data) {
     // infinite loop to classify data sent by client
     while (true) {
-        char *menu = "Welcome to the KNN classifier Server. Please choose an option:\n"
-                     "1. upload an unclassified csv data file\n"
-                     "2. algorithm settings\n"
-                     "3. classify data\n"
-                     "4. display results\n"
-                     "5. download results\n"
-                     "8. exit";
+        char menu[size];
+        string temp = "Welcome to the KNN classifier Server. Please choose an option:\n"
+                      "1. upload an unclassified csv data file\n"
+                      "2. algorithm settings\n"
+                      "3. classify data\n"
+                      "4. display results\n"
+                      "5. download results\n"
+                      "8. exit";
+        strcpy(menu, temp.c_str());
+//        char *menu =  "Welcome to the KNN classifier Server. Please choose an option:\n"
+//                      "1. upload an unclassified csv data file\n"
+//                      "2. algorithm settings\n"
+//                      "3. classify data\n"
+//                      "4. display results\n"
+//                      "5. download results\n"
+//                      "8. exit";
         sendBuffer(menu, client_sock);
         char buffer[size];
         char *check = getBuffer(buffer, client_sock);

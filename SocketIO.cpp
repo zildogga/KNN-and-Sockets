@@ -12,7 +12,7 @@ SocketIO::SocketIO(int socket) {
 
 string SocketIO::tryToRead() {
     while (!mtx.try_lock()) {
-        this_thread::sleep_for(chrono::milliseconds(10));
+        this_thread::sleep_for(chrono::milliseconds(100));
     }
     if (!allMsg->empty()) {
         string result = allMsg->front();
