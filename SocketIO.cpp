@@ -3,6 +3,7 @@
 //
 
 #include "SocketIO.h"
+mutex mtx;
 SocketIO::SocketIO(int socket) {
     allMsg = new queue<string>();
     fiveMsg = new queue<string>();

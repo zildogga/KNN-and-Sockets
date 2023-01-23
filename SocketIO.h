@@ -23,7 +23,6 @@ using namespace std;
 
 class SocketIO: public DefaultIO{
 public:
-    const mutex mtx;
     int sock = 0;
     queue<string> *allMsg;
     queue<string> *fiveMsg;
