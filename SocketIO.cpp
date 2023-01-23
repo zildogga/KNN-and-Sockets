@@ -13,6 +13,7 @@ SocketIO::SocketIO(int socket) {
 string SocketIO::tryToRead() {
     //unique_lock<mutex> lock(mtx, try_to_lock);
     while (!mtx.try_lock()) {
+        cout << "chould'nt lock in trytoread" << endl;
         this_thread::sleep_for(chrono::milliseconds(100));
     }
     cout << "start tryToRead" << endl;
@@ -39,7 +40,9 @@ string SocketIO::read2() {
     cout << "trying read 2" << endl;
     string result;
     while ((result = tryToRead()) == "notReady") {
+        cout << "read2 result : " << result << endl;
         this_thread::sleep_for(chrono::milliseconds(100));
+        cout << "after sleep in read 2" << endl;
         continue;
     }
     cout << "ending read 2" << endl;
@@ -82,6 +85,7 @@ void SocketIO::reciveMsg() {
     string msg = read();
     //unique_lock<mutex> lock(mtx, try_to_lock);
     while (!mtx.try_lock()) {
+        cout << "chould'nt lock in recivemsg" << endl;
         this_thread::sleep_for(chrono::milliseconds(100));
     }
     cout << "start reciveMSG" << endl;
