@@ -33,6 +33,7 @@ public:
     void sendBuffer(char data_addr[], int sock);
     char *getBuffer(char *buffer, int sock);
     void ReciveMsg(SocketIO scio);
+    void menu(SocketIO scio, int sock);
 };
 
 
