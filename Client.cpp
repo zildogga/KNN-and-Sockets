@@ -35,13 +35,20 @@ int Client::createClient(char *ipAddress, string portNum) {
         perror("error connecting to server");
         return 0;
     }
+    thread getMsg(ReciveMsg,sock);
+    getMsg.detach();
     // infinite loop to send and receive data from server
     while(true) {
         // create buffer to store received data
         char buffer[SIZE_OF_BUFFER];
         // gets the input to the buffer from the socket
         // if nullptr was returned
-        if(getBuffer(buffer,sock) == nullptr) {
+        while(allMsg.empty()) {
+
+        }
+        strcpy(buffer, allMsg.front().c_str());
+        allMsg.pop();
+        if(buffer == nullptr) {
             break;
         } else if (strcmp(buffer, "close") == 0){
             // close socket and return 0 if "close" is received from server
@@ -113,5 +120,17 @@ char *Client::getBuffer(char* buffer,int sock) {
         return nullptr;
     }
     return buffer;
+}
+
+void Client::ReciveMsg(int sock) {
+    SocketIO scio(sock);
+    while(true) {
+        string msg = scio.read2();
+        if (msg.find("fiveAss") != string::npos) {
+            fiveMsg.push(msg);
+        } else {
+            allMsg.push(msg);
+        }
+    }
 }
 

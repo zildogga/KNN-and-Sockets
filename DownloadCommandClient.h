@@ -11,6 +11,8 @@
 #include "StandardIO.h"
 #include "DefaultIO.h"
 #include "ReadFile.h"
+#include "Client.h"
+
 class DownloadCommandClient: public Command {
 public:
     int sock;

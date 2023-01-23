@@ -8,8 +8,16 @@ void DownloadCommandClient::execute() {
     string serverStr;
     dio = &scio;
     vector<string> vs;
-    while ((serverStr = dio->read())!= "Done.") {
+    Client c;
+    while (c.fiveMsg.empty()) {
+
+    }
+    while ((serverStr = c.fiveMsg.front())!= "Done.") {
         vs.push_back(serverStr);
+        c.fiveMsg.pop();
+        while (c.fiveMsg.empty()) {
+
+        }
     }
     ReadFile rf;
     rf.WriteCSVByVector(vs,path,"Classified.csv");

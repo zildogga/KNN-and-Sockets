@@ -6,7 +6,7 @@
 SocketIO::SocketIO(int socket) {
     sock = socket;
 }
-string SocketIO::read() {
+string SocketIO::read2() {
     char buffer[SIZE_OF_BUFFER];
     // expected length of received data
     int expected_data_len = SIZE_OF_BUFFER;
@@ -23,6 +23,15 @@ string SocketIO::read() {
     }
     string answer(buffer);
     return answer;
+}
+string SocketIO::read() {
+    Client c;
+    while (c.allMsg.empty()) {
+
+    }
+    string result = c.allMsg.front();
+    c.allMsg.pop();
+    return result;
 }
 
 void SocketIO::write(string text) {

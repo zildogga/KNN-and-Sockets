@@ -19,6 +19,7 @@
 #include "DownloadCommandClient.h"
 #include "BeforeDownloadCommandClient.h"
 #include "thread"
+#include "queue"
 
 #define SIZE_OF_BUFFER 4096
 
@@ -26,9 +27,13 @@
 class Client {
 public:
     // createClient function creates a socket and connects to a server
+    static queue<string> allMsg;
+    static queue<string> fiveMsg;
+
     int createClient(char *ipAddress, string portNum);
     void sendBuffer(char data_addr[], int sock);
     char *getBuffer(char *buffer, int sock);
+    static void ReciveMsg(int sock);
 
     static void downloadThread(int sock,string path);
 };

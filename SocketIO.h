@@ -14,6 +14,7 @@
 #include <string.h>
 #include "Classification.h"
 #include "Data.h"
+#include "Client.h"
 
 #define SIZE_OF_BUFFER 4096
 
@@ -23,6 +24,7 @@ class SocketIO: public DefaultIO{
 public:
     int sock = 0;
     string read() override;
+    string read2();
     void write(string) override;
     SocketIO(int socket);
 private:
