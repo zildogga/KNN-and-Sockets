@@ -30,6 +30,9 @@ public:
     // createClient function creates a socket and connects to a server
 
     int createClient(char *ipAddress, string portNum);
+
+    void downloadCommand(int sock, string path, SocketIO scio);
+
     void sendBuffer(char data_addr[], int sock);
     char *getBuffer(char *buffer, int sock);
     void ReciveMsg(SocketIO scio);

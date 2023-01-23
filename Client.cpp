@@ -82,8 +82,8 @@ void Client::menu(SocketIO scio, int sock) {
                 string path;
                 BeforeDownloadCommandClient bdcc(sock,&path,scio);
                 bdcc.execute();
-                DownloadCommandClient dwcc (sock, path,scio);
-                dwcc.execute();
+                thread downloadThread(&Client::downloadCommand,this,sock, path, scio);
+                downloadThread.detach();
             }
             if(choice == "8") {
                 ExitCommandClient ecc(sock,scio);
@@ -95,6 +95,10 @@ void Client::menu(SocketIO scio, int sock) {
     // close socket
     close(sock);
     return;
+}
+void Client::downloadCommand(int sock, string path, SocketIO scio) {
+    DownloadCommandClient dwcc (sock, path,scio);
+    dwcc.execute();
 }
 void Client::sendBuffer(char data_addr[], int sock) {
     // get length of data
