@@ -6,10 +6,11 @@ void DownloadCommandClient::execute() {
     cout << "before while" << endl;
     scio.write("ok");
     while ((serverStr = scio.readFive()) != "Done.") {
-        cout << "before ok" << endl;
+        cout << "trying to send ok in download" << endl;
         scio.write("ok");
-        cout << "after ok" << endl;
+        cout << "sent ok in download" << endl;
         vs.push_back(serverStr);
+        cout <<"before display readFive the buffer is empty : " << scio.fiveMsg->empty();
     }
     cout << "after while" << endl;
     ReadFile rf;
