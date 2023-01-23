@@ -4,6 +4,7 @@ void DownloadCommandClient::execute() {
     dio = &scio;
     vector<string> vs;
     while ((serverStr = scio.readFive()) != "Done.") {
+        dio->write("ok");
         vs.push_back(serverStr);
     }
     ReadFile rf;

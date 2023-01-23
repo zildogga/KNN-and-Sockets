@@ -19,6 +19,8 @@ void DisplayCommandClient::execute() {
         dio = &sdio;
         dio->write(serverStr);
         serverStr = scio.read2();
+        dio = &scio;
+        dio->write("ok");
     }
     dio = &sdio;
     dio->write("Done.");
