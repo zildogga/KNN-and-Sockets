@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/BeforeDownloadCommandClient.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/BeforeDownloadCommandClient.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/CLI.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
@@ -108,10 +114,16 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Classification.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ClassifyCommand.cpp">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ClassifyCommandClient.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ClassifyCommand.h">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ClassifyCommandClient.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ClassifyCommandServer.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ClassifyCommandServer.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Client.cpp">
@@ -126,16 +138,28 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Command.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Data.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Data.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DefaultIO.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DefaultIO.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DisplayCommand.cpp">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DisplayCommandClient.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DisplayCommand.h">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DisplayCommandClient.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DisplayCommandServer.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DisplayCommandServer.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DistanceClass.cpp">
@@ -144,10 +168,16 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DistanceClass.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DownloadCommand.cpp">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DownloadCommandClient.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DownloadCommand.h">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DownloadCommandClient.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DownloadCommandServer.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/DownloadCommandServer.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Euclidean.cpp">
@@ -156,10 +186,16 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Euclidean.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ExitCommand.cpp">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ExitCommandClient.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ExitCommand.h">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ExitCommandClient.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ExitCommandServer.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ExitCommandServer.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Knn.cpp">
@@ -168,22 +204,10 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Knn.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Main.cpp">
-			<Option target="Advanced_Programming_1_Project"/>
-		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Main.h">
-			<Option target="Advanced_Programming_1_Project"/>
-		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainClient.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainClient.h">
-			<Option target="Advanced_Programming_1_Project"/>
-		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainServer.cpp">
-			<Option target="Advanced_Programming_1_Project"/>
-		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/MainServer.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Manhattan.cpp">
@@ -198,22 +222,10 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Minkowski.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ReadCommand.cpp">
-			<Option target="Advanced_Programming_1_Project"/>
-		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ReadCommand.h">
-			<Option target="Advanced_Programming_1_Project"/>
-		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ReadFile.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/ReadFile.h">
-			<Option target="Advanced_Programming_1_Project"/>
-		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SendCommand.cpp">
-			<Option target="Advanced_Programming_1_Project"/>
-		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SendCommand.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Server.cpp">
@@ -222,10 +234,16 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/Server.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SettingsCommand.cpp">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SettingsCommandClient.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SettingsCommand.h">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SettingsCommandClient.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SettingsCommandServer.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SettingsCommandServer.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/SocketIO.cpp">
@@ -240,10 +258,16 @@
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/StandardIO.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/UploadCommand.cpp">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/UploadCommandClient.cpp">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/UploadCommand.h">
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/UploadCommandClient.h">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/UploadCommandServer.cpp">
+			<Option target="Advanced_Programming_1_Project"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/UploadCommandServer.h">
 			<Option target="Advanced_Programming_1_Project"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/Advanced-Programming-1-Project/CMakeLists.txt">

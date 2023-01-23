@@ -55,13 +55,28 @@ string SocketIO::read() {
     string answer(buffer);
     return answer;
 }
-
-string SocketIO::readFive() {
-    while (fiveMsg->empty()) {
-
+string SocketIO::tryToReadFive() {
+    //unique_lock<mutex> lock(mtx, try_to_lock);
+    while (!mtx.try_lock()) {
+        this_thread::sleep_for(chrono::milliseconds(100));
     }
-    string result = fiveMsg->front();
-    fiveMsg->pop();
+    if (!fiveMsg->empty()) {
+        string result = fiveMsg->front();
+        fiveMsg->pop();
+        //lock.unlock();
+        mtx.unlock();
+        return result;
+    }
+    mtx.unlock();
+    //lock.unlock();
+    return "notReady";
+};
+string SocketIO::readFive() {
+    string result;
+    while ((result = tryToReadFive()) == "notReady") {
+        this_thread::sleep_for(chrono::milliseconds(100));
+        continue;
+    }
     return result;
 }
 
@@ -71,7 +86,9 @@ void SocketIO::reciveMsg() {
     while (!mtx.try_lock()) {
         this_thread::sleep_for(chrono::milliseconds(100));
     }
-    if (msg.find("fiveAss") != string::npos) {
+    size_t wordPos;
+    if ((wordPos = msg.find("fiveAss")) != string::npos) {
+        msg.erase(wordPos,7);
         fiveMsg->push(msg);
     } else {
         allMsg->push(msg);

@@ -29,6 +29,7 @@ public:
     string read() override;
     string read2();
     string readFive();
+    string tryToReadFive();
     void write(string) override;
     void reciveMsg();
     string tryToRead();
