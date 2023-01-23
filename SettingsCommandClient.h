@@ -9,14 +9,17 @@
 #include "StandardIO.h"
 #include "SocketIO.h"
 #include "string.h"
+
 using namespace std;
 
 class SettingsCommandClient: public Command {
 public:
     int sock;
+    SocketIO scio;
     void execute() override;
-    SettingsCommandClient(int sockNum) {
+    SettingsCommandClient(int sockNum, SocketIO sc) {
         sock = sockNum;
+        scio = sc;
     };
 private:
     SettingsCommandClient() = default;

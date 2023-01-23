@@ -4,20 +4,11 @@
 
 #include "DownloadCommandClient.h"
 void DownloadCommandClient::execute() {
-    SocketIO scio(sock);
     string serverStr;
     dio = &scio;
     vector<string> vs;
-    Client c;
-    while (c.fiveMsg.empty()) {
-
-    }
-    while ((serverStr = c.fiveMsg.front())!= "Done.") {
+    while ((serverStr = scio.readFive())!= "Done.") {
         vs.push_back(serverStr);
-        c.fiveMsg.pop();
-        while (c.fiveMsg.empty()) {
-
-        }
     }
     ReadFile rf;
     rf.WriteCSVByVector(vs,path,"Classified.csv");

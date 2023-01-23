@@ -3,8 +3,9 @@
 //
 
 #include "SocketIO.h"
-SocketIO::SocketIO(int socket) {
+SocketIO::SocketIO(int socket, Client cli) {
     sock = socket;
+    c = cli;
 }
 string SocketIO::read2() {
     char buffer[SIZE_OF_BUFFER];
@@ -25,13 +26,30 @@ string SocketIO::read2() {
     return answer;
 }
 string SocketIO::read() {
-    Client c;
-    while (c.allMsg.empty()) {
+    while (allMsg.empty()) {
 
     }
-    string result = c.allMsg.front();
-    c.allMsg.pop();
+    string result = allMsg.front();
+    allMsg.pop();
     return result;
+}
+string SocketIO::readFive() {
+    while (fiveMsg.empty()) {
+
+    }
+    string result = fiveMsg.front();
+    fiveMsg.pop();
+    return result;
+}
+void SocketIO::reciveMsg() {
+    while(true) {
+        string msg = read2();
+        if (msg.find("fiveAss") != string::npos) {
+            fiveMsg.push(msg);
+        } else {
+            allMsg.push(msg);
+        }
+    }
 }
 
 void SocketIO::write(string text) {

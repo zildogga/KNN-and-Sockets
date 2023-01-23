@@ -11,9 +11,11 @@
 class DisplayCommandClient: public Command{
 public:
     int sock;
+    SocketIO scio;
     void execute() override;
-    DisplayCommandClient(int sockNum) {
+    DisplayCommandClient(int sockNum, SocketIO sc) {
         sock = sockNum;
+        scio = sc;
     };
 private:
     DisplayCommandClient() = default;
