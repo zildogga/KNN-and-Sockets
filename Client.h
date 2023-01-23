@@ -27,8 +27,8 @@
 class Client {
 public:
     // createClient function creates a socket and connects to a server
-    static queue<string> allMsg;
-    static queue<string> fiveMsg;
+    queue<string> allMsg;
+    queue<string> fiveMsg;
 
     int createClient(char *ipAddress, string portNum);
     void sendBuffer(char data_addr[], int sock);
