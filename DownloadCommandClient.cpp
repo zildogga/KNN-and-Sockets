@@ -1,7 +1,3 @@
-//
-// Created by omer on 1/22/23.
-//
-
 #include "DownloadCommandClient.h"
 void DownloadCommandClient::execute() {
     string serverStr;

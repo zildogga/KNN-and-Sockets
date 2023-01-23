@@ -15,24 +15,26 @@
 #include "Classification.h"
 #include "Data.h"
 #include "queue"
-
+#include "thread"
+#include "mutex"
 #define SIZE_OF_BUFFER 4096
 
 using namespace std;
 
 class SocketIO: public DefaultIO{
 public:
+    const mutex mtx;
     int sock = 0;
-    queue<string> allMsg;
-    queue<string> fiveMsg;
-
+    queue<string> *allMsg;
+    queue<string> *fiveMsg;
     string read() override;
     string read2();
     string readFive();
     void write(string) override;
     void reciveMsg();
+    string tryToRead();
     SocketIO(int socket);
-    SocketIO()= default;
+    SocketIO() = default;
 };
 
 
