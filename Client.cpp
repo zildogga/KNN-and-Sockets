@@ -35,7 +35,7 @@ int Client::createClient(char *ipAddress, string portNum) {
         perror("error connecting to server");
         return 0;
     }
-    thread getMsg(ReciveMsg,sock);
+    thread getMsg(&Client::ReciveMsg,this,sock);
     getMsg.detach();
     // infinite loop to send and receive data from server
     while(true) {

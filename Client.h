@@ -33,7 +33,7 @@ public:
     int createClient(char *ipAddress, string portNum);
     void sendBuffer(char data_addr[], int sock);
     char *getBuffer(char *buffer, int sock);
-    static void ReciveMsg(int sock);
+    void ReciveMsg(int sock);
 
     static void downloadThread(int sock,string path);
 };
