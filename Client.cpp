@@ -131,11 +131,12 @@ char *Client::getBuffer(char* buffer,int sock) {
 }
 
 void Client::ReciveMsg(SocketIO scio) {
-    cout << "!" << endl;
+    cout << "starting ReciveMsg" << endl;
     while(true) {
-        cout << "?";
+        cout << "start while ReciveMsg" << endl;
         this_thread::sleep_for(chrono::milliseconds(100));
         scio.reciveMsg();
+        cout << "end ReciveMsg" << endl;
     }
 }
 

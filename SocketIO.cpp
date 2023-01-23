@@ -36,15 +36,18 @@ string SocketIO::tryToRead() {
 
 
 string SocketIO::read2() {
+    cout << "trying read 2" << endl;
     string result;
     while ((result = tryToRead()) == "notReady") {
         this_thread::sleep_for(chrono::milliseconds(100));
         continue;
     }
+    cout << "ending read 2" << endl;
     return result;
 }
 
 string SocketIO::read() {
+    cout << "trying to read" << endl;
     char buffer[SIZE_OF_BUFFER];
     // expected length of received data
     int expected_data_len = SIZE_OF_BUFFER;
@@ -60,15 +63,18 @@ string SocketIO::read() {
         return "";
     }
     string answer(buffer);
+    cout << "ending to read" << endl;
     return answer;
 }
 
 string SocketIO::readFive() {
+    cout << "read five start" << endl;
     while (fiveMsg->empty()) {
 
     }
     string result = fiveMsg->front();
     fiveMsg->pop();
+    cout << "read five end" << endl;
     return result;
 }
 
