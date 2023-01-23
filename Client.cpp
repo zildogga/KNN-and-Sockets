@@ -118,6 +118,8 @@ char *Client::getBuffer(char* buffer,int sock) {
 }
 
 void Client::ReciveMsg(SocketIO scio) {
-    scio.reciveMsg();
+    while(true) {
+        scio.reciveMsg();
+    }
 }
 
