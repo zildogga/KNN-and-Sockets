@@ -36,6 +36,7 @@ string SocketIO::read2() {
 }
 
 string SocketIO::read() {
+    this_thread::sleep_for(chrono::milliseconds(100));
     char buffer[SIZE_OF_BUFFER];
     // expected length of received data
     int expected_data_len = SIZE_OF_BUFFER;
