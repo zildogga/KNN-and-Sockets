@@ -38,6 +38,7 @@ string SocketIO::tryToRead() {
 string SocketIO::read2() {
     string result;
     while ((result = tryToRead()) == "notReady") {
+        this_thread::sleep_for(chrono::milliseconds(100));
         continue;
     }
     return result;

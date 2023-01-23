@@ -134,6 +134,7 @@ void Client::ReciveMsg(SocketIO scio) {
     cout << "!" << endl;
     while(true) {
         cout << "?";
+        this_thread::sleep_for(chrono::milliseconds(100));
         scio.reciveMsg();
     }
 }
