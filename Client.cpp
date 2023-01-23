@@ -55,33 +55,6 @@ void Client::downloadCommand(int sock, string path, SocketIO scio) {
     dwcc.execute();
 }
 
-void Client::sendBuffer(char data_addr[], int sock) {
-    // get length of data
-    int data_len = strlen(data_addr);
-    // try to send data to server
-    int sent_bytes = send(sock, data_addr, data_len, 0);
-    if (sent_bytes < 0) {
-        // error
-    }
-}
-
-char *Client::getBuffer(char *buffer, int sock) {
-    // expected length of received data
-    int expected_data_len = SIZE_OF_BUFFER;
-    // clear memory of buffer
-    memset(buffer, 0, SIZE_OF_BUFFER);
-    // try to receive data from server
-    int read_bytes = recv(sock, buffer, expected_data_len, 0);
-    if (read_bytes == 0) {
-        // break loop if connection is closed by server
-        return nullptr;
-    } else if (read_bytes < 0) {
-        // break loop if there is an error receiving data from server
-        return nullptr;
-    }
-    return buffer;
-}
-
 void Client::ReciveMsg(SocketIO scio) {
     while (true) {
         this_thread::sleep_for(chrono::milliseconds(100));
