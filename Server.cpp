@@ -92,7 +92,9 @@ int Server::menu(int client_sock, Data *data) {
         SocketIO sc(client_sock);
         sc.write(menu);
         string check = sc.read();
-        if (check == "1") {
+        if(check == "close") {
+            break;
+        } else if (check == "1") {
             UploadCommandServer up(data);
             up.execute();
         } else if (check == "2") {
