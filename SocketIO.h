@@ -24,16 +24,17 @@ using namespace std;
 class SocketIO: public DefaultIO{
 public:
     int sock = 0;
-    queue<string> *allMsg;
-    queue<string> *fiveMsg;
+//    queue<string> *allMsg;
+//    queue<string> *fiveMsg;
     string read() override;
-    string read2();
-    string readFive();
-    string tryToReadFive();
+//    string read2();
+//    string readFive();
+//    string tryToReadFive();
     void write(string) override;
-    void reciveMsg();
-    string tryToRead();
+//    void reciveMsg();
+//    string tryToRead();
     SocketIO(int socket);
+private:
     SocketIO() = default;
 };
 

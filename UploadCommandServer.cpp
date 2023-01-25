@@ -12,6 +12,7 @@ void UploadCommandServer::execute() {
     string currentLine1;
     list<string> trainCSVList;
     while ((currentLine1 = dio->read()) != "endOfFile") {
+        dio->write("ok");
         trainCSVList.push_back(currentLine1);
     }
     if (trainCSVList.empty()) {
@@ -29,6 +30,7 @@ void UploadCommandServer::execute() {
     string currentLine2;
     list<string> testCSVList;
     while ((currentLine2 = dio->read()) != "endOfFile") {
+        dio->write("ok");
         testCSVList.push_back(currentLine2);
     }
     if (testCSVList.empty()) {

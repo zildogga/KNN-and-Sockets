@@ -3,37 +3,37 @@
 //
 
 #include "SocketIO.h"
-mutex mtx;
+//mutex mtx;
 SocketIO::SocketIO(int socket) {
     allMsg = new queue<string>();
     fiveMsg = new queue<string>();
     sock = socket;
 }
 
-string SocketIO::tryToRead() {
-    while (!mtx.try_lock()) {
-        this_thread::sleep_for(chrono::milliseconds(100));
-    }
-    if (!allMsg->empty()) {
-        string result = allMsg->front();
-        allMsg->pop();
-        //lock.unlock();
-        mtx.unlock();
-        return result;
-    }
-    mtx.unlock();
-    return "notReady";
-}
+//string SocketIO::tryToRead() {
+//    while (!mtx.try_lock()) {
+//        this_thread::sleep_for(chrono::milliseconds(100));
+//    }
+//    if (!allMsg->empty()) {
+//        string result = allMsg->front();
+//        allMsg->pop();
+//        //lock.unlock();
+//        mtx.unlock();
+//        return result;
+//    }
+//    mtx.unlock();
+//    return "notReady";
+//}
 
-
-string SocketIO::read2() {
-    string result;
-    while ((result = tryToRead()) == "notReady") {
-        this_thread::sleep_for(chrono::milliseconds(100));
-        continue;
-    }
-    return result;
-}
+//
+//string SocketIO::read2() {
+//    string result;
+//    while ((result = tryToRead()) == "notReady") {
+//        this_thread::sleep_for(chrono::milliseconds(100));
+//        continue;
+//    }
+//    return result;
+//}
 
 string SocketIO::read() {
     this_thread::sleep_for(chrono::milliseconds(100));
@@ -54,42 +54,42 @@ string SocketIO::read() {
     string answer(buffer);
     return answer;
 }
-string SocketIO::tryToReadFive() {
-    while (!mtx.try_lock()) {
-        this_thread::sleep_for(chrono::milliseconds(100));
-    }
-    if (!fiveMsg->empty()) {
-        string result = fiveMsg->front();
-        fiveMsg->pop();
-        mtx.unlock();
-        return result;
-    }
-    mtx.unlock();
-    return "notReady";
-};
-string SocketIO::readFive() {
-    string result;
-    while ((result = tryToReadFive()) == "notReady") {
-        this_thread::sleep_for(chrono::milliseconds(100));
-        continue;
-    }
-    return result;
-}
-
-void SocketIO::reciveMsg() {
-    while (!mtx.try_lock()) {
-        this_thread::sleep_for(chrono::milliseconds(100));
-    }
-    string msg = read();
-    size_t wordPos;
-    if ((wordPos = msg.find("fiveAss")) != string::npos) {
-        msg.erase(wordPos,7);
-        fiveMsg->push(msg);
-    } else {
-        allMsg->push(msg);
-    }
-    mtx.unlock();
-}
+//string SocketIO::tryToReadFive() {
+//    while (!mtx.try_lock()) {
+//        this_thread::sleep_for(chrono::milliseconds(100));
+//    }
+//    if (!fiveMsg->empty()) {
+//        string result = fiveMsg->front();
+//        fiveMsg->pop();
+//        mtx.unlock();
+//        return result;
+//    }
+//    mtx.unlock();
+//    return "notReady";
+//};
+//string SocketIO::readFive() {
+//    string result;
+//    while ((result = tryToReadFive()) == "notReady") {
+//        this_thread::sleep_for(chrono::milliseconds(100));
+//        continue;
+//    }
+//    return result;
+//}
+//
+//void SocketIO::reciveMsg() {
+//    while (!mtx.try_lock()) {
+//        this_thread::sleep_for(chrono::milliseconds(100));
+//    }
+//    string msg = read();
+//    size_t wordPos;
+//    if ((wordPos = msg.find("fiveAss")) != string::npos) {
+//        msg.erase(wordPos,7);
+//        fiveMsg->push(msg);
+//    } else {
+//        allMsg->push(msg);
+//    }
+//    mtx.unlock();
+//}
 
 void SocketIO::write(string text) {
     this_thread::sleep_for(chrono::milliseconds(100));

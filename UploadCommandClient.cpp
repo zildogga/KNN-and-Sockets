@@ -2,11 +2,12 @@
 
 void UploadCommandClient::execute() {
     StandardIO stio;
+    SocketIO scio(sock);
     string serverStr = "";
     string ClientStr = "";
     dio = &scio;
     dio->write("1");
-    serverStr = scio.read2();
+    serverStr = dio->read();
     dio = &stio;
     dio->write(serverStr);
     ClientStr = dio->read();
@@ -28,16 +29,17 @@ void UploadCommandClient::execute() {
                 line.erase(pos, 1);
             }
             dio->write(line);
+            dio->read();
         }
         // This line closes the CSV file
         file.close();
         dio->write("endOfFile");
-        serverStr = scio.read2();
+        serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
     } else {
         dio->write("endOfFile");
-        serverStr = scio.read2();
+        serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
         return;
@@ -62,16 +64,17 @@ void UploadCommandClient::execute() {
                 line2.erase(pos, 1);
             }
             dio->write(line2);
+            dio->read();
         }
         // This line closes the CSV file
         file2.close();
         dio->write("endOfFile");
-        serverStr = scio.read2();
+        serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
     } else {
         dio->write("endOfFile");
-        serverStr = scio.read2();
+        serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
         return;
