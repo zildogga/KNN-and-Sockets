@@ -37,8 +37,7 @@ void CLI::start() {
                 string path;
                 BeforeDownloadCommandClient bdcc(sock, &path);
                 bdcc.execute();
-                thread downloadThread(&CLI::downloadCommand, this, sock, path);
-                downloadThread.detach();
+                downloadCommand(sock, path);
             } else if (choice == "8") {
                 ExitCommandClient ecc(sock);
                 ecc.execute();
