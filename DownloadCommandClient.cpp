@@ -13,9 +13,9 @@ void DownloadCommandClient::execute() {
     }
     dio = &scio;
     while (serverStr != "Done.") {
+        vs.push_back(serverStr);
         dio->write("ok");
         serverStr = dio->read();
-        vs.push_back(serverStr);
     }
     thread t(&DownloadCommandClient::ClassifyOnCommand, this, vs, path);
     t.detach();

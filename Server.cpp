@@ -110,13 +110,14 @@ int Server::menu(int client_sock, Data *data) {
         } else if (check == "8") {
             ExitCommandServer ecs(data->socketNum);
             ecs.execute();
-            return 0;
+            break;
         } else {
             // add code in here!!!
             sc.write("wrong option");
         }
     }
-    cout << "HOW DID IT HAPPENED" << endl;
+    close(data->socketNum);
+    return 0;
 }
 
 
