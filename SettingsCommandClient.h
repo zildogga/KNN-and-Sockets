@@ -15,11 +15,9 @@ using namespace std;
 class SettingsCommandClient: public Command {
 public:
     int sock;
-    SocketIO scio;
     void execute() override;
-    SettingsCommandClient(int sockNum, SocketIO sc) {
+    SettingsCommandClient(int sockNum) {
         sock = sockNum;
-        scio = sc;
     };
 private:
     SettingsCommandClient() = default;

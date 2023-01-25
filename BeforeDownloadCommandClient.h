@@ -12,12 +12,10 @@ class BeforeDownloadCommandClient: public Command{
 public:
     string* path;
     int sock;
-    SocketIO scio;
     void execute() override;
-    BeforeDownloadCommandClient(int sockNum,string* pathConstructor, SocketIO sc) {
+    BeforeDownloadCommandClient(int sockNum,string* pathConstructor) {
         sock = sockNum;
         path = pathConstructor;
-        scio = sc;
     };
 private:
     BeforeDownloadCommandClient() = default;

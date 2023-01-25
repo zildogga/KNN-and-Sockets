@@ -5,11 +5,12 @@
 #include "DisplayCommandClient.h"
 void DisplayCommandClient::execute() {
     StandardIO sdio;
+    SocketIO scio(sock);
     string serverStr;
     string clientStr;
     dio = &scio;
     dio->write("4");
-    serverStr = scio.read2();
+    serverStr = dio->read();
     if(serverStr == "please upload data" || serverStr == "please classify the data") {
         dio = &sdio;
         dio->write(serverStr);
@@ -18,7 +19,9 @@ void DisplayCommandClient::execute() {
     while(serverStr != "Done.") {
         dio = &sdio;
         dio->write(serverStr);
-        serverStr = scio.read2();
+        dio = &scio;
+        dio->write("ok");
+        serverStr = dio->read();
     }
     dio = &sdio;
     dio->write("Done.");

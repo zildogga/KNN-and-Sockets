@@ -17,12 +17,10 @@ using namespace std;
 
 class CLI {
 public:
-    SocketIO scio;
     int sock;
     void start();
-    void downloadCommand(int sock, string path, SocketIO scio);
-        CLI(SocketIO scio2, int sock2) {
-        scio = scio2;
+    void downloadCommand(int sock, string path);
+    CLI(int sock2) {
         sock = sock2;
     }
 private:

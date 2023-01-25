@@ -7,37 +7,40 @@ void CLI::start() {
         char buffer[SIZE_OF_BUFFER];
         // gets the input to the buffer from the socket
         // if nullptr was returned
-        strcpy(buffer, scio.read2().c_str());
+        SocketIO scio(sock);
+        strcpy(buffer, scio.read().c_str());
         if (buffer == nullptr) {
             break;
+        } else if (buffer == "") {
+            break;
         } else if (strcmp(buffer, "close") == 0) {
-            // close socket and return 0 if "close" is received from server
-            close(sock);
-            return;
+                // close socket and return 0 if "close" is received from server
+                close(sock);
+                return;
         } else {
             cout << buffer << endl;
             string choice;
             cin >> choice;
             if (choice == "1") {
-                UploadCommandClient ucc(sock, scio);
+                UploadCommandClient ucc(sock);
                 ucc.execute();
             } else if (choice == "2") {
-                SettingsCommandClient scc(sock, scio);
+                SettingsCommandClient scc(sock);
                 scc.execute();
             } else if (choice == "3") {
-                ClassifyCommandClient scc(sock, scio);
+                ClassifyCommandClient scc(sock);
                 scc.execute();
             } else if (choice == "4") {
-                DisplayCommandClient dcc(sock, scio);
+                DisplayCommandClient dcc(sock);
                 dcc.execute();
             } else if (choice == "5") {
                 string path;
-                BeforeDownloadCommandClient bdcc(sock, &path, scio);
+                BeforeDownloadCommandClient bdcc(sock, &path);
                 bdcc.execute();
-                thread downloadThread(&CLI::downloadCommand, this, sock, path, scio);
+                thread downloadThread(&CLI::downloadCommand, this, sock, path);
                 downloadThread.detach();
             } else if (choice == "8") {
-                ExitCommandClient ecc(sock, scio);
+                ExitCommandClient ecc(sock);
                 ecc.execute();
                 break;
             } else{
@@ -51,7 +54,7 @@ void CLI::start() {
     close(sock);
     return;
 }
-void CLI::downloadCommand(int sock, string path, SocketIO scio) {
-    DownloadCommandClient dwcc(sock, path, scio);
+void CLI::downloadCommand(int sock, string path) {
+    DownloadCommandClient dwcc(sock, path);
     dwcc.execute();
 }

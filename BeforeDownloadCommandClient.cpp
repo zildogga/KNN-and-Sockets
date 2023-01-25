@@ -5,6 +5,7 @@
 #include "BeforeDownloadCommandClient.h"
 void BeforeDownloadCommandClient::execute() {
     StandardIO sdio;
+    SocketIO scio(sock);
     string serverStr;
     dio = &sdio;
     *path = dio->read();

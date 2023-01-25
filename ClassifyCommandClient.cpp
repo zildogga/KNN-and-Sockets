@@ -5,10 +5,11 @@
 #include "ClassifyCommandClient.h"
 void ClassifyCommandClient::execute() {
     StandardIO sdio;
+    SocketIO scio(sock);
     string serverStr;
     dio = &scio;
     dio->write("3");
-    serverStr = scio.read2();
+    serverStr = dio->read();
     dio = &sdio;
     dio->write(serverStr);
 }

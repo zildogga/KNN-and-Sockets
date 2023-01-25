@@ -10,11 +10,9 @@
 class ExitCommandClient: public Command {
 public:
     int sock;
-    SocketIO scio;
     void execute() override;
-    ExitCommandClient(int sockNum, SocketIO sc) {
+    ExitCommandClient(int sockNum) {
         sock = sockNum;
-        scio = sc;
     };
 private:
     ExitCommandClient() = default;

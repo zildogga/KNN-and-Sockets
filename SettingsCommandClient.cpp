@@ -5,16 +5,17 @@
 #include "SettingsCommandClient.h"
 
 void SettingsCommandClient::execute() {
+    SocketIO scio(sock);
     dio = &scio;
     dio->write("2");
-    string serverStr = scio.read2();
+    string serverStr = dio->read();
     StandardIO sdio;
     dio = &sdio;
     dio->write(serverStr);
     string userString = dio->read();
     dio = &scio;
     dio->write(userString);
-    string serverStr2 = scio.read2();
+    string serverStr2 = dio->read();
     if(serverStr2 == "User pressed enter") {
         return;
     }

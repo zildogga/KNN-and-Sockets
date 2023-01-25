@@ -5,6 +5,7 @@
 #include "ExitCommandClient.h"
 
 void ExitCommandClient::execute() {
+    SocketIO scio(sock);
     dio = &scio;
     dio->write("8");
     return;
