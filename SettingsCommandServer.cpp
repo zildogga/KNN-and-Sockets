@@ -25,6 +25,10 @@ void SettingsCommandServer::execute() {
             if (iss >> strTemp) {
                 if (strTemp == "AUC" || strTemp == "MIN" || strTemp == "MAN" || strTemp == "CHB" || strTemp == "CAN") {
                     if (numFlag == true) {
+                        if(numTemp <= 0) {
+                            dio->write("invalid value for K");
+                            return;
+                        }
                         data->k = numTemp;
                         data->algo = strTemp;
                         dio->write("update success. \nThe current KNN parameters are: K = " + to_string(data->k)
