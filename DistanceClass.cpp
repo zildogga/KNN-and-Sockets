@@ -10,6 +10,7 @@ double DistanceClass::checkValidation(string str) {
         size_t pos;
         //stod is string to double, and the size is being saved as pos
         x = stod(str, &pos);
+        cout << x << endl;
         //if the sizes of the original and the converted number aren't the same, that means
         //the string was not converted properly and that was probably not a number
         if (str.size() != pos) {
