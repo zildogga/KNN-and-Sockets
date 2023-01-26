@@ -137,17 +137,17 @@ string Classification::classifyTestByTrain(vector<string> testVector, vector<vec
     // This line creates a new empty vector of pairs of vectors of doubles and strings
     vector<pair<vector<double>, string>> information;
     // This loop iterates over each row of the CSV file
-    for (int i = 0; i < trainCSV.size(); ++i) {
+    for (int i = 0; i < trainCSV.size(); i++) {
         // This line creates a new empty vector of doubles
         vector<double> vTemp;
         // This line creates an empty string to store the class name
         string className = "";
         // This loop iterates over each element in the current row of the CSV file
-        for (int j = 0; j < trainCSV.at(i).size(); ++j) {
+        for (int j = 0; j < trainCSV.at(i).size(); j++) {
             // If the current element is not the last element in the row (i.e. not the class name), this line converts the string to a double and adds it to the vector of doubles
             if (j != trainCSV.at(i).size() - 1) {
                 double x = distanceClass.checkValidation(trainCSV.at(i).at(j));
-                if(x >= 100000000) {
+                if(x >= 1000000) {
                     return "input was not a number";
                 }
                 vTemp.push_back(x);
@@ -164,10 +164,10 @@ string Classification::classifyTestByTrain(vector<string> testVector, vector<vec
     vector<double> vTemp;
     // This loop iterates over each element in the current row of the CSV file
 
-    for (int j = 0; j < testVector.size(); ++j) {
+    for (int j = 0; j < testVector.size(); j++) {
         // If the current element is not the last element in the row (i.e. not the class name), this line converts the string to a double and adds it to the vector of doubles
         double x = distanceClass.checkValidation(testVector.at(j));
-        if(x >= 100000000) {
+        if(x >= 1000000) {
             return "input was not a number";
         }
         vTemp.push_back(x);
