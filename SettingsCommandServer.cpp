@@ -26,6 +26,7 @@ void SettingsCommandServer::execute() {
                 if (strTemp == "AUC" || strTemp == "MIN" || strTemp == "MAN" || strTemp == "CHB" || strTemp == "CAN") {
                     if (numFlag == true) {
                         if(numTemp <= 0) {
+                            // printing wrong k for user
                             dio->write("invalid value for K");
                             return;
                         }
