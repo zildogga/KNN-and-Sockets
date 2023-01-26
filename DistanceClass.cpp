@@ -29,6 +29,7 @@ double DistanceClass::checkValidation(string str) {
     }
     //if the flag is true that means the string was successfully converted into a double
     if (isDouble) {
+        cout << "input was a number" << endl;
         return x;
     }
     return DBL_MAX;
