@@ -122,7 +122,7 @@ string Classification::classify(
         string disType
 ) {
     if (k > information.size()) {
-        return "invalid input";
+        k = information.size();
     }
     // This line creates a new Knn object
     Knn knn;
