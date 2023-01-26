@@ -10,6 +10,9 @@ void ClassifyCommandClient::execute() {
     dio = &scio;
     dio->write("3");
     serverStr = dio->read();
+    if(serverStr == "input was not a number") {
+        serverStr = "wrong file format, please upload again";
+    }
     dio = &sdio;
     dio->write(serverStr);
 }
