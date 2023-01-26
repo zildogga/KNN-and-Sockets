@@ -1,4 +1,11 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #include "Euclidean.h"
+
 // calculate the Euclidean distance of 2 vectors. d(p,q) = square root of sigma (v1[i] - v2[i]) ^ 2
 // when i run form 0 to v1/v2.size
 double Euclidean::distance(std::vector<double> v1, std::vector<double> v2) {

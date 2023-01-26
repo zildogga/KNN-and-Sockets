@@ -1,16 +1,31 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #include "UploadCommandClient.h"
 
 void UploadCommandClient::execute() {
+    // Initialize StandardIO and SocketIO objects
     StandardIO stio;
     SocketIO scio(sock);
     string serverStr = "";
     string ClientStr = "";
+    // Set dio to point to scio
+    dio = &scio;
+    // Send "1" to the server
     dio = &scio;
     dio->write("1");
+    // Read the server's response
     serverStr = dio->read();
+    // Set dio to point to stio
     dio = &stio;
+    // Write the server's response to the standard output
     dio->write(serverStr);
+    // Read the client's response
     ClientStr = dio->read();
+    // Set dio to point to scio
     dio = &scio;
     string line;
     // This line initializes a new ifstream object using the path to the CSV file
@@ -37,7 +52,7 @@ void UploadCommandClient::execute() {
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
-        if(serverStr == "invalid input") {
+        if (serverStr == "invalid input") {
             return;
         }
     } else {
@@ -75,7 +90,7 @@ void UploadCommandClient::execute() {
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
-        if(serverStr == "invalid input") {
+        if (serverStr == "invalid input") {
             return;
         }
     } else {

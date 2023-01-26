@@ -1,3 +1,9 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #include "Classification.h"
 
 // This function is part of the Classification class
@@ -132,7 +138,8 @@ string Classification::classify(
     return chosenClass;
 }
 
-string Classification::classifyTestByTrain(vector<string> testVector, vector<vector<string>> trainCSV, int k, string disType) {
+string
+Classification::classifyTestByTrain(vector<string> testVector, vector<vector<string>> trainCSV, int k, string disType) {
     DistanceClass distanceClass;
     // This line creates a new empty vector of pairs of vectors of doubles and strings
     vector<pair<vector<double>, string>> information;
@@ -147,7 +154,7 @@ string Classification::classifyTestByTrain(vector<string> testVector, vector<vec
             // If the current element is not the last element in the row (i.e. not the class name), this line converts the string to a double and adds it to the vector of doubles
             if (j != trainCSV.at(i).size() - 1) {
                 double x = distanceClass.checkValidation(trainCSV.at(i).at(j));
-                if(x == DBL_MAX) {
+                if (x == DBL_MAX) {
                     return "input was not a number";
                 }
                 vTemp.push_back(x);
@@ -167,7 +174,7 @@ string Classification::classifyTestByTrain(vector<string> testVector, vector<vec
     for (int j = 0; j < testVector.size(); j++) {
         // If the current element is not the last element in the row (i.e. not the class name), this line converts the string to a double and adds it to the vector of doubles
         double x = distanceClass.checkValidation(testVector.at(j));
-        if(x == DBL_MAX) {
+        if (x == DBL_MAX) {
             return "input was not a number";
         }
         vTemp.push_back(x);

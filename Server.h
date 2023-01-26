@@ -1,3 +1,9 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H
 
@@ -21,14 +27,20 @@
 #include "ClassifyCommandServer.h"
 #include "DisplayCommandServer.h"
 #include "DownloadCommandServer.h"
+
 using namespace std;
 
 class Server {
 public:
+    //start server with a port
     static int startServer(string serverPort);
+    //menu function
     static int menu(int client_sock, Data *data);
+    //get socket number per client
     static int getSockPerClient(int sockNum);
+    //run download command
     static void runDownloadCommand(Data *data);
 };
+
 
 #endif //ADVANCED_PROGRAMMING_1_PROJECT_SERVER_H

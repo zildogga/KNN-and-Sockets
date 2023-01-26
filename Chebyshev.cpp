@@ -1,3 +1,9 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #include "Chebyshev.h"
 
 double Chebyshev::distance(vector<double> v1, vector<double> v2) {

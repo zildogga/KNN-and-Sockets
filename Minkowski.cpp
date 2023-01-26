@@ -1,5 +1,9 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
 
-//d(x,y) = (for from 1 to n of abs of (xi - yi)^p)^(1/p)
 #include "Minkowski.h"
 
 double Minkowski::distance(vector<double> v1, vector<double> v2) {

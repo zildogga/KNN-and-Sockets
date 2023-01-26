@@ -1,3 +1,9 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_MAIN_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_MAIN_H
 
@@ -20,6 +26,7 @@
 
 
 using namespace std;
+
 class MainClient {
 
 };

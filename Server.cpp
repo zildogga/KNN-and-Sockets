@@ -1,3 +1,9 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #include "Server.h"
 
 #define size 4096
@@ -92,7 +98,7 @@ int Server::menu(int client_sock, Data *data) {
         SocketIO sc(client_sock);
         sc.write(menu);
         string check = sc.read();
-        if(check == "close") {
+        if (check == "close") {
             break;
         } else if (check == "1") {
             UploadCommandServer up(data);
