@@ -147,8 +147,7 @@ string Classification::classifyTestByTrain(vector<string> testVector, vector<vec
             // If the current element is not the last element in the row (i.e. not the class name), this line converts the string to a double and adds it to the vector of doubles
             if (j != trainCSV.at(i).size() - 1) {
                 double x = distanceClass.checkValidation(trainCSV.at(i).at(j));
-                if(x == DBL_MAX) {
-                    cout << "input was not a num" << endl;
+                if(x >= DBL_MAX-1000000) {
                     return "input was not a number";
                 }
                 vTemp.push_back(x);
@@ -168,9 +167,7 @@ string Classification::classifyTestByTrain(vector<string> testVector, vector<vec
     for (int j = 0; j < testVector.size(); ++j) {
         // If the current element is not the last element in the row (i.e. not the class name), this line converts the string to a double and adds it to the vector of doubles
         double x = distanceClass.checkValidation(testVector.at(j));
-        cout << x << endl;
         if(x >= DBL_MAX-1000000) {
-            cout << "input was not a num" << endl;
             return "input was not a number";
         }
         vTemp.push_back(x);
