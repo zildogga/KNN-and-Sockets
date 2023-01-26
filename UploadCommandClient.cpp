@@ -37,6 +37,9 @@ void UploadCommandClient::execute() {
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
+        if(serverStr == "invalid input") {
+            return;
+        }
     } else {
         dio->write("endOfFile");
         serverStr = dio->read();
@@ -72,6 +75,9 @@ void UploadCommandClient::execute() {
         serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
+        if(serverStr == "invalid input") {
+            return;
+        }
     } else {
         dio->write("endOfFile");
         serverStr = dio->read();
