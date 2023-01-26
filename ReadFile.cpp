@@ -50,9 +50,9 @@ vector<vector<string>> ReadFile::ReadCSVByPath(
     // This line returns the 2D vector of values from the CSV file
     return result;
 }
-void ReadFile::WriteCSVByVector(vector<string> information, string path, string fileName) {
+void ReadFile::WriteCSVByVector(vector<string> information, string path) {
     // Open the file in output mode
-    string fullPath = path+'/'+fileName;
+    string fullPath = path;
     ofstream file(fullPath, ios::out);
 
     if(file.is_open()) {

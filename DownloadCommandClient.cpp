@@ -23,6 +23,6 @@ void DownloadCommandClient::execute() {
 }
 void DownloadCommandClient::ClassifyOnCommand(vector<string> vs, string path) {
     ReadFile rf;
-    rf.WriteCSVByVector(vs,path,"Classified.csv");
+    rf.WriteCSVByVector(vs,path);
     return;
 }
