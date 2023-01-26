@@ -12,11 +12,12 @@ void CLI::start() {
         if (buffer == nullptr) {
             break;
         } else if (buffer == "") {
-            break;
+            close(sock);
+            return;
         } else if (strcmp(buffer, "close") == 0) {
-                // close socket and return 0 if "close" is received from server
-                close(sock);
-                return;
+            // close socket and return 0 if "close" is received from server
+            close(sock);
+            return;
         } else {
             cout << buffer << endl;
             string choice;

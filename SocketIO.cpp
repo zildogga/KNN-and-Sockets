@@ -18,8 +18,10 @@ string SocketIO::read() {
     int read_bytes = recv(sock, buffer, expected_data_len, 0);
     if (read_bytes == 0) {
         // break loop if connection is closed by server
+        close(sock);
         return "close";
     } else if (read_bytes < 0) {
+        close(sock);
         // break loop if there is an error receiving data from server
         return "close";
     }
