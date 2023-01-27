@@ -1,5 +1,12 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #ifndef ADVANCED_PROGRAMMING_1_PROJECT_CLIENT_H
 #define ADVANCED_PROGRAMMING_1_PROJECT_CLIENT_H
+
 #include <iostream>
 #include <sys/socket.h>
 #include <stdio.h>
@@ -28,9 +35,8 @@
 
 class Client {
 public:
+    // function that create nre client
     int createClient(char *ipAddress, string portNum);
-    void downloadCommand(int sock, string path, SocketIO scio);
-    void ReciveMsg(SocketIO scio);
 };
 
 

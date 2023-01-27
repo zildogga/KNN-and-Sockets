@@ -1,15 +1,31 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #include "UploadCommandClient.h"
 
 void UploadCommandClient::execute() {
+    // Initialize StandardIO and SocketIO objects
     StandardIO stio;
+    SocketIO scio(sock);
     string serverStr = "";
     string ClientStr = "";
+    // Set dio to point to scio
+    dio = &scio;
+    // Send "1" to the server
     dio = &scio;
     dio->write("1");
-    serverStr = scio.read2();
+    // Read the server's response
+    serverStr = dio->read();
+    // Set dio to point to stio
     dio = &stio;
+    // Write the server's response to the standard output
     dio->write(serverStr);
+    // Read the client's response
     ClientStr = dio->read();
+    // Set dio to point to scio
     dio = &scio;
     string line;
     // This line initializes a new ifstream object using the path to the CSV file
@@ -28,16 +44,20 @@ void UploadCommandClient::execute() {
                 line.erase(pos, 1);
             }
             dio->write(line);
+            dio->read();
         }
         // This line closes the CSV file
         file.close();
         dio->write("endOfFile");
-        serverStr = scio.read2();
+        serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
+        if (serverStr == "invalid input") {
+            return;
+        }
     } else {
         dio->write("endOfFile");
-        serverStr = scio.read2();
+        serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
         return;
@@ -62,16 +82,20 @@ void UploadCommandClient::execute() {
                 line2.erase(pos, 1);
             }
             dio->write(line2);
+            dio->read();
         }
         // This line closes the CSV file
         file2.close();
         dio->write("endOfFile");
-        serverStr = scio.read2();
+        serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
+        if (serverStr == "invalid input") {
+            return;
+        }
     } else {
         dio->write("endOfFile");
-        serverStr = scio.read2();
+        serverStr = dio->read();
         dio = &stio;
         dio->write(serverStr);
         return;

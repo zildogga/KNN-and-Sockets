@@ -1,3 +1,9 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #include "Server.h"
 
 #define size 4096
@@ -92,7 +98,9 @@ int Server::menu(int client_sock, Data *data) {
         SocketIO sc(client_sock);
         sc.write(menu);
         string check = sc.read();
-        if (check == "1") {
+        if (check == "close") {
+            break;
+        } else if (check == "1") {
             UploadCommandServer up(data);
             up.execute();
         } else if (check == "2") {
@@ -105,23 +113,19 @@ int Server::menu(int client_sock, Data *data) {
             DisplayCommandServer dcs(data);
             dcs.execute();
         } else if (check == "5") {
-            thread t(runDownloadCommand, data);
-            t.detach();
+            DownloadCommandServer dwcs(data);
+            dwcs.execute();
         } else if (check == "8") {
             ExitCommandServer ecs(data->socketNum);
             ecs.execute();
-            return 0;
+            break;
         } else {
             // add code in here!!!
             sc.write("wrong option");
         }
     }
-    cout << "HOW DID IT HAPPENED" << endl;
-}
-
-void Server::runDownloadCommand(Data *data) {
-    DownloadCommandServer dwcs(data);
-    dwcs.execute();
+    close(data->socketNum);
+    return 0;
 }
 
 

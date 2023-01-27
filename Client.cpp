@@ -1,3 +1,9 @@
+/*
+ * Advanced Programming 1 Project
+ * Ofir Goldberg - 315141325
+ * Omer Groman - 207163452
+*/
+
 #include "Client.h"
 
 using namespace std;
@@ -37,28 +43,9 @@ int Client::createClient(char *ipAddress, string portNum) {
         perror("error connecting to server");
         return 0;
     }
-
-    SocketIO scio(sock);
-    thread getMsg(&Client::ReciveMsg, this, scio);
-    getMsg.detach();
-    // infinite loop to send and receive data from server
-    //thread menuThread(&Client::menu,this,scio, sock);
-    //menuThread.detach();
-    CLI cli(scio, sock);
+    CLI cli(sock);
     cli.start();
-    //menu(scio, sock);
     return 1;
 }
 
-void Client::downloadCommand(int sock, string path, SocketIO scio) {
-    DownloadCommandClient dwcc(sock, path, scio);
-    dwcc.execute();
-}
-
-void Client::ReciveMsg(SocketIO scio) {
-    while (true) {
-        this_thread::sleep_for(chrono::milliseconds(100));
-        scio.reciveMsg();
-    }
-}
 
