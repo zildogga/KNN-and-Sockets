@@ -47,6 +47,8 @@ void DisplayCommandClient::execute() {
     dio = &sdio;
     //write "Done." to dio
     dio->write("Done.");
+    // read enter from the user for return to main menu
+    dio->read();
     //return
     return;
 }
