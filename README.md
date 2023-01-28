@@ -7,7 +7,7 @@
 </div>
 ㅤ
 <div align=center>🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁</div>
-ㅤ
+ 
 
   So far, we have uploaded the first and the second assignments for the project.
 The first assignment was to make a software that calculates distances between 2 vectors of the same size with 5 different algorithms:
@@ -26,6 +26,8 @@ lastly we made classification class that combines the two classes above and by u
 The third assignment was to create a server and a client that talks to one another. we created a server with his own main, and a client with his own main, where whenever you write the make command, the makefile knows to make a server.out and a client.out files with different mains.
 
 The fourth assigment was to create realization so the server would be able to talk with several clients at the same time. In addition, the server will print a menu for the user with several options as detailed later in the file
+
+ ❤️ *There is an alternative version of the project, where we implemented a double queue as a double buffer and mutex on them at every read and write function, so we would be able to talk to the server while the lines are sending from the server to the client in the 5th option in the menu. **This is not the submitted version**, but we worked really hard on this version so we wrote about it here, and it is on **ex4_alternative_verion** branch if you would like to just take a look.* ❤️
 
 This is a rundown about everything we have and did in the project:
 
@@ -94,17 +96,24 @@ Than paste this command to the terminal:
 ## ✍ User menu
 
 When a new user connects to the server, first the server will print the following options menu:
-1. upload an unclassified csv data file
-2. algorithm settings
-3. classify data
-4. display results
-5. download results
-8. exit
+
+*1. upload an unclassified csv data file*
+
+*2. algorithm settings*
+
+*3. classify data*
+
+*4. display results*
+
+*5. download results*
+
+*8. exit*
 
  **if the user press 1 + Enter:** 
 first he will receive a message "please upload your local train CSV file." and will have to enter a path to his local train CSV file, which is the classified file.
 If the upload fails, the user will receive an error message and return to the main menu,
 else, he will receive a message "upload complete. please upload your local test CSV file." and will have to enter a path to his local test CSV file, which is the unclassified file.
+
 If the upload fails, the user will receive an error message and return to the main menu,
 else, he will receive a message "upload complete" and return to the main menu.
 
@@ -122,7 +131,9 @@ If the user pressed Enter immediately after displaying the current K value and m
 |Minkowski       |MIN                         |
 
 if the user entered an invalid value for K, "invalid value for k" message will be printed 
+
 if the user entered an invalid value for metric, "invalid value for metric" message will be printed 
+
 if the user entered an invalid input for bouth K and metric, "invalid value for k and invalid value for metric" message will be printed 
 
  **if the user press 3 + Enter:**
@@ -132,18 +143,26 @@ if the user never pressed 1 and never upload files, "please upload data" message
 
  **if the user press 4 + Enter:**
  The server will return the list of classifications and it will be printed to the user in the following format: 
+ 
  1 A
+ 
  2 B
+ 
  3 C
+ 
  4 A
+ 
 Done. 
+
 where A B C are the classification classes and at the end "Done." will be printed.
 if the user never upload Train and Test files, "please upload data" message will be printed
 if the user never classify the data, "please classify data" message will be printed
 
  **if the user press 5 + Enter:**
  Similar behavior to that of option 4, only that instead of printing the results, the user will enter a path to create local CSV file and there the client will save the results in exactly the same format without "Done." at the end.
+ 
  ❤️ pay attention ❤️
+ 
 Immediately after entering the path and pressing enter, the menu will be reprinted and the user will be able to send additional commands immediately, even if the file download has not yet finished because the file download is done in a separate thread.
 
  **if the user press 8 + Enter:**
