@@ -1,35 +1,6 @@
+# KNN Machine Learning Algorithm with Socket Programming
 
-# <div align=center>Omer and Ofir Advanced programming project</div>
-
-# <div align=center>Advanced-Programming-1-Project</div>
-<div align=center>
-  <img src="https://i.imgur.com/UWgstMt.png" width="200" align ="center"/><img src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/media/5387dc7e035b3efe9d94516044de66a4.gif" width="400px" align="center"/><img src="https://i.imgur.com/UWgstMt.png" width="200" align ="center"/>
-</div>
-ㅤ
-<div align=center>🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁</div>
- 
-
-  So far, we have uploaded the first and the second assignments for the project.
-The first assignment was to make a software that calculates distances between 2 vectors of the same size with 5 different algorithms:
-
- 1. *Canberra*
- 2. *Minkowski*
- 3. *Euclidean*
- 4. *Chebyshev*
- 5. *Manhattan*
-
-The second assignment was to make a software that reads CSV files and convert them to a structure, then calculate the nearest neighbors by k value and return the class with most appearences. 
-firstly we made a read file class that can read CSV files and convert them into vectors,
-then, we made KNN class that uses the KNN algorithm and by getting vectors as data and a test vector, returns the chosen class.
-lastly we made classification class that combines the two classes above and by using the data from the debug command and the vectors from the user returns the chosen class for this vector and this CSV file.
-
-The third assignment was to create a server and a client that talks to one another. we created a server with his own main, and a client with his own main, where whenever you write the make command, the makefile knows to make a server.out and a client.out files with different mains.
-
-The fourth assigment was to create realization so the server would be able to talk with several clients at the same time. In addition, the server will print a menu for the user with several options as detailed later in the file
-
- ❤️ *There is an alternative version of the project, where we implemented a double queue as a double buffer and mutex on them at every read and write function, so we would be able to talk to the server while the lines are sending from the server to the client in the 5th option in the menu. **This is not the submitted version**, but we worked really hard on this version so we wrote about it here, and it is on **ex4_alternative_verion** branch if you would like to just take a look.* ❤️
-
-This is a rundown about everything we have and did in the project:
+Welcome to the KNN Machine Learning Algorithm with Socket Programming README! This project is a C++ implementation of the K-Nearest Neighbors (KNN) machine learning algorithm with the added functionality of socket programming for smooth communication and interaction with clients.
 
 # ⚡ Algorithms
 
@@ -171,7 +142,30 @@ The interaction between the server and the client will end.
  **any other option:**
  "wrong input" message will be printed and the user will return to main menu
  
-## 📁 Files
+## [](https://github.com/RonenSiv/KNN_SOCKET/tree/main#features)Features
+
+-   **K-Nearest Neighbors**: Implement the KNN machine learning algorithm to classify data based on the nearest neighbors.
+-   **Socket Programming**: Utilize socket programming to establish communication channels and interact with clients.
+-   **Client-Server Architecture**: Enable multiple clients to connect and send data for classification using the KNN algorithm.
+-   **Real-Time Classification**: Perform real-time classification of data sent by clients using the trained KNN model.
+-   **Customization**: Adjust the K value, distance metric, and other parameters to fine-tune the KNN algorithm.
+
+## [](https://github.com/RonenSiv/KNN_SOCKET/tree/main#how-to-use)How to Use
+
+1.  Clone the repository to your local machine.
+2.  Compile the C++ code using the makefile provided (or any other compiler).
+3.  Start the server application by running the executable.
+4.  Clients can connect to the server using the provided IP address and port number.
+5.  Clients can send data to the server for classification.
+6.  The server performs classification using the KNN algorithm and sends the results back to the clients.
+7.  Analyze the classification results and evaluate the performance of the KNN model.
+
+## [](https://github.com/RonenSiv/KNN_SOCKET/tree/main#technologies-used)Technologies Used
+
+-   C++
+-   Socket Programming
+
+### [](https://github.com/RonenSiv/KNN_SOCKET/tree/main#uml-diagrams)[![img](https://camo.githubusercontent.com/55bc7023aea0be8a7c83f851bd3c120223754b40efafd83b9c7d025b59aae044/68747470733a2f2f692e696d6775722e636f6d2f674e64444f43462e676966)](https://camo.githubusercontent.com/55bc7023aea0be8a7c83f851bd3c120223754b40efafd83b9c7d025b59aae044/68747470733a2f2f692e696d6775722e636f6d2f674e64444f43462e676966)UML Diagrams
 
 **Dictionary:** 
 
