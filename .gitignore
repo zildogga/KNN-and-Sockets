@@ -1,6 +1,5 @@
 # Prerequisites
 *.d
-
 cmake-build-debug/
 
 # Compiled Object files
@@ -32,3 +31,6 @@ cmake-build-debug/
 *.exe
 *.out
 *.app
+# Directories
+cmake-build-debug/
+cmake/CMakeFiles/
